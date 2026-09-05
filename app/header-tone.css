@@ -1,5 +1,5 @@
-/* Lighter blue header — keeps the rest of the dark sections unchanged. */
+/* Header uses the same blue as the word “autosleutel” in the brand design. */
 .announcement,
 .header {
-  background: #163a56;
+  background: #1678c8;
 }
