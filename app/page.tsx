@@ -59,14 +59,13 @@ export default function Home() {
             <h1>Probleem met uw<br /><span>autosleutel?</span></h1>
             <p className="hero-text">Autosleutel bijmaken, programmeren, vervangen of uw auto schadevrij openen. Snel, vakkundig en op locatie in Tiel en de regio.</p>
             <div className="actions">
-              <a className="btn primary" href={tel}>Bel direct <b>06 48 65 92 79</b></a>
-              <a className="btn hero-secondary" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <b>Stuur een bericht →</b></a>
+              <a className="btn primary" href={tel}><span className="btn-icon" aria-hidden="true">☎</span><span>Bel direct</span><b>06 48 65 92 79</b></a>
+              <a className="btn hero-secondary" href={whatsapp} target="_blank" rel="noreferrer"><span className="btn-icon whatsapp-icon" aria-hidden="true">◉</span><span>WhatsApp</span><b>Stuur een bericht →</b></a>
             </div>
             <div className="hero-trust"><span>✓ Service op locatie</span><span>✓ 1 jaar garantie</span><span>✓ Geen voorrijkosten binnen Tiel</span></div>
           </div>
           <div className="hero-image-wrap">
-            <Image className="hero-image" src="/ai-workbench.svg" alt="Autosleutelservice en professionele apparatuur" width={640} height={427} priority />
-            <div className="image-badge"><div><strong>Professionele autosleutelservice</strong><span>Programmeren · snijden · diagnose</span></div><div className="hero-side-points"><span>ϟ Snel ter plaatse</span><span>♢ Vakkundige service</span><span>⌖ Tiel en omgeving</span><span>☆ Klanten beoordelen ons op Google</span></div></div>
+            <Image className="hero-image" src="https://advancedkeys.co.uk/wp-content/uploads/2024/06/R-MG3.jpg" alt="Zwarte autosleutel met vergrendel-, kofferbak- en ontgrendelknop" width={640} height={427} priority unoptimized />
           </div>
         </div>
       </section>
