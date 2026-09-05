@@ -3,6 +3,7 @@ import "./globals.css";
 import "./premium.css";
 import "./logo-fix.css";
 import "./header-tone.css";
+import "./phone-hover.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://autosleutelrivierenland.nl"),
