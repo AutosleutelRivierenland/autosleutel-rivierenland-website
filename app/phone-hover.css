@@ -1,2 +1,2 @@
-.nav-phone span{display:inline-block;transition:transform .22s ease;font-size:15px;transform-origin:center}.nav-phone:hover span{transform:scale(1.08)}
-@media(max-width:760px){.nav-phone span{font-size:10px}.nav-phone:hover span{transform:none}}
+.nav-phone span{display:inline-block;transition:transform .22s ease;font-size:16px;transform-origin:center}.nav-phone:hover span{transform:scale(1.03)}
+@media(max-width:760px){.nav-phone span{font-size:13px}.nav-phone:hover span{transform:none}}
