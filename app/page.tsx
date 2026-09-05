@@ -64,9 +64,7 @@ export default function Home() {
             </div>
             <div className="hero-trust"><span>✓ Service op locatie</span><span>✓ 1 jaar garantie</span><span>✓ Geen voorrijkosten binnen Tiel</span></div>
           </div>
-          <div className="hero-image-wrap">
-            <Image className="hero-image" src="https://advancedkeys.co.uk/wp-content/uploads/2024/06/R-MG3.jpg" alt="Zwarte autosleutel met vergrendel-, kofferbak- en ontgrendelknop" width={640} height={427} priority unoptimized />
-          </div>
+          <div className="hero-image-wrap" aria-label="Neutrale zwarte autosleutel met drie witte functiesymbolen" />
         </div>
       </section>
 
