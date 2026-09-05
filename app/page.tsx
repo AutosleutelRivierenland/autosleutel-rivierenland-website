@@ -3,19 +3,115 @@ import Image from "next/image";
 const tel = "tel:+31648659279";
 const whatsapp = "https://wa.me/31648659279?text=Hallo%20Autosleutel%20Rivierenland%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20autosleutel.";
 const googleReviews = "https://www.google.com/search?q=autosleutel+rivierenland";
-const services = [["01","Autosleutel bijmaken","Een extra sleutel, met of zonder afstandsbediening."],["02","Autosleutel kwijt","Ook wanneer u geen werkende sleutel meer heeft."],["03","Autosleutel programmeren","Nieuwe en extra sleutels programmeren voor veel voertuigen."],["04","Schadevrij openen","Vakkundig openen wanneer u bent buitengesloten."],["05","Keyless Go","Keyless- en smartkeys maken en programmeren voor geschikte voertuigen."],["06","Diagnose & uitlezen","Gericht zoeken naar elektronische sleutel- en startproblemen."]];
-const coreAreas = ["Tiel","Culemborg","Geldermalsen","Buren","Zaltbommel","Leerdam","Gorinchem"];
-const expansionAreas = ["Nijmegen","Arnhem","Den Bosch","Utrecht"];
-const structuredData = {"@context":"https://schema.org","@type":"Locksmith",name:"Autosleutel Rivierenland",url:"https://autosleutelrivierenland.nl",telephone:"+31648659279",email:"autosleutel.rivierenland@gmail.com",address:{"@type":"PostalAddress",addressLocality:"Tiel",addressRegion:"Gelderland",addressCountry:"NL"},areaServed:[...coreAreas,...expansionAreas].map(name=>({"@type":"City",name})),openingHoursSpecification:[{"@type":"OpeningHoursSpecification",dayOfWeek:["Monday","Tuesday","Wednesday","Thursday","Saturday","Sunday"],opens:"09:00",closes:"21:00"}]};
 
-function Header(){return <header className="header"><div className="container nav-inner"><a className="logo-frame" href="#top" aria-label="Autosleutel Rivierenland home"><Image src="/logo.svg" alt="Autosleutel Rivierenland" width={174} height={70} priority /></a><nav aria-label="Hoofdnavigatie"><a href="#diensten">Diensten</a><a href="#werkgebied">Werkgebied</a><a href="/mercedes-contactslot">Mercedes contactslot</a><a href="#zakelijk">Zakelijk</a><a href="#contact">Contact</a></nav><a className="nav-phone" href={tel}>Bel direct <span>06 48 65 92 79</span></a></div></header>}
+const services = [
+  ["01", "Autosleutel bijmaken", "Een extra sleutel, met of zonder afstandsbediening."],
+  ["02", "Autosleutel kwijt", "Ook wanneer u geen werkende sleutel meer heeft."],
+  ["03", "Autosleutel programmeren", "Nieuwe en extra sleutels programmeren voor veel voertuigen."],
+  ["04", "Schadevrij openen", "Vakkundig openen wanneer u bent buitengesloten."],
+  ["05", "Keyless Go", "Keyless- en smartkeys maken en programmeren voor geschikte voertuigen."],
+  ["06", "Diagnose & uitlezen", "Gericht zoeken naar elektronische sleutel- en startproblemen."],
+];
 
-export default function Home(){return <main id="top"><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structuredData)}}/><div className="announcement"><div className="container announce-inner"><span>Autosleutelservice vanuit Tiel</span><span>Ma–do 09:00–21:00 · vrijdag gesloten · za–zo 09:00–21:00</span></div></div><Header/>
-<section className="hero light-hero"><div className="container hero-inner"><div className="hero-copy"><div className="eyebrow"><i></i> Uw autosleutelspecialist uit Tiel</div><h1>Probleem met uw<br/><span>autosleutel?</span></h1><p className="hero-text">Wij helpen u snel weer op weg. Van een extra sleutel tot programmeren, schadevrij openen en Keyless Go.</p><div className="actions"><a className="btn primary" href={tel}>Bel direct <b>→</b></a><a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <b>↗</b></a></div><div className="hero-trust"><span>✓ Service op locatie</span><span>✓ 1 jaar garantie</span><span>✓ Geen voorrijkosten binnen Tiel</span></div></div><div className="hero-photo" aria-hidden="true"><div className="key-scene"><div className="scene-key"><div className="scene-key-head"></div><div className="scene-key-shaft"></div></div><div className="scene-ring"></div></div><div className="hero-note"><b>Tiel als basis</b><small>Service in de regio</small></div></div></div></section>
-<section id="diensten" className="section services"><div className="container"><div className="section-head"><div><label>ONZE DIENSTEN</label><h2>Alles voor uw <em>autosleutel.</em></h2></div><p>Overzichtelijk geregeld, op locatie of op afspraak in Tiel.</p></div><div className="service-grid">{services.map(([n,title,text])=><a href="#contact" className="service" key={n}><span className="service-no">{n}</span><div className="service-symbol">+</div><h3>{title}</h3><p>{text}</p><b className="service-arrow">→</b></a>)}</div></div></section>
-<section className="special-banner"><div className="container special-banner-inner"><div><label>SPECIALE SERVICE</label><h2>Mercedes FBS3 contactslot vervangen</h2><p>Start uw Mercedes niet meer? Bij geschikte FBS3-modellen kan een defect contactslot de oorzaak zijn. Wij beoordelen het probleem en verzorgen vervanging en programmering.</p></div><a className="btn primary" href="/mercedes-contactslot">Meer over Mercedes <b>→</b></a></div></section>
-<section id="werkgebied" className="section area light-area"><div className="container area-grid"><div><label>WERKGEBIED</label><h2>Tiel is ons <em>kerngebied.</em></h2><p>Vanuit Tiel rijden wij naar klanten in de directe omgeving. Daarnaast breiden wij onze service uit richting Midden-Nederland.</p><div className="area-columns"><div><small>KERNGEBIED</small><div className="areas">{coreAreas.map(a=><span key={a}>✓ {a}</span>)}</div></div><div><small>UITBREIDING</small><div className="areas">{expansionAreas.map(a=><span key={a}>✓ {a}</span>)}</div></div></div><p><a className="text-link" href="/tiel">Bekijk autosleutelservice in Tiel →</a></p></div><div className="map-card"><div className="map-pin"><i></i><b>TIEL</b></div><span>SERVICE OP LOCATIE</span></div></div></section>
-<section id="zakelijk" className="business light-business"><div className="container business-box"><div><label>VOOR BEDRIJVEN</label><h2>Een praktische partner voor <em>uw werkplaats.</em></h2><p>Ook garages en autobedrijven kunnen bij ons terecht. Zakelijke werkzaamheden kunnen op factuur worden afgehandeld.</p></div><a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">Bespreek uw aanvraag <b>→</b></a></div></section>
-<section className="review-strip"><div className="container review-strip-inner"><div><label>ERVARINGEN VAN KLANTEN</label><h2>Tevreden over onze service?</h2><p>Bekijk onze beoordelingen op Google.</p></div><a className="btn ghost" href={googleReviews} target="_blank" rel="noreferrer">Bekijk Google reviews <b>↗</b></a></div></section>
-<section id="contact" className="contact"><div className="container contact-box"><div><label>CONTACT</label><h2>Autosleutelprobleem? <em>Bel ons.</em></h2><p>Vertel ons kort wat er aan de hand is. Wij helpen u graag.</p><div className="details"><a href={tel}><small>TELEFOON</small><strong>06 48 65 92 79</strong></a><a href="mailto:autosleutel.rivierenland@gmail.com"><small>E-MAIL</small><strong>autosleutel.rivierenland@gmail.com</strong></a></div></div><div className="contact-actions"><a className="btn primary large" href={tel}>Bel Autosleutel Rivierenland <b>→</b></a><a className="btn whatsapp large" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp ons <b>↗</b></a><p>Ma–do 09:00–21:00 · vrijdag gesloten · za–zo 09:00–21:00</p></div></div></section>
-<footer><div className="container footer-grid"><a className="logo-frame footer-logo" href="#top"><Image src="/logo.svg" alt="Autosleutel Rivierenland" width={174} height={70}/></a><div><b>DIENSTEN</b><a href="#diensten">Autosleutel kwijt</a><a href="#diensten">Extra autosleutel</a><a href="#diensten">Schadevrij openen</a><a href="/mercedes-contactslot">Mercedes FBS3 contactslot</a></div><div><b>CONTACT</b><a href={tel}>06 48 65 92 79</a><a href="mailto:autosleutel.rivierenland@gmail.com">E-mail</a><span>Tiel · Service op locatie</span></div></div><div className="container footer-bottom"><span>© 2026 Autosleutel Rivierenland</span><span>KvK 94298033</span><span>BTW-plichtig</span></div></footer><a className="float-wa" href={whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp Autosleutel Rivierenland">WA</a></main>}
+const coreAreas = ["Tiel", "Culemborg", "Geldermalsen", "Buren", "Zaltbommel", "Leerdam", "Gorinchem"];
+const expansionAreas = ["Nijmegen", "Arnhem", "Den Bosch", "Utrecht"];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Locksmith",
+  name: "Autosleutel Rivierenland",
+  url: "https://autosleutelrivierenland.nl",
+  telephone: "+31648659279",
+  email: "autosleutel.rivierenland@gmail.com",
+  address: { "@type": "PostalAddress", addressLocality: "Tiel", addressRegion: "Gelderland", addressCountry: "NL" },
+  areaServed: [...coreAreas, ...expansionAreas].map((name) => ({ "@type": "City", name })),
+  openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], opens: "09:00", closes: "21:00" }],
+};
+
+function Header() {
+  return (
+    <header className="header">
+      <div className="container nav-inner">
+        <a className="logo-frame" href="#top" aria-label="Autosleutel Rivierenland home">
+          <Image src="/logo.svg" alt="Autosleutel Rivierenland" width={174} height={70} priority />
+        </a>
+        <nav aria-label="Hoofdnavigatie">
+          <a href="#diensten">Diensten</a>
+          <a href="#werkgebied">Werkgebied</a>
+          <a href="/mercedes-contactslot">Mercedes FBS3</a>
+          <a href="#zakelijk">Zakelijk</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a className="nav-phone" href={tel}>Bel direct <span>06 48 65 92 79</span></a>
+      </div>
+    </header>
+  );
+}
+
+export default function Home() {
+  return (
+    <main id="top">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <div className="announcement">
+        <div className="container announce-inner">
+          <span>Autosleutelservice vanuit Tiel</span>
+          <span>Ma–do 09:00–21:00 · vrijdag gesloten · za–zo 09:00–21:00</span>
+        </div>
+      </div>
+      <Header />
+
+      <section className="hero premium-hero">
+        <div className="container hero-inner">
+          <div className="hero-copy">
+            <div className="eyebrow"><i /> Autosleutelspecialist uit Tiel</div>
+            <h1>Uw autosleutel.<br /><span>Onze specialiteit.</span></h1>
+            <p className="hero-text">Autosleutel bijmaken, programmeren of vervangen? Wij helpen u snel weer op weg. Mobiele service in Tiel en de regio.</p>
+            <div className="actions">
+              <a className="btn primary" href={tel}>Bel direct <b>→</b></a>
+              <a className="btn hero-secondary" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <b>↗</b></a>
+            </div>
+            <div className="hero-trust"><span>✓ Service op locatie</span><span>✓ 1 jaar garantie</span><span>✓ Geen voorrijkosten binnen Tiel</span></div>
+          </div>
+          <div className="hero-panel" aria-label="Autosleutelservice">
+            <div className="hero-panel-top"><span>01</span><span>RIVIERENLAND</span></div>
+            <div className="hero-panel-title">Snel hulp bij<br /><strong>autosleutelproblemen.</strong></div>
+            <div className="hero-panel-line" />
+            <div className="hero-panel-bottom"><span>TIEL · GELDERLAND</span><b>06 48 65 92 79</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="diensten" className="section services">
+        <div className="container">
+          <div className="section-head"><div><label>ONZE DIENSTEN</label><h2>Alles voor uw <em>autosleutel.</em></h2></div><p>Professionele autosleutelservice, op locatie of op afspraak in Tiel.</p></div>
+          <div className="service-grid">{services.map(([n, title, text]) => <a href="#contact" className="service" key={n}><span className="service-no">{n}</span><span className="service-mark">+</span><h3>{title}</h3><p>{text}</p><b className="service-arrow">→</b></a>)}</div>
+        </div>
+      </section>
+
+      <section className="special-banner">
+        <div className="container special-banner-inner"><div><label>SPECIALE SERVICE</label><h2>Mercedes FBS3 contactslot</h2><p>Bij geschikte Mercedes-modellen kunnen wij een defect FBS3 contactslot beoordelen, vervangen en programmeren. <strong>FBS4 valt buiten deze service.</strong></p></div><a className="btn primary" href="/mercedes-contactslot">Bekijk service <b>→</b></a></div>
+      </section>
+
+      <section id="werkgebied" className="section area">
+        <div className="container area-grid">
+          <div><label>WERKGEBIED</label><h2>Tiel als <em>basis.</em></h2><p>Vanuit Tiel werken wij mobiel voor particulieren en bedrijven in de regio. Voor werkzaamheden in Tiel kunt u ook op afspraak langskomen.</p>
+            <div className="area-columns"><div><small>KERNGEBIED</small><div className="areas">{coreAreas.map((a) => <span key={a}>✓ {a}</span>)}</div></div><div><small>UITBREIDING</small><div className="areas">{expansionAreas.map((a) => <span key={a}>✓ {a}</span>)}</div></div></div>
+            <p><a className="text-link" href="/tiel">Bekijk autosleutelservice in Tiel →</a></p>
+          </div>
+          <div className="area-card"><div className="area-card-label">SERVICE OP LOCATIE</div><strong>TIEL</strong><span>Rivierenland</span></div>
+        </div>
+      </section>
+
+      <section className="section capability">
+        <div className="container capability-grid"><div><label>MERKEN & MOGELIJKHEDEN</label><h2>Voor vrijwel alle <em>gangbare automerken.</em></h2></div><div><p>Wij werken met moderne professionele apparatuur voor een groot aantal voertuigen. Beschikbaarheid verschilt per merk, model en uitvoering.</p><p className="excluded"><strong>Niet beschikbaar:</strong> BMW, Renault en Volvo.</p></div></div>
+      </section>
+
+      <section id="zakelijk" className="business"><div className="container business-box"><div><label>VOOR BEDRIJVEN</label><h2>Een praktische partner voor <em>uw werkplaats.</em></h2><p>Ook garages en autobedrijven kunnen bij ons terecht. Zakelijke werkzaamheden kunnen op factuur worden afgehandeld.</p></div><a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">Bespreek uw aanvraag <b>→</b></a></div></section>
+
+      <section id="contact" className="contact"><div className="container contact-box"><div><label>CONTACT</label><h2>Autosleutelprobleem? <em>Bel ons.</em></h2><p>Vertel ons kort wat er aan de hand is. Wij helpen u graag.</p><div className="details"><a href={tel}><small>TELEFOON</small><strong>06 48 65 92 79</strong></a><a href="mailto:autosleutel.rivierenland@gmail.com"><small>E-MAIL</small><strong>autosleutel.rivierenland@gmail.com</strong></a></div><a className="review-link" href={googleReviews} target="_blank" rel="noreferrer">Bekijk onze beoordelingen op Google ↗</a></div><div className="contact-actions"><a className="btn primary large" href={tel}>Bel Autosleutel Rivierenland <b>→</b></a><a className="btn whatsapp large" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp ons <b>↗</b></a><p>Ma–do 09:00–21:00 · vrijdag gesloten · za–zo 09:00–21:00</p></div></div></section>
+
+      <footer><div className="container footer-grid"><a className="logo-frame footer-logo" href="#top"><Image src="/logo.svg" alt="Autosleutel Rivierenland" width={174} height={70} /></a><div><b>DIENSTEN</b><a href="#diensten">Autosleutel kwijt</a><a href="#diensten">Extra autosleutel</a><a href="#diensten">Schadevrij openen</a><a href="/mercedes-contactslot">Mercedes FBS3 contactslot</a></div><div><b>CONTACT</b><a href={tel}>06 48 65 92 79</a><a href="mailto:autosleutel.rivierenland@gmail.com">E-mail</a><span>Tiel · Service op locatie</span></div></div><div className="container footer-bottom"><span>© 2026 Autosleutel Rivierenland</span><span>KvK 94298033</span><span>BTW-plichtig</span></div></footer>
+      <a className="float-wa" href={whatsapp} target="_blank" rel="noreferrer" aria-label="WhatsApp Autosleutel Rivierenland">WA</a>
+    </main>
+  );
+}
