@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./premium.css";
 import "./logo-fix.css";
+import "./header-tone.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://autosleutelrivierenland.nl"),
