@@ -5,9 +5,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const services = [
     "autosleutel-bijmaken",
     "autosleutel-kwijt",
-    "autosleutel-programmeren",
+    "behuizingen-vervangen",
     "schadevrij-openen",
-    "keyless-go",
     "diagnose-uitlezen",
   ];
 
