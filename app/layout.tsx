@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./premium.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://autosleutelrivierenland.nl"),
@@ -8,18 +9,8 @@ export const metadata: Metadata = {
     template: "%s | Autosleutel Rivierenland",
   },
   description: "Professionele autosleutelservice vanuit Tiel. Autosleutels maken en programmeren, schadevrij openen, Keyless Go, diagnose en uitlezen. Service op locatie voor particulieren en bedrijven.",
-  keywords: [
-    "autosleutel Tiel",
-    "autosleutel Rivierenland",
-    "autosleutel kwijt",
-    "autosleutel bijmaken",
-    "autosleutel programmeren",
-    "auto schadevrij openen",
-    "Keyless Go",
-  ],
-  alternates: {
-    canonical: "https://autosleutelrivierenland.nl",
-  },
+  keywords: ["autosleutel Tiel","autosleutel Rivierenland","autosleutel kwijt","autosleutel bijmaken","autosleutel programmeren","auto schadevrij openen","Keyless Go","VAG sleutelprogrammering"],
+  alternates: { canonical: "https://autosleutelrivierenland.nl" },
   openGraph: {
     title: "Autosleutel Rivierenland | Uw autosleutelspecialist",
     description: "Professionele autosleutelservice op locatie vanuit Tiel. Voor particulieren, garages en autobedrijven.",
@@ -28,17 +19,7 @@ export const metadata: Metadata = {
     locale: "nl_NL",
     type: "website",
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
