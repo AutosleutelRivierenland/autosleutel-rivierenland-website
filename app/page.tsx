@@ -9,7 +9,10 @@ const services = [
   ["05", "Diagnose & uitlezen", "Elektronische diagnose, foutcodes uitlezen en gericht zoeken naar storingen."],
   ["06", "Behuizing vervangen", "Een versleten of beschadigde sleutelbehuizing professioneel vervangen."],
 ];
-const areas = ["Gelderland", "Noord-Brabant", "Utrecht", "Zuid-Holland", "Noord-Holland", "Flevoland"];
+
+const coreAreas = ["Tiel", "Culemborg", "Geldermalsen", "Buren", "Zaltbommel", "Leerdam", "Gorinchem"];
+const expansionAreas = ["Nijmegen", "Arnhem", "Den Bosch", "Utrecht"];
+const allAreas = [...coreAreas, ...expansionAreas];
 
 function Brand() {
   return <a className="brand" href="#top" aria-label="Autosleutel Rivierenland home">
@@ -31,7 +34,7 @@ const structuredData = {
     addressRegion: "Gelderland",
     addressCountry: "NL"
   },
-  areaServed: areas.map((name) => ({ "@type": "AdministrativeArea", name })),
+  areaServed: allAreas.map((name) => ({ "@type": "City", name })),
   openingHoursSpecification: [
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"], opens: "09:00", closes: "21:00" }
   ],
@@ -59,7 +62,7 @@ export default function Home() {
 
     <section id="zakelijk" className="business"><div className="container business-box"><div><label>VOOR BEDRIJVEN</label><h2>Een betrouwbare partner voor <em>uw werkplaats.</em></h2><p>Ook garages, autobedrijven en andere zakelijke klanten kunnen bij Autosleutel Rivierenland terecht. Zakelijke werkzaamheden kunnen op factuur worden afgehandeld.</p></div><a className="btn primary" href={whatsapp} target="_blank" rel="noreferrer">Bespreek uw aanvraag <b>→</b></a></div></section>
 
-    <section id="werkgebied" className="section area"><div className="container area-grid"><div><label>WERKGEBIED</label><h2>Vanuit Tiel naar <em>uw locatie.</em></h2><p>Wij zijn gevestigd in Tiel en leveren autosleutelservice op locatie in een groot deel van Midden-Nederland.</p><div className="areas">{areas.map(a=><span key={a}>✓ {a}</span>)}</div></div><div className="map-card" aria-label="Werkgebied vanuit Tiel"><div className="map-pin"><i></i><b>TIEL</b></div><span>SERVICE OP LOCATIE</span></div></div></section>
+    <section id="werkgebied" className="section area"><div className="container area-grid"><div><label>WERKGEBIED</label><h2>Vanuit Tiel naar <em>uw locatie.</em></h2><p><strong>Tiel en de directe omgeving zijn ons kerngebied.</strong> Van daaruit breiden wij onze service uit richting Nijmegen, Arnhem, Den Bosch en Utrecht.</p><div className="area-groups"><div><small>KERNGBIED</small><div className="areas">{coreAreas.map(a=><span key={a}>✓ {a}</span>)}</div></div><div><small>UITBREIDING</small><div className="areas">{expansionAreas.map(a=><span key={a}>✓ {a}</span>)}</div></div></div></div><div className="map-card" aria-label="Werkgebied vanuit Tiel"><div className="map-pin"><i></i><b>TIEL</b></div><span>SERVICE OP LOCATIE</span><small>Rivierenland · Midden-Nederland</small></div></div></section>
 
     <section id="contact" className="contact"><div className="container contact-box"><div><label>CONTACT</label><h2>Klaar om weer <em>op weg te gaan?</em></h2><p>Vertel ons kort wat er met uw autosleutel of auto aan de hand is. Wij helpen u graag.</p><div className="details"><a href={tel}><small>TELEFOON</small><strong>06 48 65 92 79</strong></a><a href="mailto:autosleutel.rivierenland@gmail.com"><small>E-MAIL</small><strong>autosleutel.rivierenland@gmail.com</strong></a></div></div><div className="contact-actions"><a className="btn primary large" href={tel}>Bel Autosleutel Rivierenland <b>→</b></a><a className="btn whatsapp large" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp ons <b>↗</b></a><p>Ma–do 09:00–21:00 · vrijdag gesloten · za–zo 09:00–21:00</p></div></div></section>
 
