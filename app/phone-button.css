@@ -1,2 +1,2 @@
-.nav-phone{min-width:142px;padding:0 8px;gap:6px;font-size:14px}.nav-phone span{font-size:16px;font-weight:800;letter-spacing:-.02em}.nav-phone b{font-size:18px}
+.nav-phone{min-width:142px;padding:0 8px;gap:6px;font-size:14px;background:transparent!important;border:1px solid rgba(255,255,255,.72)!important;color:#000!important;box-shadow:none!important}.nav-phone span{font-size:16px;font-weight:800;letter-spacing:-.02em;color:#000}.nav-phone b{font-size:18px;color:#000}.nav-phone:hover{background:#1678c8!important;border-color:#fff!important;color:#fff!important}.nav-phone:hover span,.nav-phone:hover b{color:#fff!important}
 @media(max-width:760px){.nav-phone{min-width:132px;padding:0 7px;gap:5px;font-size:12px}.nav-phone span{font-size:13px}.nav-phone b{font-size:16px}}
