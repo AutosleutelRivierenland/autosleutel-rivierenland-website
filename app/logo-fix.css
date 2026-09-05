@@ -1,0 +1,4 @@
+/* Exact supplied logo: keep the full proportions visible; never crop it. */
+.logo-frame{width:222px;height:100px!important;background:#071525!important;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.logo-frame img{width:210px!important;height:auto!important;max-height:98px;object-fit:contain;display:block}
+@media(max-width:900px){.logo-frame{width:150px;height:72px!important}.logo-frame img{width:142px!important;max-height:68px}}
