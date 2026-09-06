@@ -1,8 +1,9 @@
-/* Use the supplied Autosleutel Rivierenland artwork as a pure SVG so it renders reliably on iPhone/Safari. */
+/* Supplied Autosleutel Rivierenland artwork: crisp vector logo, centered consistently across desktop and mobile. */
 .logo-frame{width:222px;height:100px!important;background:transparent!important;overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative}
 .logo-frame img{display:none!important}
 .logo-frame:before{content:"";display:block;width:210px;height:82px;background:url("/logo-exact.svg") center/contain no-repeat}
-.why-logo-card{position:relative}
+.why-logo-card{position:relative;min-height:330px!important;background:#f5efe5!important;border:1px solid #e7dfd2!important;display:flex!important;align-items:center;justify-content:center}
 .why-logo-card img{display:none!important}
-.why-logo-card:before{content:"";display:block;width:min(100%,520px);height:240px;background:url("/logo-exact-dark.svg") center/contain no-repeat}
-@media(max-width:900px){.logo-frame{width:150px;height:72px!important}.logo-frame:before{width:142px;height:62px}.why-logo-card:before{height:190px}}
+.why-logo-card:before{content:"";display:block;width:min(100%,540px);height:270px;background:url("/logo-exact-dark.svg") center/contain no-repeat}
+@media(max-width:900px){.logo-frame{width:150px;height:72px!important}.logo-frame:before{width:142px;height:62px}.why-logo-card{min-height:250px!important}.why-logo-card:before{width:min(100%,480px);height:205px}}
+@media(max-width:760px){.why-logo-card{min-height:230px!important;padding:24px!important}.why-logo-card:before{height:185px}}
