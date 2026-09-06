@@ -14,7 +14,7 @@ export default function ServicePhotoOverrides(){
       const faqAnswers: Record<string,string> = {
         "Kan ik een autosleutel zonder afstandsbediening laten maken?":"Zeker. Als u alleen een gewone autosleutel nodig heeft, kunnen wij die ook voor u maken.",
         "Kan een nieuwe sleutel op locatie worden ingeleerd?":"Dat kan vaak gewoon bij u op locatie. We nemen de sleutel ter plaatse in behandeling en testen hem daarna.",
-        "Maken jullie ook smartkeys?":"Zeker. Smartkeys en keyless-sleutels kunnen we ook voor u regelen.",
+        "Maken jullie ook smartkeys?":"Ja, smartkeys en keyless-sleutels kunnen we ook voor u regelen. We zorgen ervoor dat de sleutel bij uw auto past en controleren daarna of alles goed werkt.",
         "Wat moet ik doorgeven voor een prijsindicatie?":"Stuur ons het merk, model en bouwjaar van uw auto. Met het kenteken kunnen we u meestal nog gerichter helpen."
       };
 
