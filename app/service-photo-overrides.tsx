@@ -3,14 +3,27 @@ import { useEffect } from "react";
 
 export default function ServicePhotoOverrides(){
   useEffect(()=>{
-    if(window.location.pathname!=="/diensten/autosleutel-bijmaken") return;
+    const path=window.location.pathname;
+    if(path!=="/diensten/autosleutel-bijmaken" && path!=="/diensten/autosleutel-kwijt") return;
 
     const apply=()=>{
       const hero=document.querySelector<HTMLElement>(".service-photo");
       const offer=document.querySelector<HTMLElement>(".offer-photo");
-      if(hero){hero.style.backgroundImage='url("/autosleutel-bijmaken-autel.svg")';hero.style.backgroundPosition="center";}
-      if(offer){offer.style.backgroundImage='url("/autosleutel-bijmaken-vw-key.svg")';offer.style.backgroundPosition="center";offer.style.backgroundSize="cover";}
 
+      const photoSet=path==="/diensten/autosleutel-bijmaken"
+        ? {
+            hero:"https://images.pexels.com/videos/6182060/choice-of-keys-key-key-service-keys-6182060.jpeg?auto=compress&dpr=1&h=1200&w=1800",
+            offer:"https://images.pexels.com/photos/97079/pexels-photo-97079.jpeg?auto=compress&cs=tinysrgb&w=1800"
+          }
+        : {
+            hero:"https://images.pexels.com/photos/4930676/pexels-photo-4930676.jpeg?auto=compress&cs=tinysrgb&w=1800",
+            offer:"https://images.unsplash.com/photo-1698358530697-dd421871f576?auto=format&fit=crop&fm=jpg&q=85&w=1800"
+          };
+
+      if(hero){hero.style.backgroundImage=`url("${photoSet.hero}")`;hero.style.backgroundPosition="center";hero.style.backgroundSize="cover";}
+      if(offer){offer.style.backgroundImage=`url("${photoSet.offer}")`;offer.style.backgroundPosition="center";offer.style.backgroundSize="cover";}
+
+      if(path!=="/diensten/autosleutel-bijmaken") return;
       const faqAnswers: Record<string,string> = {
         "Kan ik een autosleutel zonder afstandsbediening laten maken?":"Zeker. Als u alleen een gewone autosleutel nodig heeft, kunnen wij die ook voor u maken.",
         "Kan een nieuwe sleutel op locatie worden ingeleerd?":"Dat kan vaak gewoon bij u op locatie. We nemen de sleutel ter plaatse in behandeling en testen hem daarna.",
