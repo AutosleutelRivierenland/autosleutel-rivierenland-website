@@ -13,7 +13,7 @@ export default function ServicePhotoOverrides(){
       if(path==="/diensten/autosleutel-bijmaken"){
         const photoSet={
           hero:"https://images.pexels.com/photos/11731973/pexels-photo-11731973.jpeg?auto=compress&cs=tinysrgb&w=1800",
-          offer:"https://images.pexels.com/photos/6097/pexels-photo-6097.jpeg?auto=compress&cs=tinysrgb&w=1800"
+          offer:"https://images.pexels.com/photos/6565048/pexels-photo-6565048.jpeg?auto=compress&cs=tinysrgb&w=1800"
         };
         if(hero){hero.style.backgroundImage=`url("${photoSet.hero}")`;hero.style.backgroundPosition="center";hero.style.backgroundSize="cover";}
         if(offer){offer.style.backgroundImage=`url("${photoSet.offer}")`;offer.style.backgroundPosition="center";offer.style.backgroundSize="cover";}
