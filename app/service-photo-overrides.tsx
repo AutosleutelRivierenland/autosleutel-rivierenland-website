@@ -4,6 +4,7 @@ import { useEffect } from "react";
 export default function ServicePhotoOverrides(){
   useEffect(()=>{
     if(window.location.pathname!=="/diensten/autosleutel-bijmaken") return;
+
     const apply=()=>{
       const hero=document.querySelector<HTMLElement>(".service-photo");
       const offer=document.querySelector<HTMLElement>(".offer-photo");
@@ -16,16 +17,19 @@ export default function ServicePhotoOverrides(){
         "Maken jullie ook smartkeys?":"Ja. Wij regelen ook moderne smartkeys en keyless-sleutels.",
         "Wat moet ik doorgeven voor een prijsindicatie?":"Geef ons het merk, model en bouwjaar door. Een kenteken of voertuiggegevens zijn ook handig voor een gerichte prijsindicatie."
       };
+
       document.querySelectorAll<HTMLElement>(".faq-list details").forEach(detail=>{
-        const question=detail.querySelector("summary")?.textContent?.trim()||"";
-        const answer=faqAnswers[question];
+        const question=detail.querySelector("summary")?.childNodes[0]?.textContent?.trim()||"";
         const paragraph=detail.querySelector<HTMLElement>("p");
+        const answer=faqAnswers[question];
         if(answer && paragraph) paragraph.textContent=answer;
       });
     };
+
     apply();
-    const timer=window.setTimeout(apply,100);
-    return()=>window.clearTimeout(timer);
+    const observer=new MutationObserver(apply);
+    observer.observe(document.body,{childList:true,subtree:true});
+    return()=>observer.disconnect();
   },[]);
   return null;
 }
