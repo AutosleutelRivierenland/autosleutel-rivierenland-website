@@ -10,6 +10,7 @@ import "./hero-polish.css";
 import "./service-images.css";
 import "./mercedes-page.css";
 import "./concept.css";
+import "./mercedes-service-photo.css";
 import "./tiel/tiel.css";
 import "./region-home.css";
 import "./region-home-copy.css";
