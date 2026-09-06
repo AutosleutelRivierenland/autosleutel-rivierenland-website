@@ -1,0 +1,13 @@
+/* Replace the old Tiel-only visual copy with the approved work-area message. */
+.tiel-home-copy{font-size:0}
+.tiel-home-copy label{font-size:12px}
+.tiel-home-copy h2{font-size:0;margin-bottom:28px}
+.tiel-home-copy h2 em{font-size:0}
+.tiel-home-copy h2:after{content:"Dichtbij voor u.\A In heel Rivierenland.";white-space:pre;font-size:clamp(48px,4.7vw,72px);line-height:.98;letter-spacing:-.065em;color:#10233a;font-weight:700}
+.tiel-home-copy h2:after{display:block}
+.tiel-home-copy p{display:none}
+.tiel-home-copy:after{content:"Autosleutel Rivierenland is gevestigd in Tiel en helpt klanten in de hele regio met autosleutels, sleutelproblemen en schadevrij openen. We komen naar u toe, of u nu in Tiel woont of in een van de omliggende plaatsen.\A\AOns primaire werkgebied is Tiel en omgeving. Daarnaast zijn wij actief in een groter gebied van Den Bosch tot Utrecht, en van Nijmegen tot Arnhem, inclusief alle plaatsen daartussen.";white-space:pre-wrap;display:block;font-size:18px;line-height:1.7;color:#68798a;max-width:610px}
+.tiel-home-copy .text-link{font-size:14px;margin-top:24px}
+.tiel-home-copy .text-link{color:transparent;position:relative}
+.tiel-home-copy .text-link:after{content:"Meer over onze regio →";color:#fff;position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+@media(max-width:760px){.tiel-home-copy h2:after{font-size:46px}.tiel-home-copy:after{font-size:16px;line-height:1.65}}
