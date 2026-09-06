@@ -27,8 +27,8 @@ export default function ServicePhotoOverrides(){
       }
 
       const photoSet={
-        hero:"https://images.pexels.com/photos/842528/pexels-photo-842528.jpeg?auto=compress&cs=tinysrgb&w=1800",
-        offer:"https://images.unsplash.com/photo-1698358530697-dd421871f576?auto=format&fit=crop&fm=jpg&q=85&w=1800"
+        hero:"https://images.pexels.com/photos/11017012/pexels-photo-11017012.jpeg?auto=compress&cs=srgb&w=1800",
+        offer:"https://images.pexels.com/photos/8024029/pexels-photo-8024029.jpeg?auto=compress&cs=tinysrgb&w=1800"
       };
       if(hero){hero.style.backgroundImage=`url("${photoSet.hero}")`;hero.style.backgroundPosition="center";hero.style.backgroundSize="cover";}
       if(offer){offer.style.backgroundImage=`url("${photoSet.offer}")`;offer.style.backgroundPosition="center";offer.style.backgroundSize="cover";}
