@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const tel="tel:+31648659279";
 const whatsapp="https://wa.me/31648659279?text=Hallo%20Autosleutel%20Rivierenland%2C%20ik%20heb%20een%20vraag%20over%20een%20Mercedes%20contactslot.";
-const carPhoto="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes_Benz_C_180_CGi_2011.jpg?width=1800";
+const carPhoto="/mercedes-sprinter-2016.jpg";
 
 const modelGroups=[
   ["A-Klasse", [["W169","2004–2012"],["W176","2012–2014"]]],
@@ -28,7 +28,7 @@ const modelGroups=[
 export default function MercedesContactslotPage(){return <main>
  <header className="header"><div className="container nav-inner"><a className="logo-frame" href="/"><img src="/logo.svg" alt="Autosleutel Rivierenland" width={220} height={89}/></a><nav aria-label="Hoofdnavigatie"><a href="/">Home</a><a href="/#diensten">Diensten</a><a href="/mercedes-contactslot">Mercedes contactslot vervangen</a><a href="/#zakelijk">Zakelijk</a><a href="/#contact">Contact</a></nav><a className="nav-phone" href={tel}><span>06 48 65 92 79</span></a></div></header>
 
- <section className="special-hero"><div className="container special-hero-grid"><div><div className="eyebrow"><i/> Mercedes contactslot</div><h1>Mercedes contactslot <span>vervangen.</span></h1><p>Werkt het contactslot van uw Mercedes niet goed of start de auto niet meer? Wij onderzoeken de klacht en vervangen geschikte contactsloten wanneer het voertuig binnen onze service valt.</p><div className="actions"><a className="btn primary" href={tel}>Bel direct <b>→</b></a><a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <b>↗</b></a></div></div><div className="mercedes-photo"><img src={carPhoto} alt="Mercedes C-Klasse uit 2011"/><span>Mercedes C-Klasse · 2011</span></div></div></section>
+ <section className="special-hero"><div className="container special-hero-grid"><div><div className="eyebrow"><i/> Mercedes contactslot</div><h1>Mercedes contactslot <span>vervangen.</span></h1><p>Werkt het contactslot van uw Mercedes niet goed of start de auto niet meer? Wij onderzoeken de klacht en vervangen geschikte contactsloten wanneer het voertuig binnen onze service valt.</p><div className="actions"><a className="btn primary" href={tel}>Bel direct <b>→</b></a><a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <b>↗</b></a></div></div><div className="mercedes-photo"><img src={carPhoto} alt="Mercedes Sprinter uit 2016 met zichtbaar contactslot"/></div></div></section>
 
  <section className="section mercedes-content"><div className="container two-col"><div><label>CONTACTSLOT PROBLEEM</label><h2>Wanneer uw Mercedes <em>niet wil starten.</em></h2></div><div><p>Een defect contactslot kan ervoor zorgen dat het contact niet wordt vrijgegeven of dat de auto niet meer start. Ook een storing die af en toe optreedt kan uiteindelijk tot volledige uitval leiden.</p><p>Wij beginnen daarom met een beoordeling van de klacht en het voertuig. Als het contactslot de oorzaak is en de auto binnen onze service valt, kunnen wij het contactslot vervangen en de werkzaamheden afronden met een controle.</p></div></div></section>
 
