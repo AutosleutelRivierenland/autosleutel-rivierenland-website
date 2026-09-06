@@ -10,6 +10,7 @@ import "./service-images.css";
 import "./mercedes-page.css";
 import "./concept.css";
 import "./tiel/tiel.css";
+import "./region-home.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://autosleutelrivierenland.nl"),
