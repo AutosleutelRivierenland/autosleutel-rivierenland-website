@@ -11,7 +11,18 @@ const whatsapp="https://wa.me/31648659279?text=Hallo%20Autosleutel%20Rivierenlan
 const carPhoto="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes_Benz_C_180_CGi_2011.jpg?width=1800";
 
 const modelGroups=[
- ["A-Klasse","W169 · 2004–2012","W176 · 2012–2014"],["B-Klasse","W245 · 2005–2011","W246 · 2011–2014"],["C-Klasse","W203 · 2000–2008","W204 · 2007–2014"],["CLA","C117 · 2013–2014",""] ,["CLS","C219 · 2004–2010","C218 · 2010–2014"],["E-Klasse","W210 · 1996–2002","W211 · 2002–2009 · W212 · 2010–2014"],["GLK","X204/W204 · 2008–2014",""] ,["M-Klasse","W164 · 2005–2011","W166 · 2011–2014"],["S-Klasse","W220 · 1998–2005","W221 · 2005–2013"],["SLK","R171 · 2004–2011","R172 · 2011–2014"],["Sprinter","W906 · 2006–2018",""] ,["Vito / Viano","W639 · 2003–2014",""]
+  ["A-Klasse", [["W169","2004–2012"],["W176","2012–2014"]]],
+  ["B-Klasse", [["W245","2005–2011"],["W246","2011–2014"]]],
+  ["C-Klasse", [["W203","2000–2008"],["W204","2007–2014"]]],
+  ["CLA", [["C117","2013–2014"]]],
+  ["CLS", [["C219","2004–2010"],["C218","2010–2014"]]],
+  ["E-Klasse", [["W210","1996–2002"],["W211","2002–2009"],["W212","2010–2014"]]],
+  ["GLK", [["X204 / W204","2008–2014"]]],
+  ["M-Klasse", [["W164","2005–2011"],["W166","2011–2014"]]],
+  ["S-Klasse", [["W220","1998–2005"],["W221","2005–2013"]]],
+  ["SLK", [["R171","2004–2011"],["R172","2011–2014"]]],
+  ["Sprinter", [["W906","2006–2018"]]],
+  ["Vito / Viano", [["W639","2003–2014"]]],
 ];
 
 export default function MercedesContactslotPage(){return <main>
@@ -23,9 +34,7 @@ export default function MercedesContactslotPage(){return <main>
 
  <section className="section symptom-section"><div className="container"><div className="section-head"><div><label>MOGELIJKE KLACHTEN</label><h2>Herkent u één van deze <em>problemen?</em></h2></div></div><div className="symptoms"><div><b>01</b><h3>Auto start niet</h3><p>De Mercedes reageert niet normaal bij het inschakelen van het contact of starten.</p></div><div><b>02</b><h3>Contactslot reageert niet</h3><p>Het contact wordt niet goed vrijgegeven of werkt wisselend.</p></div><div><b>03</b><h3>Storing komt terug</h3><p>Een probleem dat eerst af en toe voorkomt kan uiteindelijk leiden tot volledige uitval.</p></div></div></div></section>
 
- <section className="section model-section"><div className="container"><label>GESCHIKTE MODELLEN</label><h2>Veelvoorkomende Mercedes-<em>modellen.</em></h2><p className="model-intro">Onderstaande bouwjaren zijn praktische richtlijnen. Mercedes gebruikte rond sommige modelwisselingen verschillende systemen. Daarom controleren wij het voertuig vooraf.</p><div className="model-table">{modelGroups.map(([model,first,second])=><div className="model-row" key={model}><strong>{model}</strong><span>{first}</span><span>{second}</span></div>)}</div></div></section>
-
- <section className="section mercedes-process"><div className="container"><label>WERKWIJZE</label><div className="process-line"><div><b>01</b><h3>Klacht bespreken</h3><p>We nemen model, bouwjaar en de klachten met u door.</p></div><div><b>02</b><h3>Beoordelen</h3><p>We beoordelen of het contactslot de oorzaak kan zijn en of het voertuig binnen de service valt.</p></div><div><b>03</b><h3>Contactslot vervangen</h3><p>Wanneer vervanging passend is, vervangen wij het contactslot.</p></div><div><b>04</b><h3>Controleren</h3><p>Na de werkzaamheden controleren we het contact en de startfunctie.</p></div></div></div></section>
+ <section className="section model-section"><div className="container"><label>GESCHIKTE MODELLEN</label><h2>Veelvoorkomende Mercedes-<em>modellen.</em></h2><p className="model-intro">Onderstaande bouwjaren zijn praktische richtlijnen. Mercedes gebruikte rond sommige modelwisselingen verschillende systemen. Daarom controleren wij het voertuig vooraf.</p><div className="model-table"><div className="model-table-head"><span>Model</span><span>Type</span><span>Bouwjaar</span></div>{modelGroups.map(([model,variants])=><div className="model-row" key={model}><strong>{model}</strong><div className="model-variants">{variants.map(([type,years])=><div className="model-variant" key={type}><span>{type}</span><span>{years}</span></div>)}</div></div>)}</div></div></section>
 
  <section className="notice"><div className="container notice-box"><div><label>BELANGRIJK</label><h2>Deze service is gericht op FBS3-systemen.</h2><p>De bouwjaren hierboven zijn een indicatie. Het exacte systeem kan per voertuig verschillen. Nieuwe Mercedes-systemen van de FBS4-generatie vallen buiten deze service. Neem bij twijfel contact op met merk, model en bouwjaar.</p></div><a className="btn primary" href={tel}>Bespreek uw Mercedes <b>→</b></a></div></section>
 
