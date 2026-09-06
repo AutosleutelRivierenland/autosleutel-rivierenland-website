@@ -1,0 +1,37 @@
+/* Homepage work-area section: premium 3D-style regional map */
+.tiel-home-section{padding:118px 0 112px;background:#f8fbfd;border-top:1px solid #e4edf4;overflow:hidden}
+.tiel-home-grid{grid-template-columns:.82fr 1.18fr;gap:72px;align-items:center}
+.tiel-home-copy{max-width:610px}
+.tiel-home-copy label{display:block;color:#b58a50;font-size:12px;font-weight:800;letter-spacing:.22em;margin-bottom:18px}
+.tiel-home-copy h2{font-size:clamp(48px,4.7vw,72px);line-height:.98;letter-spacing:-.065em;margin:0 0 28px;color:#10233a}
+.tiel-home-copy h2 em{color:#1678c8;font-style:normal}
+.tiel-home-copy p{font-size:18px;line-height:1.7;color:#68798a;margin:0 0 18px}
+.tiel-home-copy .text-link{display:inline-flex;margin-top:20px;padding:15px 24px;border-radius:999px;background:#1678c8;color:#fff;font-size:14px;font-weight:800;box-shadow:0 12px 24px rgba(22,120,200,.18)}
+.tiel-home-copy .text-link:hover{transform:translateY(-2px);background:#0d67ad}
+.rivierenland-map{height:540px;border:1px solid #d8e4ec;border-radius:24px;background:linear-gradient(145deg,#eef6fa 0%,#f9fbfd 56%,#eaf2f7 100%);position:relative;overflow:hidden;box-shadow:0 26px 70px rgba(21,53,78,.12);isolation:isolate}
+.rivierenland-map:before{content:"";position:absolute;inset:-20%;background:radial-gradient(ellipse at 52% 42%,rgba(255,255,255,.98) 0 30%,rgba(218,233,242,.75) 48%,rgba(198,219,231,.2) 67%,transparent 72%);transform:rotate(-6deg);z-index:-1}
+.rivierenland-map:after{content:"";position:absolute;left:9%;right:9%;top:18%;height:56%;border:2px dashed rgba(22,120,200,.72);border-radius:50%;background:rgba(22,120,200,.10);box-shadow:0 0 0 18px rgba(22,120,200,.035),inset 0 0 50px rgba(22,120,200,.06);transform:rotate(-5deg);pointer-events:none;z-index:2}
+.map-outline{position:absolute;inset:34px 28px 108px;overflow:visible;border:0;border-radius:0;transform:perspective(900px) rotateX(9deg) rotateZ(-2deg);background:linear-gradient(145deg,rgba(255,255,255,.52),rgba(222,238,247,.22));box-shadow:none}
+.map-outline:before{content:"";position:absolute;width:115%;height:34px;left:-8%;top:38%;background:rgba(255,255,255,.7);border-radius:50%;filter:blur(2px);transform:rotate(17deg);box-shadow:0 80px 0 rgba(22,120,200,.035),0 -130px 0 rgba(255,255,255,.55)}
+.map-outline:after{content:"";position:absolute;width:54%;height:54%;left:22%;top:20%;border-radius:50%;background:radial-gradient(circle,rgba(22,120,200,.15) 0 17%,rgba(22,120,200,.06) 18% 42%,transparent 43%);z-index:3;pointer-events:none}
+.map-road{position:absolute;display:block;height:2px;background:rgba(100,128,145,.24);transform-origin:left center;border-radius:999px;z-index:1}
+.road-1{width:82%;left:6%;top:49%;transform:rotate(4deg)}
+.road-2{width:70%;left:18%;top:27%;transform:rotate(48deg)}
+.road-3{width:72%;left:13%;top:72%;transform:rotate(-25deg)}
+.map-city{position:absolute;display:flex;align-items:center;gap:8px;font-size:12px;color:#50677a;white-space:nowrap;transform:rotate(2deg);z-index:5}
+.map-city b{width:8px;height:8px;border-radius:50%;background:#1678c8;display:block;box-shadow:0 0 0 4px rgba(22,120,200,.10)}
+.city-tiel{left:48%;top:52%;font-size:22px;color:#10233a;font-weight:900;gap:10px}
+.city-tiel b{width:24px;height:24px;background:#1678c8;box-shadow:0 0 0 10px rgba(22,120,200,.13),0 8px 20px rgba(22,120,200,.25);position:relative}
+.city-tiel b:after{content:"";position:absolute;width:12px;height:12px;left:6px;top:5px;background:#fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 0 0 2px rgba(255,255,255,.7)}
+.city-culemborg{left:27%;top:25%}.city-geldermalsen{left:40%;top:38%}.city-buren{left:57%;top:47%}.city-zaltbommel{left:20%;top:67%}.city-leerdam{left:10%;top:43%}.city-gorinchem{left:76%;top:48%}
+.city-culemborg b,.city-geldermalsen b,.city-buren b,.city-zaltbommel b,.city-leerdam b,.city-gorinchem b{width:7px;height:7px;background:#8da4b4;box-shadow:none}
+.road-1:before,.road-1:after,.road-2:before,.road-2:after{position:absolute;color:#10233a;font-size:14px;font-weight:800;white-space:nowrap;background:#fff;border:1px solid rgba(211,225,235,.9);padding:7px 11px;border-radius:10px;box-shadow:0 8px 20px rgba(21,53,78,.08);z-index:6}
+.road-1:before{content:"Den Bosch";left:5%;top:72px}.road-1:after{content:"Utrecht";left:75%;top:-165px}.road-2:before{content:"Arnhem";left:91%;top:48px}.road-2:after{content:"Nijmegen";left:76%;top:190px}
+.map-caption{position:absolute;left:38px;right:38px;bottom:30px;display:grid;grid-template-columns:1fr auto;column-gap:22px;align-items:end;z-index:7}
+.map-caption span{grid-column:1 / -1;font-size:10px;letter-spacing:.22em;color:#1678c8;font-weight:900;margin-bottom:7px}
+.map-caption strong{font-size:24px;color:#10233a;letter-spacing:-.03em}.map-caption small{font-size:12px;color:#748798;text-align:right}
+/* Legend and work-area messaging */
+.rivierenland-map .map-caption:before{content:"PRIMAIR WERKGEBIED  •  TIEL EN OMGEVING     |     WERKGEBIED  •  DEN BOSCH – UTRECHT – ARNHEM – NIJMEGEN EN ALLES DAARTUSSEN";position:absolute;left:0;bottom:66px;max-width:82%;font-size:10px;line-height:1.5;font-weight:800;color:#38536a;background:rgba(255,255,255,.88);border:1px solid #d9e6ee;border-radius:14px;padding:12px 15px;box-shadow:0 10px 24px rgba(21,53,78,.07)}
+.rivierenland-map .map-caption span{font-size:0}.rivierenland-map .map-caption span:after{content:"WERKGEBIED";font-size:10px}
+@media(max-width:1100px){.tiel-home-section{padding:90px 0}.tiel-home-grid{grid-template-columns:1fr;gap:48px}.tiel-home-copy{max-width:820px}.rivierenland-map{height:500px}}
+@media(max-width:760px){.tiel-home-section{padding:72px 0 78px}.tiel-home-copy h2{font-size:46px}.tiel-home-copy p{font-size:16px}.rivierenland-map{height:430px;border-radius:18px}.map-outline{inset:28px 16px 96px;transform:perspective(700px) rotateX(7deg) rotateZ(-2deg)}.map-city{font-size:10px}.city-tiel{font-size:17px}.city-tiel b{width:19px;height:19px}.road-1:before,.road-1:after,.road-2:before,.road-2:after{font-size:10px;padding:5px 7px}.road-1:before{left:2%;top:50px}.road-1:after{left:63%;top:-105px}.road-2:before{left:74%;top:35px}.road-2:after{left:59%;top:135px}.rivierenland-map .map-caption{left:18px;right:18px;bottom:18px}.rivierenland-map .map-caption:before{max-width:100%;bottom:62px;font-size:8px;padding:9px 10px}.map-caption strong{font-size:17px}.map-caption small{font-size:9px}}
