@@ -13,7 +13,7 @@ export default function ServicePhotoOverrides(){
       const faqAnswers: Record<string,string> = {
         "Kan ik een autosleutel zonder afstandsbediening laten maken?":"Ja. Wij regelen ook eenvoudige autosleutels zonder afstandsbediening.",
         "Kan een nieuwe sleutel op locatie worden ingeleerd?":"Ja. Veel werkzaamheden kunnen gewoon bij u op locatie worden uitgevoerd.",
-        "Maken jullie ook smartkeys?":"Ja, wij regelen ook moderne smartkeys en keyless-sleutels.",
+        "Maken jullie ook smartkeys?":"Ja. Wij regelen ook moderne smartkeys en keyless-sleutels.",
         "Wat moet ik doorgeven voor een prijsindicatie?":"Geef ons het merk, model en bouwjaar door. Een kenteken of voertuiggegevens zijn ook handig voor een gerichte prijsindicatie."
       };
       document.querySelectorAll<HTMLElement>(".faq-list details").forEach(detail=>{
