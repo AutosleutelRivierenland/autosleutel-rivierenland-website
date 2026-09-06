@@ -18,6 +18,7 @@ import "./region-map-real.css";
 import "./mobile-menu.css";
 import "./reviews.css";
 import MobileMenu from "./mobile-menu";
+import ServicePhotoOverrides from "./service-photo-overrides";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://autosleutelrivierenland.nl"),
@@ -28,4 +29,4 @@ export const metadata: Metadata = {
   openGraph: { title: "Autosleutel Rivierenland | Autosleutelservice Tiel", description: "Autosleutelservice op locatie vanuit Tiel voor particulieren, garages en autobedrijven.", url: "https://autosleutelrivierenland.nl", siteName: "Autosleutel Rivierenland", locale: "nl_NL", type: "website" },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
 };
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="nl"><body><MobileMenu />{children}</body></html>; }
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="nl"><body><MobileMenu /><ServicePhotoOverrides />{children}</body></html>; }
