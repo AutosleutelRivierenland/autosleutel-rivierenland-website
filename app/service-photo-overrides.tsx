@@ -20,16 +20,20 @@ export default function ServicePhotoOverrides(){
 
       document.querySelectorAll<HTMLElement>(".faq-list details").forEach(detail=>{
         const question=detail.querySelector("summary")?.childNodes[0]?.textContent?.trim()||"";
-        const paragraph=detail.querySelector<HTMLElement>("p");
         const answer=faqAnswers[question];
-        if(answer && paragraph) paragraph.textContent=answer;
+        const paragraph=detail.querySelector<HTMLElement>("p");
+        if(answer && paragraph && paragraph.textContent!==answer) paragraph.textContent=answer;
       });
     };
 
+    let attempts=0;
     apply();
-    const observer=new MutationObserver(apply);
-    observer.observe(document.body,{childList:true,subtree:true});
-    return()=>observer.disconnect();
+    const timer=window.setInterval(()=>{
+      apply();
+      attempts+=1;
+      if(attempts>=20) window.clearInterval(timer);
+    },250);
+    return()=>window.clearInterval(timer);
   },[]);
   return null;
 }
