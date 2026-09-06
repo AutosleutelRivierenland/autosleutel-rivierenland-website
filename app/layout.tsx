@@ -12,6 +12,7 @@ import "./concept.css";
 import "./tiel/tiel.css";
 import "./region-home.css";
 import "./region-home-copy.css";
+import "./region-map-real.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://autosleutelrivierenland.nl"),
