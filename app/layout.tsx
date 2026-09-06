@@ -9,6 +9,7 @@ import "./hero-polish.css";
 import "./service-images.css";
 import "./mercedes-page.css";
 import "./concept.css";
+import "./tiel/tiel.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://autosleutelrivierenland.nl"),
