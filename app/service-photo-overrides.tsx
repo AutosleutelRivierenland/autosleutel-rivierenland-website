@@ -12,10 +12,10 @@ export default function ServicePhotoOverrides(){
       if(offer){offer.style.backgroundImage='url("/autosleutel-bijmaken-vw-key.svg")';offer.style.backgroundPosition="center";offer.style.backgroundSize="cover";}
 
       const faqAnswers: Record<string,string> = {
-        "Kan ik een autosleutel zonder afstandsbediening laten maken?":"Ja. Wij regelen ook eenvoudige autosleutels zonder afstandsbediening.",
-        "Kan een nieuwe sleutel op locatie worden ingeleerd?":"Ja. Veel werkzaamheden kunnen gewoon bij u op locatie worden uitgevoerd.",
-        "Maken jullie ook smartkeys?":"Ja. Wij regelen ook moderne smartkeys en keyless-sleutels.",
-        "Wat moet ik doorgeven voor een prijsindicatie?":"Geef ons het merk, model en bouwjaar door. Een kenteken of voertuiggegevens zijn ook handig voor een gerichte prijsindicatie."
+        "Kan ik een autosleutel zonder afstandsbediening laten maken?":"Zeker. Als u alleen een gewone autosleutel nodig heeft, kunnen wij die ook voor u maken.",
+        "Kan een nieuwe sleutel op locatie worden ingeleerd?":"Dat kan vaak gewoon bij u op locatie. We nemen de sleutel ter plaatse in behandeling en testen hem daarna.",
+        "Maken jullie ook smartkeys?":"Zeker. Smartkeys en keyless-sleutels kunnen we ook voor u regelen.",
+        "Wat moet ik doorgeven voor een prijsindicatie?":"Stuur ons het merk, model en bouwjaar van uw auto. Met het kenteken kunnen we u meestal nog gerichter helpen."
       };
 
       document.querySelectorAll<HTMLElement>(".faq-list details").forEach(detail=>{
