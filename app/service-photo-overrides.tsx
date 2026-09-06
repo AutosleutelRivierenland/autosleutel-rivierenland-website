@@ -4,15 +4,31 @@ import { useEffect } from "react";
 export default function ServicePhotoOverrides(){
   useEffect(()=>{
     const path=window.location.pathname;
-    if(path!=="/diensten/autosleutel-bijmaken" && path!=="/diensten/autosleutel-kwijt") return;
+    if(path!=="/diensten/autosleutel-bijmaken" && path!=="/diensten/autosleutel-kwijt" && path!=="/diensten/schadevrij-openen") return;
 
     const apply=()=>{
-      if(path!=="/diensten/autosleutel-kwijt") return;
       const hero=document.querySelector<HTMLElement>(".service-photo");
       const offer=document.querySelector<HTMLElement>(".offer-photo");
+
+      if(path==="/diensten/autosleutel-bijmaken"){
+        const photoSet={
+          hero:"https://images.pexels.com/photos/842528/pexels-photo-842528.jpeg?auto=compress&cs=tinysrgb&w=1800",
+          offer:"https://images.pexels.com/photos/109361/pexels-photo-109361.jpeg?auto=compress&cs=tinysrgb&w=1800"
+        };
+        if(hero){hero.style.backgroundImage=`url("${photoSet.hero}")`;hero.style.backgroundPosition="center";hero.style.backgroundSize="cover";}
+        if(offer){offer.style.backgroundImage=`url("${photoSet.offer}")`;offer.style.backgroundPosition="center";offer.style.backgroundSize="cover";}
+        return;
+      }
+
+      if(path==="/diensten/schadevrij-openen"){
+        const longReach="https://cdn4.volusion.store/mfyzj-nmjwk/v/vspfiles/photos/QM-6.jpg?v-cache=1591785133";
+        if(offer){offer.style.backgroundImage=`url("${longReach}")`;offer.style.backgroundPosition="center";offer.style.backgroundSize="cover";}
+        return;
+      }
+
       const photoSet={
-        hero:"https://images.pexels.com/photos/11017012/pexels-photo-11017012.jpeg?auto=compress&cs=tinysrgb&w=1800",
-        offer:"https://images.pexels.com/photos/109361/pexels-photo-109361.jpeg?auto=compress&cs=tinysrgb&w=1800"
+        hero:"https://images.pexels.com/photos/842528/pexels-photo-842528.jpeg?auto=compress&cs=tinysrgb&w=1800",
+        offer:"https://images.unsplash.com/photo-1698358530697-dd421871f576?auto=format&fit=crop&fm=jpg&q=85&w=1800"
       };
       if(hero){hero.style.backgroundImage=`url("${photoSet.hero}")`;hero.style.backgroundPosition="center";hero.style.backgroundSize="cover";}
       if(offer){offer.style.backgroundImage=`url("${photoSet.offer}")`;offer.style.backgroundPosition="center";offer.style.backgroundSize="cover";}
@@ -25,12 +41,14 @@ export default function ServicePhotoOverrides(){
       "Maken jullie ook smartkeys?":"Ja, smartkeys en keyless-sleutels kunnen we ook voor u regelen. We zorgen ervoor dat de sleutel bij uw auto past en controleren daarna of alles goed werkt.",
       "Wat moet ik doorgeven voor een prijsindicatie?":"Stuur ons het merk, model en bouwjaar van uw auto. Met het kenteken kunnen we u meestal nog gerichter helpen."
     };
-    document.querySelectorAll<HTMLElement>(".faq-list details").forEach(detail=>{
-      const question=detail.querySelector("summary")?.childNodes[0]?.textContent?.trim()||"";
-      const answer=faqAnswers[question];
-      const paragraph=detail.querySelector<HTMLElement>("p");
-      if(answer && paragraph) paragraph.textContent=answer;
-    });
+    if(path==="/diensten/autosleutel-bijmaken"){
+      document.querySelectorAll<HTMLElement>(".faq-list details").forEach(detail=>{
+        const question=detail.querySelector("summary")?.childNodes[0]?.textContent?.trim()||"";
+        const answer=faqAnswers[question];
+        const paragraph=detail.querySelector<HTMLElement>("p");
+        if(answer && paragraph) paragraph.textContent=answer;
+      });
+    }
 
     let attempts=0;
     const timer=window.setInterval(()=>{apply();attempts+=1;if(attempts>=20)window.clearInterval(timer);},250);
