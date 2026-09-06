@@ -10,14 +10,8 @@ export default function ServicePhotoOverrides(){
       const hero=document.querySelector<HTMLElement>(".service-photo");
       const offer=document.querySelector<HTMLElement>(".offer-photo");
       const photoSet=path==="/diensten/autosleutel-bijmaken"
-        ? {
-            hero:"https://www.vw-taipei.com/images/content/guide/key-tricks/vw_keys.jpg",
-            offer:"https://images.pexels.com/photos/97079/pexels-photo-97079.jpeg?auto=compress&cs=tinysrgb&w=1800"
-          }
-        : {
-            hero:"https://images.pexels.com/photos/4930676/pexels-photo-4930676.jpeg?auto=compress&cs=tinysrgb&w=1800",
-            offer:"https://images.unsplash.com/photo-1698358530697-dd421871f576?auto=format&fit=crop&fm=jpg&q=85&w=1800"
-          };
+        ? {hero:"https://images.pexels.com/videos/6182060/choice-of-keys-key-key-service-keys-6182060.jpeg?auto=compress&dpr=1&h=1200&w=1800",offer:"https://images.pexels.com/photos/97079/pexels-photo-97079.jpeg?auto=compress&cs=tinysrgb&w=1800"}
+        : {hero:"https://images.pexels.com/photos/842528/pexels-photo-842528.jpeg?auto=compress&cs=tinysrgb&w=1800",offer:"https://images.unsplash.com/photo-1698358530697-dd421871f576?auto=format&fit=crop&fm=jpg&q=85&w=1800"};
       if(hero){hero.style.backgroundImage=`url("${photoSet.hero}")`;hero.style.backgroundPosition="center";hero.style.backgroundSize="cover";}
       if(offer){offer.style.backgroundImage=`url("${photoSet.offer}")`;offer.style.backgroundPosition="center";offer.style.backgroundSize="cover";}
     };
