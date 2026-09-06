@@ -1,0 +1,10 @@
+/* Accurate Netherlands map: real country outline, with Tiel-centered service radius. */
+.region-map-card{background:#eef5f8!important;overflow:hidden}
+.region-map-card:before{content:"";position:absolute;inset:28px 34px 82px;background:url("https://simplemaps.com/static/svg/country/nl.svg") center center/contain no-repeat;filter:drop-shadow(0 18px 28px rgba(30,70,95,.12));z-index:1;opacity:.95}
+.region-map-card:after{content:"";position:absolute;left:28%;top:31%;width:54%;height:52%;border:3px dashed #1678c8;border-radius:50%;background:rgba(22,120,200,.12);box-shadow:0 0 0 18px rgba(22,120,200,.045),inset 0 0 45px rgba(22,120,200,.08);z-index:2;pointer-events:none}
+.region-map-svg{display:none!important}
+.region-map-top{z-index:6}
+.region-map-card .region-map-caption{z-index:7}
+.region-map-caption:after{content:"Tiel";position:absolute;left:55%;top:-285px;transform:translateX(-50%);width:64px;height:64px;border-radius:50% 50% 50% 0;background:#1678c8;border:7px solid rgba(255,255,255,.9);box-shadow:0 10px 24px rgba(22,120,200,.3),0 0 0 14px rgba(22,120,200,.13);display:grid;place-items:center;color:#fff;font-size:14px;font-weight:900;z-index:8}
+.region-map-caption:before{content:"TIEL • PRIMAIR WERKGEBIED";position:absolute;left:55%;top:-214px;transform:translateX(-50%);white-space:nowrap;color:#102b45;background:rgba(255,255,255,.94);border:1px solid #dce7ee;border-radius:999px;padding:8px 13px;font-size:10px;font-weight:900;letter-spacing:.04em;box-shadow:0 8px 20px rgba(22,52,72,.08);z-index:8}
+@media(max-width:700px){.region-map-card:before{inset:72px 18px 82px;background-size:contain}.region-map-card:after{left:20%;top:34%;width:60%;height:48%}.region-map-caption:after{left:55%;top:-215px;width:50px;height:50px;font-size:11px;border-width:5px}.region-map-caption:before{left:55%;top:-158px;font-size:8px;padding:6px 9px}}
