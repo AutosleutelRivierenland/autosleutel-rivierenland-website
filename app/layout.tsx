@@ -14,6 +14,7 @@ import "./region-home.css";
 import "./region-home-copy.css";
 import "./region-map-real.css";
 import "./mobile-menu.css";
+import "./reviews.css";
 import MobileMenu from "./mobile-menu";
 
 export const metadata: Metadata = {
