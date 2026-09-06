@@ -10,7 +10,9 @@ const tel="tel:+31648659279";
 const whatsapp="https://wa.me/31648659279?text=Hallo%20Autosleutel%20Rivierenland%2C%20ik%20heb%20een%20vraag%20over%20een%20Mercedes%20contactslot.";
 const carPhoto="/mercedes-sprinter-2016.jpg";
 
-const modelGroups=[
+type ModelGroup = [string, [string, string][]];
+
+const modelGroups: ModelGroup[] = [
   ["A-Klasse", [["W169","2004–2012"],["W176","2012–2014"]]],
   ["B-Klasse", [["W245","2005–2011"],["W246","2011–2014"]]],
   ["C-Klasse", [["W203","2000–2008"],["W204","2007–2014"]]],
