@@ -9,6 +9,19 @@ export default function ServicePhotoOverrides(){
       const offer=document.querySelector<HTMLElement>(".offer-photo");
       if(hero){hero.style.backgroundImage='url("/autosleutel-bijmaken-autel.svg")';hero.style.backgroundPosition="center";}
       if(offer){offer.style.backgroundImage='url("/autosleutel-bijmaken-vw-key.svg")';offer.style.backgroundPosition="center";offer.style.backgroundSize="cover";}
+
+      const faqAnswers: Record<string,string> = {
+        "Kan ik een autosleutel zonder afstandsbediening laten maken?":"Ja. Wij regelen ook eenvoudige autosleutels zonder afstandsbediening.",
+        "Kan een nieuwe sleutel op locatie worden ingeleerd?":"Ja. Veel werkzaamheden kunnen gewoon bij u op locatie worden uitgevoerd.",
+        "Maken jullie ook smartkeys?":"Ja, wij regelen ook moderne smartkeys en keyless-sleutels.",
+        "Wat moet ik doorgeven voor een prijsindicatie?":"Geef ons het merk, model en bouwjaar door. Een kenteken of voertuiggegevens zijn ook handig voor een gerichte prijsindicatie."
+      };
+      document.querySelectorAll<HTMLElement>(".faq-list details").forEach(detail=>{
+        const question=detail.querySelector("summary")?.textContent?.trim()||"";
+        const answer=faqAnswers[question];
+        const paragraph=detail.querySelector<HTMLElement>("p");
+        if(answer && paragraph) paragraph.textContent=answer;
+      });
     };
     apply();
     const timer=window.setTimeout(apply,100);
