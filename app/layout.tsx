@@ -62,12 +62,49 @@ export const metadata: Metadata = {
   },
 };
 
+const businessSchema = {
+  "@context": "https://schema.org",
+  "@type": "Locksmith",
+  "@id": `${siteUrl}/#business`,
+  name: "Autosleutel Rivierenland",
+  url: siteUrl,
+  telephone: "+31648659279",
+  email: "autosleutel.rivierenland@gmail.com",
+  image: `${siteUrl}/logo.svg`,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Tiel",
+    addressRegion: "Gelderland",
+    addressCountry: "NL",
+  },
+  areaServed: [
+    "Tiel",
+    "Rivierenland",
+    "Culemborg",
+    "Geldermalsen",
+    "Buren",
+    "Zaltbommel",
+    "Leerdam",
+    "Gorinchem",
+    "Utrecht",
+    "Nijmegen",
+    "Arnhem",
+    "Den Bosch",
+  ],
+  priceRange: "€€",
+  sameAs: [],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="nl">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+        />
         <MobileMenu />
         <ServicePhotoOverrides />
         {children}
