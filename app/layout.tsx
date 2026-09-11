@@ -20,17 +20,58 @@ import "./reviews.css";
 import MobileMenu from "./mobile-menu";
 import ServicePhotoOverrides from "./service-photo-overrides";
 
+const siteUrl = "https://autosleutelrivierenland.nl";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://autosleutelrivierenland.nl"),
-  title: { default: "Autosleutel Rivierenland | Autosleutel Tiel", template: "%s | Autosleutel Rivierenland" },
-  description: "Autosleutelservice vanuit Tiel: autosleutel bijmaken, autosleutels kwijt, behuizingen vervangen, schadevrij openen, Mercedes contactsloten vervangen en diagnose & uitlezen.",
-  keywords: ["autosleutel Tiel","autosleutel Rivierenland","autosleutel kwijt","autosleutel bijmaken","autosleutel behuizing vervangen","auto schadevrij openen","Mercedes contactslot vervangen","auto diagnose uitlezen"],
-  alternates: { canonical: "https://autosleutelrivierenland.nl" },
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Autosleutel Rivierenland | Autosleutel Tiel",
+    template: "%s | Autosleutel Rivierenland",
+  },
+  description:
+    "Autosleutelservice vanuit Tiel. Autosleutel bijmaken, autosleutel kwijt, sleutelbehuizing vervangen, auto schadevrij openen en diagnose. Mobiele service in Tiel en Rivierenland.",
+  applicationName: "Autosleutel Rivierenland",
+  authors: [{ name: "Autosleutel Rivierenland" }],
+  creator: "Autosleutel Rivierenland",
+  publisher: "Autosleutel Rivierenland",
+  category: "Automotive",
+  alternates: { canonical: siteUrl },
   icons: {
     icon: [{ url: "/favicon-key.svg", type: "image/svg+xml" }],
     apple: [{ url: "/favicon-key.svg", type: "image/svg+xml" }],
   },
-  openGraph: { title: "Autosleutel Rivierenland | Autosleutelservice Tiel", description: "Autosleutelservice op locatie vanuit Tiel voor particulieren, garages en autobedrijven.", url: "https://autosleutelrivierenland.nl", siteName: "Autosleutel Rivierenland", locale: "nl_NL", type: "website" },
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
+  openGraph: {
+    title: "Autosleutel Rivierenland | Autosleutelservice Tiel",
+    description:
+      "Professionele autosleutelservice vanuit Tiel voor particulieren, garages en autobedrijven in Rivierenland.",
+    url: siteUrl,
+    siteName: "Autosleutel Rivierenland",
+    locale: "nl_NL",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) { return <html lang="nl"><body><MobileMenu /><ServicePhotoOverrides />{children}</body></html>; }
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="nl">
+      <body>
+        <MobileMenu />
+        <ServicePhotoOverrides />
+        {children}
+      </body>
+    </html>
+  );
+}
