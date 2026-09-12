@@ -3,7 +3,6 @@
 html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{overflow-x:hidden;-webkit-tap-highlight-color:transparent}
 
-/* Subtle scroll-reveal: content enters as the visitor reaches it. */
 @keyframes ar-reveal-up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 @keyframes ar-reveal-soft{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
 
@@ -15,10 +14,8 @@ body{overflow-x:hidden;-webkit-tap-highlight-color:transparent}
   .service:nth-child(4){animation-range:entry 14% cover 37%}
 }
 
-/* Respect accessibility settings. */
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.service{transition:none!important}.section-head,.service,.why-section,.region-home-copy,.region-map-card,.capability-grid,.business-box,.contact-box,.specialists-grid,.feature-image-grid,.area-grid,.detail-intro,.detail-grid,.notice-box,.mercedes-card,.symptoms,.process-line,.symptoms>div,.process-line>div{animation:none!important}}
 
-/* Mobile: more breathing room, larger tap targets, and no accidental overflow. */
 @media(max-width:760px){
   .container{width:calc(100% - 28px);max-width:680px}
   .header{z-index:50}
@@ -44,6 +41,7 @@ body{overflow-x:hidden;-webkit-tap-highlight-color:transparent}
   .footer-bottom{line-height:1.5}
 }
 
+/* Mobile hero CTAs: full-width, vertically stacked, centered content. */
 @media(max-width:560px){
   .container{width:calc(100% - 24px)}
   .header{height:70px}
@@ -67,4 +65,20 @@ body{overflow-x:hidden;-webkit-tap-highlight-color:transparent}
   .contact-box{gap:30px}
   .contact-actions .btn{min-height:54px}
   .footer-grid{gap:24px}
+
+  .hero .actions{display:flex;flex-direction:column;align-items:stretch;gap:10px;width:100%}
+  .hero .actions .btn{width:100%;min-height:82px;display:grid;grid-template-columns:52px 1fr 1fr;align-items:center;justify-items:center;gap:4px;padding:12px 18px;text-align:center}
+  .hero .actions .btn .btn-icon{grid-column:1;grid-row:1 / span 2;display:grid;place-items:center;width:34px;height:34px}
+  .hero .actions .btn .btn-icon svg{width:26px;height:26px}
+  .hero .actions .btn>span:not(.btn-icon){grid-column:2;grid-row:1;font-size:13px;justify-self:center}
+  .hero .actions .btn>b{grid-column:3;grid-row:1;font-size:12px;justify-self:center;white-space:nowrap}
+  .hero .actions .hero-secondary>span:not(.btn-icon){grid-column:2;grid-row:1;font-size:13px}
+  .hero .actions .hero-secondary>b{grid-column:3;grid-row:1;font-size:12px;font-weight:500;white-space:nowrap}
+}
+
+/* At very narrow widths, center the label/value pair rather than squeezing three columns. */
+@media(max-width:400px){
+  .hero .actions .btn{grid-template-columns:42px 1fr 1fr;padding-left:12px;padding-right:12px}
+  .hero .actions .btn>span:not(.btn-icon){font-size:12px}
+  .hero .actions .btn>b{font-size:11px}
 }
