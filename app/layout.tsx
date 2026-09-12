@@ -17,6 +17,7 @@ import "./region-home-copy.css";
 import "./region-map-real.css";
 import "./mobile-menu.css";
 import "./reviews.css";
+import "./scroll-polish.css";
 import MobileMenu from "./mobile-menu";
 import ServicePhotoOverrides from "./service-photo-overrides";
 
