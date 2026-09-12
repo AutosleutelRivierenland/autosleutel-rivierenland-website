@@ -2,11 +2,20 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import "./tiel.css";
 
+const siteUrl = "https://www.autosleutelrivierenland.nl";
+
 export const metadata: Metadata = {
-  title: "Autosleutel Tiel | Autosleutel Rivierenland",
-  description: "Autosleutelservice in Tiel vanuit Autosleutel Rivierenland. Autosleutel bijmaken, autosleutels kwijt, schadevrij openen en andere sleutelproblemen.",
-  alternates: { canonical: "/tiel" },
-  openGraph: { title: "Autosleutel Tiel | Autosleutel Rivierenland", description: "Professionele autosleutelservice vanuit Tiel, voor Tiel en de regio.", url: "https://autosleutelrivierenland.nl/tiel", siteName: "Autosleutel Rivierenland", locale: "nl_NL", type: "website" },
+  title: "Autosleutel Tiel | Autosleutelservice in Tiel",
+  description: "Autosleutelservice in Tiel: autosleutel bijmaken, autosleutel kwijt, schadevrij openen, programmeren en diagnose. Mobiele service vanuit Tiel in Rivierenland.",
+  alternates: { canonical: `${siteUrl}/tiel` },
+  openGraph: {
+    title: "Autosleutel Tiel | Autosleutelservice in Tiel",
+    description: "Professionele autosleutelservice vanuit Tiel voor Tiel en Rivierenland.",
+    url: `${siteUrl}/tiel`,
+    siteName: "Autosleutel Rivierenland",
+    locale: "nl_NL",
+    type: "website",
+  },
 };
 
 const tel = "tel:+31648659279";
@@ -20,9 +29,9 @@ const services = [
 const corePlaces = ["Tiel", "Culemborg", "Geldermalsen", "Buren", "Zaltbommel", "Leerdam", "Gorinchem"];
 const widerPlaces = ["Lingewaal", "Vianen", "Beesd", "Tuil", "Waardenburg", "Druten", "Beneden-Leeuwen", "Boven-Leeuwen", "Zetten", "Heteren", "Kesteren", "Opheusden", "Dodewaard", "Maurik", "Rhenen", "Wijk bij Duurstede", "Schoonrewoerd", "Meerkerk", "Ameide", "Nieuwegein"];
 const additionalPlaces = ["Utrecht", "Nijmegen", "Arnhem", "Den Bosch"];
-const structuredData = { "@context": "https://schema.org", "@type": "WebPage", name: "Autosleutel Tiel", url: "https://autosleutelrivierenland.nl/tiel", description: "Lokale autosleutelservice vanuit Tiel van Autosleutel Rivierenland.", about: { "@type": "Locksmith", name: "Autosleutel Rivierenland", telephone: "+31648659279", address: { "@type": "PostalAddress", addressLocality: "Tiel", addressRegion: "Gelderland", addressCountry: "NL" } } };
+const structuredData = { "@context": "https://schema.org", "@type": "WebPage", name: "Autosleutel Tiel", url: `${siteUrl}/tiel`, description: "Lokale autosleutelservice vanuit Tiel van Autosleutel Rivierenland.", about: { "@type": "Locksmith", name: "Autosleutel Rivierenland", telephone: "+31648659279", url: siteUrl, address: { "@type": "PostalAddress", addressLocality: "Tiel", addressRegion: "Gelderland", addressCountry: "NL" } } };
 function PhoneIcon(){return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.8 9.4 2l2.1 5.1-2.4 1.8c1.2 2.5 3.1 4.5 5.7 5.7l1.8-2.4 5.1 2.1-.8 2.8c-.4 1.5-1.8 2.5-3.4 2.4C10.2 18.8 5.2 13.8 4.5 7.7c-.2-1.6.7-3.1 2.1-3.7Z" fill="currentColor"/></svg>}
-function WhatsAppIcon(){return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.7 21.4l4.9-1.2A9.4 9.4 0 1 0 12 2.5Zm0 16.9a7.5 7.5 0 0 1-3.8-1l-.3-.2-2.9.7.8-2.8-.2-.3a7.5 7.5 0 1 1 6.4 3.6Zm4.1-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.7 1-.1.2-.3.2-.5.1-1.5-.8-2.5-1.5-3.5-3.1-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s.9 2.6 1 2.8c.1.2 1.8 2.9 4.4 4 .6.3 1.1.4 1.5.5.6.2 1.2.1 1.7.1.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1 0-.3-.1-.6-.2Z" fill="currentColor"/></svg>}
+function WhatsAppIcon(){return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5a9.4 9.4 0 0 0-8.1 14.2L2.7 21.4l4.9-1.2A9.4 9.4 0 1 0 12 2.5Zm0 16.9a7.5 7.5 0 0 1-3.8-1l-.3-.2-2.9.7.8-2.8-.2-.3a7.5 7.5 0 1 1 6.4 3.6Zm4.1-5.6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4 0-.5.1-.2.2-.6.8-.7 1-.1.2-.3.2-.5.1-1.5-.8-2.5-1.5-3.5-3.1-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.4c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s.9 2.6 1 2.8c.1.2 1.8 2.9 4.4 4 .6.3 1.1.4 1.5.5.6.2 1.2.1 1.7.1.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1 0-.3-.1-.6-.2Z" fill="currentColor"/></svg>}
 function Header(){return <header className="header"><div className="container nav-inner"><a className="logo-frame" href="/" aria-label="Autosleutel Rivierenland home"><Image src="/logo.svg" alt="Autosleutel Rivierenland" width={220} height={89} priority unoptimized/></a><nav aria-label="Hoofdnavigatie"><a href="/">Home</a><a href="/#diensten">Diensten</a><a href="/mercedes-contactslot">Mercedes contactslot vervangen</a><a href="/#zakelijk">Zakelijk</a><a href="/#contact">Contact</a></nav><a className="nav-phone" href={tel}><b>☎</b><span>06 48 65 92 79</span></a></div></header>}
 function MapNode({name,className}:{name:string;className:string}){return <div className={`real-map-node ${className}`}><span></span><b>{name}</b></div>}
 
