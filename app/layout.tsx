@@ -22,7 +22,7 @@ import MobileMenu from "./mobile-menu";
 import ServicePhotoOverrides from "./service-photo-overrides";
 import ScrollReveal from "./scroll-reveal";
 
-const siteUrl = "https://autosleutelrivierenland.nl";
+const siteUrl = "https://www.autosleutelrivierenland.nl";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
