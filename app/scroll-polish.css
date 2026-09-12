@@ -3,19 +3,28 @@
 html{scroll-behavior:smooth;scroll-padding-top:90px}
 body{overflow-x:hidden;-webkit-tap-highlight-color:transparent}
 
+/* Cross-device scroll reveal. JS adds .reveal-visible when an element enters the viewport. */
 @keyframes ar-reveal-up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 @keyframes ar-reveal-soft{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
 
-@supports (animation-timeline:view()){
-  .section-head,.service,.why-section,.region-home-copy,.region-map-card,.capability-grid,.business-box,.contact-box,.specialists-grid,.feature-image-grid,.area-grid,.detail-intro,.detail-grid,.notice-box,.mercedes-card,.symptoms,.process-line{animation-name:ar-reveal-up;animation-duration:1ms;animation-fill-mode:both;animation-timeline:view();animation-range:entry 5% cover 28%}
-  .service,.why-section,.region-map-card,.business-box,.contact-box,.detail-grid,.symptoms>div,.process-line>div{animation-name:ar-reveal-soft}
-  .service:nth-child(2),.process-line>div:nth-child(2),.symptoms>div:nth-child(2){animation-range:entry 8% cover 31%}
-  .service:nth-child(3),.process-line>div:nth-child(3),.symptoms>div:nth-child(3){animation-range:entry 11% cover 34%}
-  .service:nth-child(4){animation-range:entry 14% cover 37%}
+.js .reveal-target{opacity:0;transform:translateY(28px);transition:opacity .72s cubic-bezier(.22,1,.36,1),transform .72s cubic-bezier(.22,1,.36,1);will-change:opacity,transform}
+.js .reveal-target.reveal-visible{opacity:1;transform:none}
+.js .service,.js .detail-grid,.js .symptoms>div,.js .process-line>div{transform:translateY(18px) scale(.985);transition-duration:.62s}
+.js .service.reveal-visible,.js .detail-grid.reveal-visible,.js .symptoms>div.reveal-visible,.js .process-line>div.reveal-visible{transform:none}
+
+/* Slight natural sequencing without making the animation feel gimmicky. */
+.js .service:nth-child(2),.js .process-line>div:nth-child(2),.js .symptoms>div:nth-child(2){transition-delay:.06s}
+.js .service:nth-child(3),.js .process-line>div:nth-child(3),.js .symptoms>div:nth-child(3){transition-delay:.12s}
+.js .service:nth-child(4){transition-delay:.18s}
+
+/* Respect accessibility settings. */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn,.service{transition:none!important}
+  .js .reveal-target,.js .reveal-target.reveal-visible,.js .service,.js .service.reveal-visible,.js .detail-grid,.js .detail-grid.reveal-visible,.js .symptoms>div,.js .symptoms>div.reveal-visible,.js .process-line>div,.js .process-line>div.reveal-visible{opacity:1;transform:none;transition:none!important}
 }
 
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.service{transition:none!important}.section-head,.service,.why-section,.region-home-copy,.region-map-card,.capability-grid,.business-box,.contact-box,.specialists-grid,.feature-image-grid,.area-grid,.detail-intro,.detail-grid,.notice-box,.mercedes-card,.symptoms,.process-line,.symptoms>div,.process-line>div{animation:none!important}}
-
+/* Mobile: more breathing room, larger tap targets, and no accidental overflow. */
 @media(max-width:760px){
   .container{width:calc(100% - 28px);max-width:680px}
   .header{z-index:50}
@@ -76,7 +85,6 @@ body{overflow-x:hidden;-webkit-tap-highlight-color:transparent}
   .hero .actions .hero-secondary>b{grid-column:3;grid-row:1;font-size:12px;font-weight:500;white-space:nowrap}
 }
 
-/* At very narrow widths, center the label/value pair rather than squeezing three columns. */
 @media(max-width:400px){
   .hero .actions .btn{grid-template-columns:42px 1fr 1fr;padding-left:12px;padding-right:12px}
   .hero .actions .btn>span:not(.btn-icon){font-size:12px}
