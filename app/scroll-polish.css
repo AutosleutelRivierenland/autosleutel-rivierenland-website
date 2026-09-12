@@ -1,0 +1,70 @@
+/* Scroll polish + mobile UX */
+
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+
+/* Subtle scroll-reveal: content enters as the visitor reaches it. */
+@keyframes ar-reveal-up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes ar-reveal-soft{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+@supports (animation-timeline:view()){
+  .section-head,.service,.why-section,.region-home-copy,.region-map-card,.capability-grid,.business-box,.contact-box,.specialists-grid,.feature-image-grid,.area-grid,.detail-intro,.detail-grid,.notice-box,.mercedes-card,.symptoms,.process-line{animation-name:ar-reveal-up;animation-duration:1ms;animation-fill-mode:both;animation-timeline:view();animation-range:entry 5% cover 28%}
+  .service,.why-section,.region-map-card,.business-box,.contact-box,.detail-grid,.symptoms>div,.process-line>div{animation-name:ar-reveal-soft}
+  .service:nth-child(2),.process-line>div:nth-child(2),.symptoms>div:nth-child(2){animation-range:entry 8% cover 31%}
+  .service:nth-child(3),.process-line>div:nth-child(3),.symptoms>div:nth-child(3){animation-range:entry 11% cover 34%}
+  .service:nth-child(4){animation-range:entry 14% cover 37%}
+}
+
+/* Respect accessibility settings. */
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.service{transition:none!important}.section-head,.service,.why-section,.region-home-copy,.region-map-card,.capability-grid,.business-box,.contact-box,.specialists-grid,.feature-image-grid,.area-grid,.detail-intro,.detail-grid,.notice-box,.mercedes-card,.symptoms,.process-line,.symptoms>div,.process-line>div{animation:none!important}}
+
+/* Mobile: more breathing room, larger tap targets, and no accidental overflow. */
+@media(max-width:760px){
+  .container{width:calc(100% - 28px);max-width:680px}
+  .header{z-index:50}
+  .nav-inner{min-width:0}
+  .logo-frame{flex:0 1 auto;min-width:0}
+  .nav-phone{min-height:46px;display:flex;align-items:center;justify-content:center}
+  .nav-phone b{font-size:17px}
+  .nav-phone span{font-size:10px}
+  .hero-copy{padding-left:0;padding-right:0}
+  .hero-copy h1{max-width:11ch}
+  .hero-text{max-width:100%;font-size:14px;line-height:1.72}
+  .actions{gap:10px}
+  .btn{min-height:52px;padding:15px 17px;font-size:12px}
+  .service{min-height:185px}
+  .service h3{font-size:15px}
+  .service p{font-size:11px;line-height:1.65}
+  .section h2,.business h2,.contact h2,.capability h2{font-size:clamp(31px,9vw,44px)}
+  .area-card{min-height:260px;height:auto}
+  .details{gap:22px}
+  .details a{min-height:40px}
+  .contact-actions{gap:12px}
+  .float-wa{right:14px;bottom:14px;width:54px;height:54px}
+  .footer-bottom{line-height:1.5}
+}
+
+@media(max-width:560px){
+  .container{width:calc(100% - 24px)}
+  .header{height:70px}
+  .logo-frame{width:132px;height:52px}
+  .logo-frame img{width:124px}
+  .nav-phone{padding:9px 10px;min-width:0}
+  .nav-phone span{font-size:9px}
+  .nav-phone b{display:none}
+  .hero-inner{min-height:0}
+  .hero-copy h1{font-size:clamp(43px,14vw,60px);letter-spacing:-.06em}
+  .hero-image-wrap,.hero-image{min-height:260px}
+  .hero-trust{font-size:10px}
+  .service-grid{gap:10px}
+  .service{min-height:170px;padding:20px}
+  .service-no{right:15px;top:15px}
+  .service-arrow{right:15px;bottom:14px}
+  .specialist-card{height:auto;min-height:180px}
+  .specialist-copy{padding:24px}
+  .area-columns,.areas{grid-template-columns:1fr}
+  .business-box{padding:24px 20px}
+  .contact-box{gap:30px}
+  .contact-actions .btn{min-height:54px}
+  .footer-grid{gap:24px}
+}
