@@ -20,6 +20,7 @@ import "./reviews.css";
 import "./scroll-polish.css";
 import MobileMenu from "./mobile-menu";
 import ServicePhotoOverrides from "./service-photo-overrides";
+import ScrollReveal from "./scroll-reveal";
 
 const siteUrl = "https://autosleutelrivierenland.nl";
 
@@ -108,6 +109,7 @@ export default function RootLayout({
         />
         <MobileMenu />
         <ServicePhotoOverrides />
+        <ScrollReveal />
         {children}
       </body>
     </html>
