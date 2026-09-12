@@ -1,0 +1,10 @@
+/* Header breathing room: keeps the existing layout intact while giving the logo more vertical space. */
+.header{height:96px}
+.logo-frame{height:78px}
+.logo-frame img{width:162px}
+
+@media(max-width:900px){
+  .header{height:84px}
+  .logo-frame{height:68px}
+  .logo-frame img{width:136px}
+}
