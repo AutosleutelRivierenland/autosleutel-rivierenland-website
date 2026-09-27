@@ -24,7 +24,9 @@ const services = [
   ["01", "Autosleutel bijmaken", "Een extra sleutel nodig? Voor geschikte voertuigen maken en programmeren wij een passende sleutel.", "/diensten/autosleutel-bijmaken"],
   ["02", "Autosleutels kwijt", "Geen werkende sleutel meer? Wij beoordelen de situatie en bespreken welke oplossing mogelijk is.", "/diensten/autosleutel-kwijt"],
   ["03", "Schadevrij openen", "Buitengesloten? Wij openen uw auto zo zorgvuldig mogelijk en proberen schade te voorkomen.", "/diensten/schadevrij-openen"],
-  ["04", "Mercedes contactslot vervangen", "Voor geschikte Mercedes-modellen met FBS3 kunnen wij het contactslot beoordelen en vervangen.", "/mercedes-contactslot"],
+  ["04", "Sleutelbehuizing vervangen", "Is uw sleutelbehuizing versleten of beschadigd? Voor geschikte sleutels kunnen wij de behuizing vervangen.", "/diensten/behuizingen-vervangen"],
+  ["05", "Auto uitlezen & diagnose", "Foutmelding of startprobleem? Voor geschikte voertuigen kunnen wij uitlezen en de oorzaak helpen bepalen.", "/diensten/diagnose-uitlezen"],
+  ["06", "Mercedes contactslot vervangen", "Voor geschikte Mercedes-modellen met FBS3 kunnen wij het contactslot beoordelen en vervangen.", "/mercedes-contactslot"],
 ];
 const corePlaces = ["Tiel", "Culemborg", "Geldermalsen", "Buren", "Zaltbommel", "Leerdam", "Gorinchem"];
 const widerPlaces = ["Lingewaal", "Vianen", "Beesd", "Tuil", "Waardenburg", "Druten", "Beneden-Leeuwen", "Boven-Leeuwen", "Zetten", "Heteren", "Kesteren", "Opheusden", "Dodewaard", "Maurik", "Rhenen", "Wijk bij Duurstede", "Schoonrewoerd", "Meerkerk", "Ameide", "Nieuwegein"];
