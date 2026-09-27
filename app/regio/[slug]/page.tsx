@@ -258,7 +258,7 @@ export default async function RegionPage({
             <p>{region.intro}</p>
             <p>{region.context}</p>
             <div className="tiel-facts">
-              <span><b>UITVALSBASIS</b><small>Tiel · Rivierenland</small></span>
+              <span><b>GEVESTIGD IN TIEL</b><small>Tiel · Rivierenland</small></span>
               <span><b>SERVICE</b><small>Mobiel waar mogelijk</small></span>
               <span><b>CONTACT</b><small>Bel of WhatsApp</small></span>
             </div>
@@ -316,7 +316,7 @@ export default async function RegionPage({
         <div className="container region-box">
           <div className="region-copy">
             <label>OOK IN DE REGIO</label>
-            <h2>Vanuit Tiel naar <em>{region.city} en omgeving.</em></h2>
+            <h2>Gevestigd in Tiel. <em>{region.city} en omgeving.</em></h2>
             <p>Autosleutel Rivierenland richt zich op Tiel en het omliggende Rivierenland. We werken daarnaast in een ruimer gebied wanneer de aanvraag en planning dat toelaten.</p>
             <div className="region-groups">
               <div>
@@ -370,7 +370,7 @@ export default async function RegionPage({
           <div className="tiel-cta-actions">
             <a className="btn primary" href={tel}><span className="btn-icon"><PhoneIcon /></span><span>Bel direct</span><b>06 48 65 92 79</b></a>
             <a className="btn hero-secondary" href={whatsapp} target="_blank" rel="noreferrer"><span className="btn-icon whatsapp-icon"><WhatsAppIcon /></span><span>WhatsApp</span><b>Stuur een bericht →</b></a>
-            <small>Ma–do 09:00–21:00 · vrijdag gesloten · za–zo 09:00–21:00</small>
+            <small>maandag 12:00–20:00 · di–do 10:00–20:00 · vrijdag gesloten · zaterdag 10:00–20:00 · zondag gesloten</small>
           </div>
         </div>
       </section>
