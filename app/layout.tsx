@@ -96,7 +96,10 @@ const businessSchema = {
     "Den Bosch",
   ],
   priceRange: "€€",
-  sameAs: [\n    "https://www.tiktok.com/@autosleutel_rivierenland",\n    "https://www.facebook.com/people/Autosleutel-Rivierenland/pfbid02Wde94Zwd7919j3RobbTRN6Squn27JKy83oRBRaug5x6fWo2joP5VPYUQeCriVMhdl/"\n  ],
+  sameAs: [
+    "https://www.tiktok.com/@autosleutel_rivierenland",
+    "https://www.facebook.com/people/Autosleutel-Rivierenland/pfbid02Wde94Zwd7919j3RobbTRN6Squn27JKy83oRBRaug5x6fWo2joP5VPYUQeCriVMhdl/",
+  ]
 };
 
 export default function RootLayout({
