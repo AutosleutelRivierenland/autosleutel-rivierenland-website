@@ -6,7 +6,7 @@ const siteUrl = "https://www.autosleutelrivierenland.nl";
 
 export const metadata: Metadata = {
   title: "Autosleutel Tiel | Autosleutelservice in Tiel",
-  description: "Autosleutelservice in Tiel: autosleutel bijmaken, autosleutel kwijt, schadevrij openen, programmeren en diagnose. Mobiele service vanuit Tiel in Rivierenland.",
+  description: "Autosleutelservice in Tiel: autosleutel bijmaken, autosleutel kwijt, programmeren en schadevrij openen. Mobiele service vanuit Tiel in Rivierenland.",
   alternates: { canonical: `${siteUrl}/tiel` },
   openGraph: {
     title: "Autosleutel Tiel | Autosleutelservice in Tiel",
