@@ -23,7 +23,44 @@ function RegionMap(){return <div className="region-map-card"><div className="reg
 export default function Home(){return <main id="top"><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(structuredData)}}/><Header/>
 <section className="hero"><div className="container hero-inner"><div className="hero-copy"><div className="eyebrow">MOBIELE AUTOSLEUTELSERVICE UIT TIEL</div><h1>Autosleutel nodig?<br/><span>Wij helpen u verder.</span></h1><p className="hero-text">Autosleutel bijmaken, een verloren sleutel vervangen, programmeren of inleren, een sleutelbehuizing vervangen of uw auto zorgvuldig openen. Vanuit Tiel helpen wij klanten in Rivierenland en de omliggende regio.</p><div className="actions"><a className="btn primary" href={tel}><span className="btn-icon"><PhoneIcon/></span><span>Bel direct</span><b>06 48 65 92 79</b></a><a className="btn hero-secondary" href={whatsapp} target="_blank" rel="noreferrer"><span className="btn-icon whatsapp-icon"><WhatsAppIcon/></span><span>WhatsApp</span><b>Stuur een bericht →</b></a></div><div className="hero-trust"><span>✓ Mobiele service</span><span>✓ 1 jaar garantie op autosleutels</span><span>✓ Bel of WhatsApp voor mogelijkheden</span></div></div><div className="hero-image-wrap" aria-label="Echte autosleutelservice van Autosleutel Rivierenland"><Image className="hero-image" src="/real-photos/IMG_0865(2).jpeg" alt="Autosleutel van Volkswagen in het interieur van een auto" fill sizes="(max-width: 760px) 100vw, 55vw" priority /></div></div></section>
 <section id="diensten" className="section services"><div className="container"><div className="section-head"><div><h2>Onze <em>diensten.</em></h2></div></div><div className="service-grid">{services.map(([n,title,text,href],index)=><a href={href} className={`service service-${index+1}`} key={n}><span className="service-no">{n}</span><h3>{title}</h3><p>{text}</p><b className="service-arrow">→</b></a>)}</div></div></section>
-<section className="region-home-section"><div className="container region-home-grid"><div className="region-home-copy"><label>ONZE REGIO</label><h2>Dichtbij voor u.<br/><em>In heel Rivierenland.</em></h2><p>Autosleutel Rivierenland is gevestigd in Tiel en helpt klanten in de hele regio met autosleutels, sleutelproblemen en schadevrij openen. Wij komen naar u toe, of u nu in Tiel woont of in een van de omliggende plaatsen.</p><p>Ons <strong>primaire werkgebied is Tiel en omgeving.</strong> Daarnaast zijn wij actief in een groter gebied van <strong>Den Bosch tot Utrecht</strong>, en van <strong>Nijmegen tot Arnhem</strong>, inclusief alle plaatsen daartussen.</p><div className="region-features"><div><span>⌖</span><strong>Mobiele service</strong><small>Op locatie in de regio</small></div><div><span>◷</span><strong>Snel geregeld</strong><small>Vaak dezelfde dag</small></div><div><span>◇</span><strong>Voor veel merken</strong><small>Autosleutels met en zonder afstandsbediening</small></div></div><a className="btn primary region-button" href="/tiel">Meer over onze regio →</a></div><RegionMap/></div></section>
+<section className="region-home-section region-home-clean">
+  <div className="container">
+    <div className="region-clean-head">
+      <div>
+        <label>ONZE REGIO</label>
+        <h2>Autosleutelservice in <em>Tiel en Rivierenland.</em></h2>
+      </div>
+      <p>Vanuit Tiel werken wij mobiel in de regio. Hieronder ziet u in één oogopslag waar wij voornamelijk actief zijn.</p>
+    </div>
+    <div className="region-clean-grid">
+      <article className="region-clean-card region-clean-primary">
+        <span className="region-card-no">01</span>
+        <label>UITVALSBASIS</label>
+        <h3>Tiel</h3>
+        <p>Onze uitvalsbasis voor autosleutels, diagnose en mobiele service.</p>
+        <a href="/tiel">Autosleutelservice Tiel →</a>
+      </article>
+      <article className="region-clean-card">
+        <span className="region-card-no">02</span>
+        <label>RIVIERENLAND</label>
+        <h3>Directe regio</h3>
+        <p>Tiel, Culemborg, Geldermalsen, Buren, Zaltbommel, Leerdam, Gorinchem en Druten.</p>
+        <span className="region-clean-note">Mobiele service op locatie</span>
+      </article>
+      <article className="region-clean-card">
+        <span className="region-card-no">03</span>
+        <label>RUIMER WERKGEBIED</label>
+        <h3>Omliggende steden</h3>
+        <p>Nijmegen, Arnhem, Den Bosch, Utrecht en plaatsen die daar tussenin liggen.</p>
+        <span className="region-clean-note">Vooraf controleren wat mogelijk is</span>
+      </article>
+    </div>
+    <div className="region-clean-bottom">
+      <div><strong>Mobiele autosleutelservice</strong><span>Bel of WhatsApp ons met uw merk, model en bouwjaar.</span></div>
+      <a className="btn primary region-button" href="/tiel">Bekijk onze regio →</a>
+    </div>
+  </div>
+</section>
 <section className="section local-areas">
   <div className="container">
     <div className="local-areas-head">
