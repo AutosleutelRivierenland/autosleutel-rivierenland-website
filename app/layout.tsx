@@ -66,6 +66,15 @@ export const metadata: Metadata = {
   },
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": siteUrl + "/#website",
+  name: "Autosleutel Rivierenland",
+  url: siteUrl,
+  publisher: { "@id": siteUrl + "/#business" },
+};
+
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": "Locksmith",
@@ -108,6 +117,10 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
