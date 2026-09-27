@@ -11,7 +11,6 @@ type Region = {
   context: string;
   serviceText: string;
   nearby: { name: string; slug: string }[];
-  faqs: [string, string][];
 };
 
 const siteUrl = "https://www.autosleutelrivierenland.nl";
@@ -37,13 +36,7 @@ const regions: Region[] = [
       { name: "Tiel", slug: "tiel" },
       { name: "Geldermalsen", slug: "geldermalsen" },
       { name: "Buren", slug: "buren" },
-    ],
-    faqs: [
-      ["Maken jullie autosleutels bij in Culemborg?", "Voor geschikte voertuigen kunnen wij een extra of vervangende autosleutel maken en waar nodig programmeren of inleren."],
-      ["Komen jullie voor autosleutels naar Culemborg?", "Ja. Veel werkzaamheden kunnen mobiel worden uitgevoerd. We beoordelen vooraf of uw voertuig en de werkzaamheden daarvoor geschikt zijn."],
-      ["Kunnen jullie helpen als alle autosleutels kwijt zijn?", "Voor geschikte voertuigen kunnen we de mogelijkheden voor een nieuwe sleutel en programmering beoordelen. De oplossing verschilt per merk, model en bouwjaar."],
-      ["Wat moet ik doorgeven voor een prijsindicatie?", "Geef bij voorkeur merk, model, bouwjaar en kenteken door. Een foto van de huidige sleutel of het sleutelprobleem kan ook helpen."],
-    ],
+    ]
   },
   {
     slug: "geldermalsen",
@@ -62,13 +55,7 @@ const regions: Region[] = [
       { name: "Tiel", slug: "tiel" },
       { name: "Culemborg", slug: "culemborg" },
       { name: "Zaltbommel", slug: "zaltbommel" },
-    ],
-    faqs: [
-      ["Kan ik in Geldermalsen een autosleutel laten bijmaken?", "Ja, voor geschikte voertuigen maken en programmeren wij autosleutels. We beoordelen vooraf welke sleutel voor uw auto nodig is."],
-      ["Is mobiele service in Geldermalsen mogelijk?", "Voor veel autosleutelwerkzaamheden wel. Bij contact bekijken we het merk, model, bouwjaar en de locatie."],
-      ["Ik heb nog maar één sleutel. Is een reservesleutel verstandig?", "Een werkende reservesleutel voorkomt dat een verlies of defect direct een noodsituatie wordt. We kunnen beoordelen welke reserve voor uw voertuig mogelijk is."],
-      ["Kunnen jullie een kapotte sleutelbehuizing vervangen?", "Als de elektronica van de bestaande sleutel nog goed is, kan een nieuwe behuizing voor geschikte sleutelmodellen een praktische oplossing zijn."],
-    ],
+    ]
   },
   {
     slug: "zaltbommel",
@@ -87,13 +74,7 @@ const regions: Region[] = [
       { name: "Tiel", slug: "tiel" },
       { name: "Geldermalsen", slug: "geldermalsen" },
       { name: "Druten", slug: "druten" },
-    ],
-    faqs: [
-      ["Maken jullie autosleutels op locatie in Zaltbommel?", "Voor geschikte voertuigen kunnen veel werkzaamheden op locatie worden uitgevoerd. We beoordelen dit vooraf op basis van voertuig en sleuteltype."],
-      ["Kunnen jullie een autosleutel programmeren in Zaltbommel?", "Voor geschikte voertuigen kunnen wij nieuwe of vervangende sleutels programmeren of inleren."],
-      ["Wat als ik alle sleutels kwijt ben?", "Neem eerst contact op. We beoordelen per voertuig welke mogelijkheden er zijn en wat op locatie nodig is."],
-      ["Kunnen jullie mijn auto openen als de sleutel binnen ligt?", "We kunnen voor geschikte voertuigen een zorgvuldige openingsmethode beoordelen om onnodige schade te voorkomen."],
-    ],
+    ]
   },
   {
     slug: "druten",
@@ -112,13 +93,7 @@ const regions: Region[] = [
       { name: "Tiel", slug: "tiel" },
       { name: "Buren", slug: "buren" },
       { name: "Zaltbommel", slug: "zaltbommel" },
-    ],
-    faqs: [
-      ["Kunnen jullie naar Druten komen?", "Ja, Druten valt binnen ons werkgebied. Voor veel autosleutelwerkzaamheden is mobiele service mogelijk."],
-      ["Kan ik een reservesleutel laten maken in Druten?", "Voor geschikte voertuigen kunnen wij een extra autosleutel maken, programmeren en testen."],
-      ["Mijn sleutel start de auto niet meer. Kunnen jullie helpen?", "We kunnen de sleutel en het voertuig beoordelen en, waar passend, programmering en sleutelherkenning onderzoeken."],
-      ["Kunnen jullie een auto openen zonder schade?", "We kiezen een passende, zo zorgvuldig mogelijke openingsmethode. Absolute schadevrijheid kan niet voor ieder voertuig worden gegarandeerd."],
-    ],
+    ]
   },
   {
     slug: "buren",
@@ -137,13 +112,7 @@ const regions: Region[] = [
       { name: "Tiel", slug: "tiel" },
       { name: "Geldermalsen", slug: "geldermalsen" },
       { name: "Druten", slug: "druten" },
-    ],
-    faqs: [
-      ["Maken jullie autosleutels in Buren?", "Voor geschikte voertuigen kunnen wij extra en vervangende autosleutels verzorgen, inclusief programmeren of inleren wanneer dat nodig is."],
-      ["Komen jullie bij mij thuis of naar de auto?", "Ja, veel werkzaamheden kunnen mobiel worden uitgevoerd. We bespreken vooraf of dat voor uw voertuig mogelijk is."],
-      ["Kan een beschadigde sleutel worden gerepareerd?", "Dat hangt af van de schade. Bij een versleten behuizing kan vervangen vaak een optie zijn; elektronische schade vraagt een andere beoordeling."],
-      ["Hoe krijg ik vooraf een prijsindicatie?", "Stuur merk, model, bouwjaar en bij voorkeur kenteken en een foto van de sleutel via WhatsApp. Daarna kunnen we de mogelijkheden bespreken."],
-    ],
+    ]
   },
   {
     slug: "leerdam",
@@ -162,13 +131,7 @@ const regions: Region[] = [
       { name: "Culemborg", slug: "culemborg" },
       { name: "Geldermalsen", slug: "geldermalsen" },
       { name: "Tiel", slug: "tiel" },
-    ],
-    faqs: [
-      ["Kunnen jullie een autosleutel maken in Leerdam?", "Voor geschikte merken en modellen kunnen wij een extra of vervangende autosleutel verzorgen en programmeren."],
-      ["Is mobiele autosleutelservice in Leerdam mogelijk?", "Dat kan voor veel werkzaamheden. We beoordelen vooraf of de klus op locatie kan worden uitgevoerd."],
-      ["Wat als mijn afstandsbediening niet meer werkt?", "Een lege batterij, beschadigde behuizing, elektronisch probleem of voertuigprobleem kan verschillende oorzaken hebben. We beoordelen eerst de situatie."],
-      ["Kunnen jullie ook helpen als ik ben buitengesloten?", "Ja, voor geschikte voertuigen kunnen we beoordelen welke zorgvuldige openingsmethode mogelijk is."],
-    ],
+    ]
   },
 ];
 
@@ -282,20 +245,9 @@ export default async function RegionPage({
     ],
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: region.faqs.map(([question, answer]) => ({
-      "@type": "Question",
-      name: question,
-      acceptedAnswer: { "@type": "Answer", text: answer },
-    })),
-  };
-
   return (
     <main className="tiel-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Header />
 
       <section className="tiel-hero">
@@ -403,24 +355,7 @@ export default async function RegionPage({
           <div>
             <p>Een autosleutel is afhankelijk van merk, model, bouwjaar en uitvoering. Daarom geven we liever een passende prijsindicatie na controle dan een bedrag dat achteraf verandert.</p>
             <p>Stuur via WhatsApp het merk, model, bouwjaar en eventueel kenteken. Een duidelijke foto van de huidige sleutel helpt om het type sleutel sneller te herkennen.</p>
-            <p><strong>Niet beschikbaar:</strong> BMW, Renault en Volvo. Bij twijfel kunt u altijd eerst contact opnemen.</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section tiel-info">
-        <div className="container info-box">
-          <div>
-            <label>VEELGESTELDE VRAGEN</label>
-            <h2>Autosleutel <em>{region.city}.</em></h2>
-          </div>
-          <div>
-            {region.faqs.map(([question, answer]) => (
-              <details key={question} style={{ marginBottom: "12px" }}>
-                <summary style={{ cursor: "pointer", fontWeight: 700, color: "#122333" }}>{question}</summary>
-                <p style={{ marginTop: "10px" }}>{answer}</p>
-              </details>
-            ))}
+            <p><strong>Niet beschikbaar:</strong> Renault en Volvo. Bij twijfel kunt u altijd eerst contact opnemen.</p>
           </div>
         </div>
       </section>
