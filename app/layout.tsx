@@ -19,6 +19,7 @@ import "./mobile-menu.css";
 import "./reviews.css";
 import "./scroll-polish.css";
 import "./header-fit.css";
+import "./local-areas.css";
 import MobileMenu from "./mobile-menu";
 import ServicePhotoOverrides from "./service-photo-overrides";
 import ScrollReveal from "./scroll-reveal";
@@ -28,11 +29,11 @@ const siteUrl = "https://www.autosleutelrivierenland.nl";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Autosleutel Rivierenland | Autosleutel Tiel",
+    default: "Autosleutel Rivierenland | Autosleutel bijmaken in Tiel",
     template: "%s | Autosleutel Rivierenland",
   },
   description:
-    "Autosleutelservice vanuit Tiel. Autosleutel bijmaken, autosleutel kwijt, sleutelbehuizing vervangen, auto schadevrij openen en diagnose. Mobiele service in Tiel en Rivierenland.",
+    "Autosleutelservice vanuit Tiel. Autosleutel bijmaken, autosleutel kwijt, programmeren, sleutelbehuizing vervangen en auto schadevrij openen. Mobiele service in Tiel en Rivierenland.",
   applicationName: "Autosleutel Rivierenland",
   authors: [{ name: "Autosleutel Rivierenland" }],
   creator: "Autosleutel Rivierenland",
@@ -95,7 +96,7 @@ const businessSchema = {
     "Den Bosch",
   ],
   priceRange: "€€",
-  sameAs: [],
+  sameAs: [\n    "https://www.tiktok.com/@autosleutel_rivierenland",\n    "https://www.facebook.com/people/Autosleutel-Rivierenland/pfbid02Wde94Zwd7919j3RobbTRN6Squn27JKy83oRBRaug5x6fWo2joP5VPYUQeCriVMhdl/"\n  ],
 };
 
 export default function RootLayout({
