@@ -84,7 +84,8 @@ const businessSchema = {
   url: siteUrl,
   telephone: "+31648659279",
   email: "autosleutel.rivierenland@gmail.com",
-  image: `${siteUrl}/logo.svg`,
+  image: `${siteUrl}/real-photos/IMG_0865(2).jpeg`,
+  logo: `${siteUrl}/logo.svg`,
   address: {
     "@type": "PostalAddress",
     addressLocality: "Tiel",
@@ -105,7 +106,8 @@ const businessSchema = {
     "Arnhem",
     "Den Bosch",
   ],
-  priceRange: "€€",,openingHoursSpecification:[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday"],"opens":"12:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Saturday"],"opens":"10:00","closes":"20:00"}],
+  priceRange: "€€",
+  openingHoursSpecification:[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday"],"opens":"12:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Saturday"],"opens":"10:00","closes":"20:00"}],
   sameAs: [
     "https://www.tiktok.com/@autosleutel_rivierenland",
     "https://www.facebook.com/people/Autosleutel-Rivierenland/pfbid02Wde94Zwd7919j3RobbTRN6Squn27JKy83oRBRaug5x6fWo2joP5VPYUQeCriVMhdl/",
