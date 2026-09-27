@@ -11,6 +11,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "schadevrij-openen",
     "diagnose-uitlezen",
   ];
+  const regions = [
+    "culemborg",
+    "geldermalsen",
+    "zaltbommel",
+    "druten",
+    "buren",
+    "leerdam",
+  ];
 
   return [
     { url: siteUrl, lastModified: now, changeFrequency: "weekly", priority: 1 },
