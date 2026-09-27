@@ -38,7 +38,8 @@ export default function MercedesContactslotPage(){return <main>
 
  <section className="section model-section"><div className="container"><label>GESCHIKTE MODELLEN</label><h2>Veelvoorkomende Mercedes-<em>modellen.</em></h2><p className="model-intro">Onderstaande bouwjaren zijn praktische richtlijnen. Mercedes gebruikte rond sommige modelwisselingen verschillende systemen. Daarom controleren wij het voertuig vooraf.</p><div className="model-table">{modelGroups.map(([model,variants])=><div className="model-row" key={model}><strong>{model}</strong><div className="model-variants">{variants.map(([type,years])=><div className="model-variant" key={type}><span>{type}</span><span>{years}</span></div>)}</div></div>)}</div></div></section>
 
- <section className="notice"><div className="container notice-box"><div><label>BELANGRIJK</label><h2>Deze service is gericht op FBS3-systemen.</h2><p>De bouwjaren hierboven zijn een indicatie. Het exacte systeem kan per voertuig verschillen. Nieuwe Mercedes-systemen van de FBS4-generatie vallen buiten deze service. Neem bij twijfel contact op met merk, model en bouwjaar.</p></div><a className="btn primary" href={tel}>Bespreek uw Mercedes <b>→</b></a></div></section>
+
+
 
  <section className="contact"><div className="container contact-box"><div><label>CONTACT</label><h2>Mercedes probleem? <em>Neem contact op.</em></h2><p>Autosleutel Rivierenland werkt vanuit Tiel en komt voor geschikte werkzaamheden op locatie.</p></div><div className="contact-actions"><a className="btn primary large" href={tel}>Bel 06 48 65 92 79 <b>→</b></a><a className="btn whatsapp large" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp ons <b>↗</b></a></div></div></section>
 
