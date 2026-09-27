@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     siteName: "Autosleutel Rivierenland",
     locale: "nl_NL",
     type: "website",
+    images: [{ url: `${siteUrl}/real-photos/IMG_0865(2).jpeg`, alt: "Autosleutelservice van Autosleutel Rivierenland" }],
   },
 };
 
