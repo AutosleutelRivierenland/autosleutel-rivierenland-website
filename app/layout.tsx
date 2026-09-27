@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     siteName: "Autosleutel Rivierenland",
     locale: "nl_NL",
     type: "website",
+    images: [`${siteUrl}/real-photos/IMG_0865(2).jpeg`],
   },
   robots: {
     index: true,
@@ -104,7 +105,7 @@ const businessSchema = {
     "Arnhem",
     "Den Bosch",
   ],
-  priceRange: "€€",
+  priceRange: "€€",,openingHoursSpecification:[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday"],"opens":"12:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Saturday"],"opens":"10:00","closes":"20:00"}],
   sameAs: [
     "https://www.tiktok.com/@autosleutel_rivierenland",
     "https://www.facebook.com/people/Autosleutel-Rivierenland/pfbid02Wde94Zwd7919j3RobbTRN6Squn27JKy83oRBRaug5x6fWo2joP5VPYUQeCriVMhdl/",
