@@ -18,7 +18,7 @@ const services: Service[]=[
 ];
 
 export function generateStaticParams(){return services.map(s=>({slug:s.slug}));}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const s=services.find(x=>x.slug===slug);return{title:s?s.seoTitle+" | Autosleutel Rivierenland":"Autosleutelservice Tiel",description:s?.intro??"Autosleutelservice vanuit Tiel."};}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const s=services.find(x=>x.slug===slug);if(!s)return{title:"Autosleutelservice Tiel"};return{title:s.seoTitle+" | Autosleutel Rivierenland",description:s.intro,alternates:{canonical:`${siteUrl}/diensten/${s.slug}`},openGraph:{title:s.seoTitle+" | Autosleutel Rivierenland",description:s.intro,url:`${siteUrl}/diensten/${s.slug}`,siteName:"Autosleutel Rivierenland",locale:"nl_NL",type:"website",images:[{url:s.image}]}};}
 
 export default async function ServicePage({params}:{params:Promise<{slug:string}>}){
  const {slug}=await params;const service=services.find(s=>s.slug===slug); if(!service) notFound();
