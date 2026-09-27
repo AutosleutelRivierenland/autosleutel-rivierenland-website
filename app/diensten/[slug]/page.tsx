@@ -4,6 +4,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import "./service-pages.css";
 
+const siteUrl="https://www.autosleutelrivierenland.nl";
+
 type Service = { slug:string; title:string; label:string; intro:string; seoTitle:string; text:string[]; points:string[]; steps:string[]; image:string; imageAlt:string };
 const tel="tel:+31648659279";
 const whatsapp="https://wa.me/31648659279?text=Hallo%20Autosleutel%20Rivierenland%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20autosleutel.";
