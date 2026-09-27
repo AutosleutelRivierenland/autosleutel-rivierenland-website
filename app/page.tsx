@@ -25,36 +25,13 @@ export default function Home(){return <main id="top"><script type="application/l
     <div className="region-clean-head">
       <div>
         <label>ONZE REGIO</label>
-        <h2>Autosleutelservice in <em>Tiel en Rivierenland.</em></h2>
+        <h2>Gevestigd in Tiel. <em>Mobiele service in Rivierenland.</em></h2>
       </div>
-      <p>Wij zijn gevestigd in Tiel en werken mobiel in de regio. Hieronder ziet u in één oogopslag waar wij actief zijn.</p>
-    </div>
-    <div className="region-clean-grid">
-      <article className="region-clean-card region-clean-primary">
-        <span className="region-card-no">01</span>
-        <label>GEVESTIGD IN TIEL</label>
-        <h3>Tiel</h3>
-        <p>Wij zijn gevestigd in Tiel en werken mobiel in de regio.</p>
-        <a href="/tiel">Autosleutelservice Tiel →</a>
-      </article>
-      <article className="region-clean-card">
-        <span className="region-card-no">02</span>
-        <label>RIVIERENLAND</label>
-        <h3>Directe regio</h3>
-        <p>Tiel, Culemborg, Geldermalsen, Buren, Zaltbommel, Leerdam, Gorinchem en Druten.</p>
-        <span className="region-clean-note">Mobiele service op locatie</span>
-      </article>
-      <article className="region-clean-card">
-        <span className="region-card-no">03</span>
-        <label>RUIMER WERKGEBIED</label>
-        <h3>Omliggende steden</h3>
-        <p>Nijmegen, Arnhem, Den Bosch, Utrecht en plaatsen die daar tussenin liggen.</p>
-        <span className="region-clean-note">Vooraf controleren wat mogelijk is</span>
-      </article>
+      <p>Wij werken vanuit Tiel en komen voor geschikte autosleutelwerkzaamheden naar klanten in de regio. Bekijk hieronder onze belangrijkste plaatsen.</p>
     </div>
     <div className="region-clean-bottom">
-      <div><strong>Mobiele autosleutelservice</strong><span>Bel of WhatsApp ons met uw merk, model en bouwjaar.</span></div>
-      <a className="btn primary region-button" href="/tiel">Bekijk onze regio →</a>
+      <div><strong>Tiel · Culemborg · Geldermalsen · Buren · Zaltbommel · Leerdam · Gorinchem · Druten</strong><span>Ook actief in de omliggende regio. Bel of WhatsApp met uw merk, model en bouwjaar.</span></div>
+      <a className="btn primary region-button" href="/tiel">Autosleutel Tiel →</a>
     </div>
   </div>
 </section>
