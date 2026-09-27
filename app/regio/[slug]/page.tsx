@@ -172,7 +172,9 @@ const regions: Region[] = [
   },
 ];
 
-const regionHref = (slug: string) => slug === "tiel" ? "/tiel" : `/regio/${slug}`;\n\nconst services = [
+const regionHref = (slug: string) => slug === "tiel" ? "/tiel" : `/regio/${slug}`;
+
+const services = [
   ["01", "Autosleutel bijmaken", "Een extra autosleutel laten maken? Voor geschikte voertuigen maken en programmeren wij een passende sleutel.", "/diensten/autosleutel-bijmaken"],
   ["02", "Autosleutels kwijt", "Geen werkende sleutel meer? Wij beoordelen de situatie en bespreken welke oplossing mogelijk is.", "/diensten/autosleutel-kwijt"],
   ["03", "Schadevrij openen", "Buitengesloten? Wij openen uw auto zo zorgvuldig mogelijk en proberen onnodige schade te voorkomen.", "/diensten/schadevrij-openen"],
