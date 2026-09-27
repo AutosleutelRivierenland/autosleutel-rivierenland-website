@@ -369,7 +369,7 @@ export default async function RegionPage({
                 <strong>Ook dichtbij</strong>
                 <div className="region-list">
                   {region.nearby.map((place) => (
-                    <Link href={`/regio/${place.slug}`} key={place.slug}>{place.name}</Link>
+                    <Link href={regionHref(place.slug)} key={place.slug}>{place.name}</Link>
                   ))}
                 </div>
               </div>
@@ -442,7 +442,7 @@ export default async function RegionPage({
         <div className="container footer-grid">
           <Link className="logo-frame footer-logo" href="/"><img src="/logo.svg" alt="Autosleutel Rivierenland" width={220} height={89} /></Link>
           <div><b>DIENSTEN</b>{services.map(([_, title, __, href]) => <Link key={href} href={href}>{title}</Link>)}</div>
-          <div><b>REGIO</b><Link href="/tiel">Autosleutel Tiel</Link>{region.nearby.map((place) => <Link key={place.slug} href={`/regio/${place.slug}`}>Autosleutel {place.name}</Link>)}</div>
+          <div><b>REGIO</b><Link href="/tiel">Autosleutel Tiel</Link>{region.nearby.map((place) => <Link key={place.slug} href={regionHref(place.slug)}>Autosleutel {place.name}</Link>)}</div>
           <div><b>CONTACT</b><a href={tel}>06 48 65 92 79</a><a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp</a><span>Tiel · Rivierenland</span></div>
         </div>
         <div className="container footer-bottom"><span>© 2026 Autosleutel Rivierenland</span><span>KvK 94298033</span><span>Service op locatie</span></div>
