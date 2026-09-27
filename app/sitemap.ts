@@ -9,7 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "autosleutel-kwijt",
     "behuizingen-vervangen",
     "schadevrij-openen",
-    "diagnose-uitlezen",
   ];
   const regions = [
     "culemborg",
