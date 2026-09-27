@@ -10,7 +10,6 @@ const services = [
   ["02", "Autosleutels kwijt", "Geen werkende sleutel meer? Wij beoordelen de mogelijkheden voor uw voertuig en helpen u weer op weg.", "/diensten/autosleutel-kwijt"],
   ["03", "Schadevrij openen", "Buitengesloten? Wij openen uw auto zo zorgvuldig mogelijk en proberen onnodige schade te voorkomen.", "/diensten/schadevrij-openen"],
   ["04", "Sleutelbehuizing vervangen", "Is uw sleutelbehuizing versleten of beschadigd? Voor geschikte sleutels kunnen wij de behuizing vervangen.", "/diensten/behuizingen-vervangen"],
-  ["05", "Auto uitlezen & diagnose", "Foutmelding of startprobleem? Voor geschikte voertuigen kunnen wij uitlezen en de oorzaak helpen bepalen.", "/diensten/diagnose-uitlezen"],
   ["06", "Mercedes contactsloten vervangen", "Problemen met het contactslot van uw Mercedes? Wij onderzoeken de klacht en vervangen geschikte contactsloten.", "/mercedes-contactslot"],
 ];
 const coreAreas = ["Tiel", "Culemborg", "Geldermalsen", "Buren", "Zaltbommel", "Leerdam", "Gorinchem", "Druten"];
@@ -30,12 +29,12 @@ export default function Home(){return <main id="top"><script type="application/l
         <label>ONZE REGIO</label>
         <h2>Autosleutelservice in <em>Tiel en Rivierenland.</em></h2>
       </div>
-      <p>Vanuit Tiel werken wij mobiel in de regio. Hieronder ziet u in één oogopslag waar wij voornamelijk actief zijn.</p>
+      <p>Wij zijn gevestigd in Tiel en werken mobiel in de regio. Hieronder ziet u in één oogopslag waar wij actief zijn.</p>
     </div>
     <div className="region-clean-grid">
       <article className="region-clean-card region-clean-primary">
         <span className="region-card-no">01</span>
-        <label>UITVALSBASIS</label>
+        <label>GEVESTIGD IN TIEL</label>
         <h3>Tiel</h3>
         <p>Onze uitvalsbasis voor autosleutels, diagnose en mobiele service.</p>
         <a href="/tiel">Autosleutelservice Tiel →</a>
