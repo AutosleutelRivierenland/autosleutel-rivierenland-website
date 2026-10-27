@@ -380,3 +380,27 @@ h1 span,h2 span,h3 span,h4 span,
     font-size:clamp(31px,8vw,38px);
   }
 }
+
+
+/* Maak de blauwe sectietitels even groot en duidelijk als CONTACT op de homepage */
+.eyebrow,
+[class*="eyebrow"],
+.pricing-heading label,
+.brand-heading label{
+  display:block;
+  font-size:clamp(18px,1.55vw,22px)!important;
+  line-height:1.25!important;
+  font-weight:800!important;
+  letter-spacing:.12em!important;
+  color:#1d5ff5!important;
+  margin-bottom:16px!important;
+}
+@media(max-width:760px){
+  .eyebrow,
+  [class*="eyebrow"],
+  .pricing-heading label,
+  .brand-heading label{
+    font-size:clamp(17px,4.6vw,20px)!important;
+    margin-bottom:12px!important;
+  }
+}
