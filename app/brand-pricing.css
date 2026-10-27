@@ -171,3 +171,92 @@ h3{font-size:clamp(18px,2vw,22px)}
   #contact .contact-box>div:first-child>p,
   .contact-form-section .contact-form-layout>div:first-child>p{font-size:16px}
 }
+
+
+/* SITEWIDE DESIGN SYSTEM — afgestemd op de contactsectie */
+:root{
+  --brand-navy:#071426;
+  --brand-blue:#155eef;
+  --brand-cobalt:#0649c7;
+  --brand-text:#243247;
+  --brand-muted:#64748b;
+  --brand-line:#e2e8f0;
+  --brand-soft:#f5f7fb;
+  --blue:#155eef;
+  --navy:#071426;
+  --text:#243247;
+  --muted:#64748b;
+  --line:#e2e8f0;
+}
+html{scroll-behavior:smooth}
+body{background:#fff!important;color:var(--brand-text)!important}
+h1,h2,h3,h4,strong{color:inherit}
+label,.eyebrow{color:var(--brand-blue)}
+a{transition:color .18s ease,border-color .18s ease,background-color .18s ease}
+:where(.section,.services,.area,.business,.capability,.pricing-section,.service-price-section,.brand-section,.contact-form-section,.reviews-section,.tiel-home-section,.home-usps,.region-home-section,.local-areas,.service-detail-section,.mercedes-process,.notice,.special-banner,.special-hero,.special-hero-grid,.symptom-section){
+  border-color:var(--brand-line)!important;
+}
+.reviews-section{background:var(--brand-soft)!important;border-top:1px solid var(--brand-line)!important}
+.reviews-head label{color:var(--brand-blue)!important}
+.reviews-head h2{color:var(--brand-navy)!important}
+.reviews-head h2 em{color:var(--brand-blue)!important}
+.reviews-link{border-color:var(--brand-line)!important;color:var(--brand-blue)!important;background:#fff!important}
+.reviews-link:hover{background:var(--brand-blue)!important;color:#fff!important;border-color:var(--brand-blue)!important}
+.review-card{background:#fff!important;border-color:var(--brand-line)!important;box-shadow:0 12px 32px rgba(7,20,38,.045)!important}
+.review-stars{color:var(--brand-blue)!important}
+.review-card blockquote{color:#334155!important}
+.review-avatar{background:var(--brand-navy)!important}
+.review-author strong{color:var(--brand-navy)!important}
+.reviews-controls>button{border-color:var(--brand-line)!important;color:var(--brand-navy)!important}
+.reviews-controls>button:hover{background:var(--brand-blue)!important;color:#fff!important;border-color:var(--brand-blue)!important}
+.review-dots button.active{background:var(--brand-blue)!important}
+.review-dots button:focus-visible,.reviews-controls>button:focus-visible,.reviews-link:focus-visible{outline-color:rgba(21,94,239,.25)!important}
+.hero,.premium-hero,.special-hero{background:var(--brand-soft)!important;color:var(--brand-navy)!important;border-color:var(--brand-line)!important}
+.hero-copy h1,.premium-hero .hero-copy h1,.special-hero h1{color:var(--brand-navy)!important}
+.hero-copy h1 span,.hero-copy h1 em,.special-hero h1 span{color:var(--brand-blue)!important}
+.hero-copy .eyebrow,.hero .eyebrow{color:var(--brand-blue)!important}
+.hero-text,.hero-trust,.special-hero p{color:#64748b!important}
+.hero-secondary{background:#fff!important;color:var(--brand-navy)!important;border:1px solid var(--brand-line)!important}
+.hero-secondary:hover{border-color:var(--brand-blue)!important;color:var(--brand-blue)!important}
+.btn.primary,.primary,.home-main-link,.specialist-btn{background:var(--brand-blue)!important;border-color:var(--brand-blue)!important;color:#fff!important;box-shadow:none!important}
+.btn.primary:hover,.primary:hover,.home-main-link:hover,.specialist-btn:hover{background:var(--brand-navy)!important;border-color:var(--brand-navy)!important;color:#fff!important}
+.section h2,.business h2,.contact h2,.capability h2,.section-head h2,.tiel-home-copy h2,.why-copy-card h2,.pricing-heading h2,.brand-heading h2{color:var(--brand-navy)!important}
+.section h2 em,.business h2 em,.contact h2 em,.capability h2 em,.section-head h2 em,.tiel-home-copy h2 em,.why-copy-card h2 em,.pricing-heading h2 em,.brand-heading h2 em{color:var(--brand-blue)!important}
+.section-head label,.pricing-heading label,.brand-heading label,.tiel-home-copy label,.why-copy-card label{color:var(--brand-blue)!important}
+.service,.pricing-card,.service-price-grid article,.symptoms>div,.detail-grid article,.brand-logo,.contact-form,.review-card{border-color:var(--brand-line)!important;box-shadow:0 5px 20px rgba(7,20,38,.035)!important}
+.service:hover{border-color:#b8cdf7!important;box-shadow:0 12px 28px rgba(7,20,38,.06)!important}
+.service-mark,.pricing-icon,.usp-grid article>span{background:#e8efff!important;color:var(--brand-blue)!important}
+.service h3,.pricing-card h3,.service-price-grid h3,.symptoms h3,.detail-grid h3{color:var(--brand-navy)!important}
+.service p,.pricing-card p,.service-price-grid p,.detail-grid p,.section-head>p{color:var(--brand-muted)!important}
+.pricing-price,.service-price-grid strong,.pricing-heading label,.brand-heading label,.local-more-links a,.text-link,.review-link{color:var(--brand-blue)!important}
+.pricing-notice,.service-price-note,.business-box,.notice-box{background:var(--brand-soft)!important;border-color:var(--brand-line)!important}
+.region-home-section,.local-areas,.capability,.service-detail-section,.mercedes-process,.tiel-home-section,.reviews-section{background:var(--brand-soft)!important}
+.why-logo-card{background:var(--brand-soft)!important;border-color:var(--brand-line)!important}
+.why-copy-card{background:#fff!important;border-color:var(--brand-line)!important}
+.why-points span{background:#e8efff!important;color:var(--brand-blue)!important}
+.why-points strong,.map-caption strong{color:var(--brand-navy)!important}
+.why-copy-card>p,.why-points small,.tiel-home-copy p{color:var(--brand-muted)!important}
+.rivierenland-map{background:linear-gradient(145deg,#f5f7fb,#fff)!important;border-color:var(--brand-line)!important;box-shadow:0 12px 32px rgba(7,20,38,.045)!important}
+.map-caption span,.city-tiel b,.tiel-home-section .text-link{color:var(--brand-blue)!important}
+.city-tiel b{background:var(--brand-blue)!important}
+.area-card,.feature-image-section{background:linear-gradient(145deg,#071426,#142b48)!important}
+.feature-image-copy h2 em,.feature-image-copy .text-link{color:#9bbcff!important}
+.special-banner,.notice{background:var(--brand-soft)!important}
+.special-banner-inner{background:#fff!important;border-color:var(--brand-line)!important}
+.special-banner h2,.notice h2{color:var(--brand-navy)!important}
+.special-banner p,.notice p{color:var(--brand-muted)!important}
+.model-table,.model-row{border-color:var(--brand-line)!important}
+.model-row strong{color:var(--brand-navy)!important}
+.model-variant span:first-child{color:var(--brand-blue)!important}
+.local-more-links{border-color:var(--brand-line)!important}
+.local-more-links a{border-color:var(--brand-line)!important;background:#fff!important}
+.local-more-links a:hover{border-color:var(--brand-blue)!important;background:var(--brand-soft)!important}
+.contact-actions .btn.whatsapp{background:#fff!important;color:#075b43!important;border-color:#087f5b!important}
+.contact-actions .btn.whatsapp:hover{background:#087f5b!important;color:#fff!important}
+footer{background:var(--brand-navy)!important}
+.float-wa{box-shadow:0 8px 25px rgba(7,20,38,.16)!important}
+@media(max-width:760px){
+ .reviews-section{padding:64px 0 70px!important}
+ .reviews-head h2{font-size:clamp(36px,10vw,48px)!important;line-height:1.05!important}
+ .review-card{padding:28px 22px!important}
+}
