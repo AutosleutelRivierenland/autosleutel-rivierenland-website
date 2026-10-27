@@ -545,6 +545,6 @@ h2 em,h2 span,h2 strong{
 .brand-mark svg{width:80px;height:27px;display:block;fill:none;stroke:#17283d;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .brand-mark.mark-mercedes svg,.brand-mark.mark-alfa svg{width:27px;height:27px}
 .brand-mark.mark-cupra svg{fill:#17283d;stroke:none}
-.brand-mark.mark-landrover{height:25px;width:80px;border:2px solid #17283d;border-radius:50%;font-size:9px;font-weight:800;letter-spacing:.02em}
+.brand-mark.mark-landrover{height:27px;width:100px;border:0;border-radius:0;font-size:9px;font-weight:800;letter-spacing:.02em}
 .brand-mark.mark-dodge{font-size:17px;font-weight:900;font-style:italic;letter-spacing:-1px}
 .brand-mark.mark-lexus svg{width:80px;height:27px}
