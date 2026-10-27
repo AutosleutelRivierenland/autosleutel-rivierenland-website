@@ -28,7 +28,7 @@ const modelGroups: ModelGroup[] = [
 ];
 
 export default function MercedesContactslotPage(){return <main>
- <header className="header"><div className="container nav-inner"><a className="logo-frame" href="/"><img src="/logo-header.svg" alt="Autosleutel Rivierenland" width={245} height={90}/></a><nav aria-label="Hoofdnavigatie"><a href="/diensten/autosleutel-bijmaken">Autosleutel bijmaken</a><a className="active" href="/mercedes-contactslot">Mercedes contactslot vervangen</a><a href="/#prijzen">Prijzen</a><a href="/#contact">Contact</a></nav><a className="nav-phone" href={tel}><span>06 48 65 92 79</span></a></div></header>
+ 
 
  <section className="special-hero"><div className="container special-hero-grid"><div><div className="eyebrow">Mercedes contactslot</div><h1>Mercedes contactslot <span>vervangen.</span></h1><p>Werkt het contactslot van uw Mercedes niet goed of start de auto niet meer? Wij onderzoeken de klacht en vervangen geschikte contactsloten wanneer het voertuig binnen onze service valt.</p><div className="actions mercedes-cta"><a className="btn primary" href={tel}><span aria-hidden="true">☎</span> Bel direct <b>→</b></a><a className="btn ghost" href={whatsapp} target="_blank" rel="noreferrer"><span aria-hidden="true">◉</span> WhatsApp <b>↗</b></a></div></div><div className="mercedes-photo"><img src={carPhoto} alt="Mercedes E-Klasse W211 cockpit met zichtbaar contactslot en sleutel"/></div></div></section>
 
@@ -43,5 +43,5 @@ export default function MercedesContactslotPage(){return <main>
 
  <section className="contact"><div className="container contact-box"><div><label>CONTACT</label><h2>Mercedes probleem? <em>Neem contact op.</em></h2><p>Autosleutel Rivierenland werkt vanuit Tiel en komt voor geschikte werkzaamheden op locatie.</p></div><div className="contact-actions"><a className="btn primary large" href={tel}>Bel 06 48 65 92 79 <b>→</b></a><a className="btn whatsapp large" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp ons <b>↗</b></a></div></div></section>
 
- <footer><div className="container footer-grid"><a className="logo-frame footer-logo" href="/"><img src="/logo-header.svg" alt="Autosleutel Rivierenland" width={245} height={90}/></a><div><b>DIENSTEN</b><a href="/diensten/autosleutel-bijmaken">Autosleutel bijmaken</a><a href="/diensten/autosleutel-kwijt">Autosleutels kwijt</a><a href="/diensten/behuizingen-vervangen">Behuizingen vervangen</a><a href="/diensten/schadevrij-openen">Schadevrij openen</a><a href="/diensten/diagnose-uitlezen">Auto uitlezen & diagnose</a></div><div><b>CONTACT</b><a href="/mercedes-contactslot">Mercedes contactslot vervangen</a><a href="/tiel">Autosleutel Tiel</a></div><div><b>TELEFOON</b><a href={tel}>06 48 65 92 79</a><a href="mailto:autosleutel.rivierenland@gmail.com">E-mail</a></div></div></footer>
+ 
  </main>}
