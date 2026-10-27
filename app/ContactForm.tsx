@@ -24,7 +24,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="contact-form-section" id="contactformulier">
+    <section className="contact-form-section" id="contact">
       <div className="container contact-form-layout">
         <div>
           <label>VRAAG EEN PRIJS OF AFSPRAAK AAN</label>
