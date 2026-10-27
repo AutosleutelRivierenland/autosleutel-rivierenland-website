@@ -3,7 +3,7 @@ const whatsappCatalog = "https://wa.me/c/31648659279";
 const brands = [
   ["Mercedes-Benz","mercedesbenz"],["BMW","bmw"],["Volkswagen","volkswagen"],["Audi","audi"],
   ["SEAT","seat"],["CUPRA","cupra"],["Škoda","skoda"],["Fiat","fiat"],["Ferrari","ferrari"],
-  ["Lamborghini","lamborghini"],["Alfa Romeo","alfaromeo"],["Land Rover","landrover"],["Volvo","volvo"],
+  ["Lamborghini","lamborghini"],["Land Rover","landrover"],["Volvo","volvo"],
   ["Peugeot","peugeot"],["Renault","renault"],["Opel","opel"],["Citroën","citroen"],["Ford","ford"],
   ["Chevrolet","chevrolet"],["Dodge","dodge"],["Kia","kia"],["Hyundai","hyundai"],["Suzuki","suzuki"],
   ["Mazda","mazda"],["Honda","honda"],["Toyota","toyota"],["Mitsubishi","mitsubishi"],["Nissan","nissan"],
