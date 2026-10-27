@@ -125,3 +125,49 @@ h3{font-size:clamp(18px,2vw,22px)}
 .opening-hours dl>div:nth-child(5) dd,.opening-hours dl>div:nth-child(7) dd{color:#64748b;font-weight:600}
 .contact-actions .opening-hours>p{margin:12px 0 0;padding-top:10px;border-top:1px solid #e1e7f0;color:#64748b;font-size:12px!important;line-height:1.5}
 @media(max-width:520px){.contact-actions .opening-hours{padding:15px 16px}.opening-hours dl>div{padding:9px 0}}
+
+
+/* Duidelijke, grotere koppen voor de contactsecties onderaan de homepage */
+#contact .contact-box>div:first-child>label,
+.contact-form-section .contact-form-layout>div:first-child>label{
+  display:block;
+  margin:0 0 14px;
+  color:var(--brand-blue);
+  font-size:clamp(13px,1.15vw,15px)!important;
+  font-weight:800;
+  line-height:1.4;
+  letter-spacing:.12em;
+}
+#contact .contact-box h2,
+.contact-form-section .contact-form-layout h2{
+  max-width:640px;
+  margin:0 0 18px;
+  font-size:clamp(34px,4.1vw,48px)!important;
+  font-weight:800;
+  line-height:1.08!important;
+  letter-spacing:-.04em;
+}
+#contact .contact-box>div:first-child>p,
+.contact-form-section .contact-form-layout>div:first-child>p{
+  max-width:580px;
+  font-size:17px;
+  line-height:1.75;
+}
+.contact-form-section .contact-form-layout>div:first-child>label{
+  max-width:100%;
+  letter-spacing:.09em;
+}
+@media(max-width:600px){
+  #contact .contact-box h2,
+  .contact-form-section .contact-form-layout h2{
+    font-size:clamp(31px,8vw,38px)!important;
+    line-height:1.1!important;
+  }
+  #contact .contact-box>div:first-child>label,
+  .contact-form-section .contact-form-layout>div:first-child>label{
+    font-size:12px!important;
+    letter-spacing:.08em;
+  }
+  #contact .contact-box>div:first-child>p,
+  .contact-form-section .contact-form-layout>div:first-child>p{font-size:16px}
+}
