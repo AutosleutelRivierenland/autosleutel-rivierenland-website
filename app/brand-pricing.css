@@ -338,3 +338,45 @@ footer{background:var(--brand-navy)!important}
  .tiel-page .tiel-hero-grid{padding-top:30px!important;padding-bottom:24px!important}
  .tiel-page .tiel-services{padding-top:22px!important}
 }
+
+
+/* Consistente koppen door de hele website: contactsectie als typografische referentie */
+:root{
+  --site-heading-navy:#0b1729;
+  --site-heading-blue:#1d5ff5;
+}
+h1,h2,h3,h4,
+.tiel-page h1,.tiel-page h2,.tiel-page h3,.tiel-page h4,
+.regio-page h1,.regio-page h2,.regio-page h3,.regio-page h4{
+  color:var(--site-heading-navy);
+  font-family:Arial,Helvetica,sans-serif;
+  font-weight:800;
+  letter-spacing:-.035em;
+}
+h1,h2,
+.tiel-page h1,.tiel-page h2,
+.regio-page h1,.regio-page h2{
+  font-size:clamp(31px,4.1vw,48px);
+  line-height:1.08;
+}
+h3,.tiel-page h3,.regio-page h3{
+  font-size:clamp(24px,2.8vw,32px);
+  line-height:1.15;
+}
+h4,.tiel-page h4,.regio-page h4{
+  font-size:clamp(19px,2vw,24px);
+  line-height:1.2;
+}
+/* Blauwe nadruk in koppen blijft overal dezelfde kobaltblauwe accentkleur */
+h1 span,h2 span,h3 span,h4 span,
+.tiel-page h1 span,.tiel-page h2 span,.tiel-page h3 span,.tiel-page h4 span,
+.regio-page h1 span,.regio-page h2 span,.regio-page h3 span,.regio-page h4 span{
+  color:var(--site-heading-blue);
+}
+@media(max-width:760px){
+  h1,h2,
+  .tiel-page h1,.tiel-page h2,
+  .regio-page h1,.regio-page h2{
+    font-size:clamp(31px,8vw,38px);
+  }
+}
