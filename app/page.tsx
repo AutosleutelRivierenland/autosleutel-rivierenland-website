@@ -15,7 +15,7 @@ const services = [
   ["05", "Foutcodes uitlezen en wissen", "Foutmelding of startprobleem? Voor geschikte voertuigen lezen we foutcodes uit en wissen we codes waar dat passend en veilig is.", "/diensten/diagnose-uitlezen", "/real-photos/IMG_0864(2).jpeg", "Audi-interieur met Autel diagnoseapparaat"],
   ["06", "Mercedes contactsloten vervangen", "Problemen met het contactslot van uw Mercedes? Wij onderzoeken de klacht en vervangen geschikte contactsloten.", "/mercedes-contactslot", "https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz_Sprinter_cockpit.jpg?width=1280", "Mercedes-interieur met zichtbaar contactslot"],
   ["07", "Keyless & smart keys", "Smart keys en keyless sleutels voor geschikte auto's, inclusief programmering waar mogelijk.", "/diensten/keyless-smartkey", "/real-photos/IMG_0701(1).jpeg", "Autosleutels voor verschillende voertuigen"],
-  ["08", "VAG opties coderen", "Opties vrijschakelen en coderen voor geschikte Volkswagen-, Audi-, SEAT-, CUPRA- en Škoda-modellen.", "/diensten/vag-coderen", "/real-photos/IMG_0864(2).jpeg", "Diagnoseapparaat in auto-interieur"],
+  ["08", "Auto diagnose en VAG-codering", "Foutcodes uitlezen, storingen onderzoeken en beschikbare voertuigopties coderen.", "/diensten/vag-coderen", "/IMG_3004-diagnose%202.jpeg", "Xhorse Key Tool Max Pro bij het dashboard van een SEAT"],
   ["09", "Contactslot vervangen", "Contactslotservice voor geschikte voertuigen, met vooraf besproken mogelijkheden.", "/diensten/contactslot-vervangen", "https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercedes_E_240_Avantgarde_W211_%282002-2009%3B_hier_2003%29_Cockpit_MJ.JPG", "Interieur met contactslot"],
 ];
 const structuredData = {"@context":"https://schema.org","@type":"WebPage","@id":"https://www.autosleutelrivierenland.nl/#webpage","url":"https://www.autosleutelrivierenland.nl","name":"Autosleutel Rivierenland | Autosleutel bijmaken in Tiel","description":"Autosleutelservice vanuit Tiel voor autosleutels bijmaken, verloren autosleutels, programmeren, sleutelbehuizingen en schadevrij openen.","primaryImageOfPage":"https://www.autosleutelrivierenland.nl/real-photos/IMG_0865(2).jpeg","about":{"@id":"https://www.autosleutelrivierenland.nl/#business"}}
@@ -34,7 +34,8 @@ export default function Home(){return <main id="top"><script type="application/l
       <a href="/diensten/behuizingen-vervangen"><span>Behuizing autosleutel vervangen</span><b aria-hidden="true">↗</b></a>
       <a href="/mercedes-contactslot"><span>Mercedes contactslot vervangen</span><b aria-hidden="true">↗</b></a>
       <a href="/diensten/vag-coderen"><span>Auto diagnose en coderen voor VAG-auto's</span><b aria-hidden="true">↗</b></a>
-      <a href="/diensten/contactslot-vervangen"><span>Overige slotenservice</span><b aria-hidden="true">↗</b></a>
+      <a href="/diensten/contactslot-vervangen"><span>Contactslot vervangen</span><b aria-hidden="true">↗</b></a>
+      <a href="/diensten/overige-slotenservice"><span>Overige slotenservice</span><b aria-hidden="true">↗</b></a>
     </div>
   </div>
 </section>

@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "keyless-smartkey",
     "vag-coderen",
     "contactslot-vervangen",
+    "overige-slotenservice",
   ];
   const regions = [
     "culemborg",
