@@ -24,6 +24,7 @@ import "./brand-pricing.css";
 import MobileMenu from "./mobile-menu";
 import ServicePhotoOverrides from "./service-photo-overrides";
 import ScrollReveal from "./scroll-reveal";
+import { SiteHeader, SiteFooter } from "./site-chrome";
 
 const siteUrl = "https://www.autosleutelrivierenland.nl";
 
@@ -121,6 +122,7 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <body>
+        <SiteHeader />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
@@ -133,6 +135,7 @@ export default function RootLayout({
         <ServicePhotoOverrides />
         <ScrollReveal />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
