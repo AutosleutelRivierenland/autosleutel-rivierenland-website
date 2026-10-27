@@ -12,7 +12,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "diagnose-uitlezen",
     "keyless-smartkey",
     "vag-coderen",
-    "contactslot-vervangen",
     "overige-slotenservice",
   ];
   const regions = [
