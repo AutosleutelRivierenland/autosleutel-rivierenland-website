@@ -3,3 +3,12 @@
 @media(max-width:700px){.service-page .header nav{display:none}.service-page .nav-inner{gap:10px}.service-page .logo-frame{width:145px;height:56px}.service-page .nav-phone{min-width:155px;height:46px;padding:9px 10px}.service-page .nav-phone span{font-size:11px}.service-breadcrumb{height:43px;font-size:9px}.service-hero-grid{min-height:auto}.service-hero-copy{padding:42px 0}.service-hero h1{font-size:clamp(36px,8vw,42px)}.service-hero p{font-size:16.5px;line-height:1.65}.service-trust{gap:11px;font-size:9px}.service-photo{min-height:300px;border-radius:13px}.photo-badge{right:15px;top:15px}.service-page .section{padding:62px 0}.offer-photo{height:290px}.offer-copy p,.steps-head>p,.info-grid p,.faq-list p,.service-cta p{font-size:16.5px;line-height:1.65}.offer-copy h2,.steps-head h2,.info-grid h2,.faq-grid h2{font-size:39px}.check-grid{grid-template-columns:1fr;gap:9px}.steps-head{gap:20px}.faq-grid{gap:25px}.service-cta{padding:58px 0}.service-cta h2{font-size:40px}.service-page .footer-grid{grid-template-columns:1fr 1fr}.service-page .footer-logo{grid-column:1/-1}.service-page .footer-bottom{gap:8px;flex-wrap:wrap}}
 
 .service-remote-image{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}.offer-photo .service-remote-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+
+/* Autosleutel bijmaken: CTA met duidelijk contrast en passende tekst */
+.service-page .service-cta-keymaking h2{color:#fff!important}
+.service-page .service-cta-keymaking h2 em{color:#2161f5!important}
+.service-page .service-cta-keymaking p{color:#d8ebf8!important}
+.service-page .service-cta-keymaking .cta-primary{background:#2161f5!important;color:#fff!important}
+.service-page .service-cta-keymaking .cta-secondary{background:#fff!important;color:#0b1729!important;border:1px solid #dbe5f3}
+.service-page .service-cta-keymaking .cta-actions small{color:#d8ebf8!important}
