@@ -16,7 +16,6 @@ const services = [
   ["06", "Mercedes contactsloten vervangen", "Problemen met het contactslot van uw Mercedes? Wij onderzoeken de klacht en vervangen geschikte contactsloten.", "/mercedes-contactslot", "https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz_Sprinter_cockpit.jpg?width=1280", "Mercedes-interieur met zichtbaar contactslot"],
   ["07", "Keyless & smart keys", "Smart keys en keyless sleutels voor geschikte auto's, inclusief programmering waar mogelijk.", "/diensten/keyless-smartkey", "/real-photos/IMG_0701(1).jpeg", "Autosleutels voor verschillende voertuigen"],
   ["08", "Auto diagnose en VAG-codering", "Foutcodes uitlezen, storingen onderzoeken en beschikbare voertuigopties coderen.", "/diensten/vag-coderen", "/IMG_3004-diagnose%202.jpeg", "Xhorse Key Tool Max Pro bij het dashboard van een SEAT"],
-  ["09", "Contactslot vervangen", "Contactslotservice voor geschikte voertuigen, met vooraf besproken mogelijkheden.", "/diensten/contactslot-vervangen", "https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercedes_E_240_Avantgarde_W211_%282002-2009%3B_hier_2003%29_Cockpit_MJ.JPG", "Interieur met contactslot"],
 ];
 const structuredData = {"@context":"https://schema.org","@type":"WebPage","@id":"https://www.autosleutelrivierenland.nl/#webpage","url":"https://www.autosleutelrivierenland.nl","name":"Autosleutel Rivierenland | Autosleutel bijmaken in Tiel","description":"Autosleutelservice vanuit Tiel voor autosleutels bijmaken, verloren autosleutels, programmeren, sleutelbehuizingen en schadevrij openen.","primaryImageOfPage":"https://www.autosleutelrivierenland.nl/real-photos/IMG_0865(2).jpeg","about":{"@id":"https://www.autosleutelrivierenland.nl/#business"}}
 function PhoneIcon(){return <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.8 9.4 2l2.1 5.1-2.4 1.8c1.2 2.5 3.1 4.5 5.7 5.7l1.8-2.4 5.1 2.1-.8 2.8c-.4 1.5-1.8 2.5-3.4 2.4C10.2 18.8 5.2 13.8 4.5 7.7c-.2-1.6.7-3.1 2.1-3.7Z" fill="currentColor"/></svg>}
@@ -34,7 +33,6 @@ export default function Home(){return <main id="top"><script type="application/l
       <a href="/diensten/behuizingen-vervangen"><span>Behuizing autosleutel vervangen</span><b aria-hidden="true">↗</b></a>
       <a href="/mercedes-contactslot"><span>Mercedes contactslot vervangen</span><b aria-hidden="true">↗</b></a>
       <a href="/diensten/vag-coderen"><span>Auto diagnose en coderen voor VAG-auto's</span><b aria-hidden="true">↗</b></a>
-      <a href="/diensten/contactslot-vervangen"><span>Contactslot vervangen</span><b aria-hidden="true">↗</b></a>
       <a href="/diensten/overige-slotenservice"><span>Overige slotenservice</span><b aria-hidden="true">↗</b></a>
     </div>
   </div>
