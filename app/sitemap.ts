@@ -28,6 +28,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "den-bosch",
     "gorinchem",
     "veenendaal",
+    "houten",
+    "rhenen",
   ];
 
   return [
