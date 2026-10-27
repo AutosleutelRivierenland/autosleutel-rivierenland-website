@@ -340,67 +340,136 @@ footer{background:var(--brand-navy)!important}
 }
 
 
-/* Consistente koppen door de hele website: contactsectie als typografische referentie */
+
+/* DEFINITIEF TYPOGRAFISCH SYSTEEM — vaste schaal voor alle secties */
 :root{
-  --site-heading-navy:#0b1729;
-  --site-heading-blue:#1d5ff5;
+  --heading-navy:#071426;
+  --heading-blue:#155eef;
+  --heading-size:clamp(34px,4.1vw,48px);
+  --eyebrow-size:18px;
 }
-h1,h2,h3,h4,
-.tiel-page h1,.tiel-page h2,.tiel-page h3,.tiel-page h4,
-.regio-page h1,.regio-page h2,.regio-page h3,.regio-page h4{
-  color:var(--site-heading-navy);
-  font-family:Arial,Helvetica,sans-serif;
-  font-weight:800;
-  letter-spacing:-.035em;
-}
-h1,h2,
-.tiel-page h1,.tiel-page h2,
-.regio-page h1,.regio-page h2{
-  font-size:clamp(31px,4.1vw,48px);
-  line-height:1.08;
-}
-h3,.tiel-page h3,.regio-page h3{
-  font-size:clamp(24px,2.8vw,32px);
-  line-height:1.15;
-}
-h4,.tiel-page h4,.regio-page h4{
-  font-size:clamp(19px,2vw,24px);
-  line-height:1.2;
-}
-/* Blauwe nadruk in koppen blijft overal dezelfde kobaltblauwe accentkleur */
-h1 span,h2 span,h3 span,h4 span,
-.tiel-page h1 span,.tiel-page h2 span,.tiel-page h3 span,.tiel-page h4 span,
-.regio-page h1 span,.regio-page h2 span,.regio-page h3 span,.regio-page h4 span{
-  color:var(--site-heading-blue);
-}
-@media(max-width:760px){
-  h1,h2,
-  .tiel-page h1,.tiel-page h2,
-  .regio-page h1,.regio-page h2{
-    font-size:clamp(31px,8vw,38px);
-  }
-}
-
-
-/* Maak de blauwe sectietitels even groot en duidelijk als CONTACT op de homepage */
-.eyebrow,
-[class*="eyebrow"],
-.pricing-heading label,
-.brand-heading label{
-  display:block;
-  font-size:clamp(18px,1.55vw,22px)!important;
-  line-height:1.25!important;
+.section-head h2,
+.section-head h2 em,
+.local-areas-head h2,
+.reviews-head h2,
+.pricing-heading h2,
+.brand-heading h2,
+.region-clean-head h2,
+.tiel-home-copy h2,
+.why-copy-card h2,
+.capability h2,
+.business h2,
+.contact-box h2,
+.contact-form-section h2,
+.section h2,
+.local-areas h2,
+.reviews-section h2,
+.tiel-page h1,
+.tiel-page h2,
+.regio-page h1,
+.regio-page h2{
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:var(--heading-size)!important;
   font-weight:800!important;
+  line-height:1.08!important;
+  letter-spacing:-.04em!important;
+  color:var(--heading-navy)!important;
+}
+.section-head h2 em,
+.local-areas-head h2 em,
+.reviews-head h2 em,
+.pricing-heading h2 em,
+.brand-heading h2 em,
+.region-clean-head h2 em,
+.tiel-home-copy h2 em,
+.why-copy-card h2 em,
+.capability h2 em,
+.business h2 em,
+.contact-box h2 em,
+.contact-form-section h2 em,
+.section h2 em,
+.local-areas h2 em,
+.reviews-section h2 em,
+.tiel-page h1 span,
+.tiel-page h2 em,
+.regio-page h1 span,
+.regio-page h2 em{
+  color:var(--heading-blue)!important;
+}
+/* Alle kleine, blauwe sectielabels volgen één maat en één letterafstand */
+.section-head>label,
+.section-head label,
+.local-areas-head>label,
+.reviews-head>label,
+.reviews-head label,
+.pricing-heading>label,
+.brand-heading>label,
+.region-clean-head>label,
+.tiel-home-copy>label,
+.why-copy-card>label,
+.contact-box>div:first-child>label,
+.contact-form-section .contact-form-layout>div:first-child>label,
+.tiel-page .tiel-eyebrow,
+.tiel-page .section-head label,
+.tiel-page .info-box label,
+.tiel-page .region-copy label,
+.eyebrow,
+[class*="eyebrow"]{
+  display:block;
+  font-family:Arial,Helvetica,sans-serif!important;
+  font-size:var(--eyebrow-size)!important;
+  font-weight:800!important;
+  line-height:1.3!important;
   letter-spacing:.12em!important;
-  color:#1d5ff5!important;
-  margin-bottom:16px!important;
+  color:var(--heading-blue)!important;
+  margin-bottom:14px!important;
 }
 @media(max-width:760px){
+  :root{
+    --heading-size:clamp(31px,8vw,38px);
+    --eyebrow-size:15px;
+  }
+  .section-head h2,
+  .section-head h2 em,
+  .local-areas-head h2,
+  .reviews-head h2,
+  .pricing-heading h2,
+  .brand-heading h2,
+  .region-clean-head h2,
+  .tiel-home-copy h2,
+  .why-copy-card h2,
+  .capability h2,
+  .business h2,
+  .contact-box h2,
+  .contact-form-section h2,
+  .section h2,
+  .local-areas h2,
+  .reviews-section h2,
+  .tiel-page h1,
+  .tiel-page h2,
+  .regio-page h1,
+  .regio-page h2{
+    font-size:var(--heading-size)!important;
+  }
+  .section-head>label,
+  .section-head label,
+  .local-areas-head>label,
+  .reviews-head>label,
+  .reviews-head label,
+  .pricing-heading>label,
+  .brand-heading>label,
+  .region-clean-head>label,
+  .tiel-home-copy>label,
+  .why-copy-card>label,
+  .contact-box>div:first-child>label,
+  .contact-form-section .contact-form-layout>div:first-child>label,
+  .tiel-page .tiel-eyebrow,
+  .tiel-page .section-head label,
+  .tiel-page .info-box label,
+  .tiel-page .region-copy label,
   .eyebrow,
-  [class*="eyebrow"],
-  .pricing-heading label,
-  .brand-heading label{
-    font-size:clamp(17px,4.6vw,20px)!important;
+  [class*="eyebrow"]{
+    font-size:var(--eyebrow-size)!important;
     margin-bottom:12px!important;
   }
 }
