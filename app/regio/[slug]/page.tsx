@@ -133,9 +133,85 @@ const regions: Region[] = [
       { name: "Tiel", slug: "tiel" },
     ]
   },
+  {
+    slug: "ede",
+    city: "Ede",
+    provinceArea: "Gelderland",
+    title: "Autosleutel Ede.",
+    description: "Autosleutelservice voor Ede: een autosleutel bijmaken, een verloren sleutel vervangen of sleutelproblemen laten beoordelen. Vooraf bespreken we voertuig, prijs en mogelijkheden.",
+    intro: "Een extra autosleutel nodig in Ede, of werkt uw huidige sleutel niet meer? Autosleutel Rivierenland biedt mobiele autosleutelservice voor geschikte voertuigen, op afspraak en na controle van de voertuiggegevens.",
+    context: "Voor aanvragen in Ede beoordelen we vooraf de afstand, het type sleutel en de werkzaamheden. Zo kunnen we aangeven of service op locatie mogelijk is en welke planning realistisch is.",
+    serviceText: "We kunnen voor geschikte auto's sleutels zonder afstandsbediening, sleutels met afstandsbediening en keyless/smart keys verzorgen. De prijs hangt af van het voertuig en wordt vooraf bevestigd.",
+    nearby: [{ name: "Tiel", slug: "tiel" }, { name: "Veenendaal", slug: "veenendaal" }, { name: "Rhenen", slug: "rhenen" }]
+  },
+  {
+    slug: "nijmegen",
+    city: "Nijmegen",
+    provinceArea: "Gelderland",
+    title: "Autosleutel Nijmegen.",
+    description: "Autosleutelservice voor Nijmegen: autosleutel bijmaken, sleutel programmeren en hulp bij verlies of defecten voor geschikte voertuigen.",
+    intro: "Wilt u een autosleutel laten bijmaken in Nijmegen of bent u uw enige sleutel kwijt? Neem contact op met Autosleutel Rivierenland om de mogelijkheden voor uw auto te bespreken.",
+    context: "Nijmegen ligt buiten de directe kern van Rivierenland. Daarom controleren we bij elke aanvraag vooraf de locatie, de werkzaamheden en de planning voordat mobiele service wordt afgesproken.",
+    serviceText: "Geef uw merk, model, bouwjaar en type sleutel door. We beoordelen of een transpondersleutel, afstandsbediening of keyless sleutel beschikbaar is en geven vooraf duidelijkheid over de prijs.",
+    nearby: [{ name: "Tiel", slug: "tiel" }, { name: "Druten", slug: "druten" }, { name: "Ede", slug: "ede" }]
+  },
+  {
+    slug: "utrecht",
+    city: "Utrecht",
+    provinceArea: "Utrecht",
+    title: "Autosleutel Utrecht.",
+    description: "Autosleutelservice voor Utrecht: vraag naar een extra autosleutel, sleutelprogrammering of vervanging bij verlies voor geschikte auto's.",
+    intro: "Een extra autosleutel nodig of problemen met uw sleutel in Utrecht? We bekijken per aanvraag of onze mobiele autosleutelservice en planning aansluiten op uw locatie en voertuig.",
+    context: "Utrecht is een groter stedelijk werkgebied buiten de directe regio rond Tiel. Beschikbaarheid en eventuele voorrijkosten worden daarom altijd vooraf besproken; er wordt geen aankomsttijd beloofd voordat de planning is gecontroleerd.",
+    serviceText: "Voor geschikte voertuigen kunnen we transpondersleutels, sleutels met afstandsbediening en keyless/smart keys verzorgen. Stuur merk, model en bouwjaar voor een gerichte beoordeling.",
+    nearby: [{ name: "Nieuwegein", slug: "nieuwegein" }, { name: "Houten", slug: "houten" }, { name: "Culemborg", slug: "culemborg" }]
+  },
+  {
+    slug: "nieuwegein",
+    city: "Nieuwegein",
+    provinceArea: "Utrecht",
+    title: "Autosleutel Nieuwegein.",
+    description: "Autosleutelservice voor Nieuwegein: autosleutel bijmaken, sleutel programmeren en vervanging bij verlies voor geschikte voertuigen.",
+    intro: "Zoekt u een autosleutelservice in Nieuwegein? Vertel ons welk voertuig u heeft en of u een transpondersleutel, afstandsbediening of keyless sleutel nodig heeft.",
+    context: "Nieuwegein ligt aan de rand van het bredere werkgebied. We bevestigen vooraf of mobiele service op uw locatie ingepland kan worden en bespreken eventuele bijkomende kosten voordat de afspraak wordt vastgelegd.",
+    serviceText: "We beoordelen iedere aanvraag op merk, model, bouwjaar en sleuteltype. Na controle krijgt u duidelijkheid over de mogelijkheden, prijs en planning.",
+    nearby: [{ name: "Utrecht", slug: "utrecht" }, { name: "Houten", slug: "houten" }, { name: "Culemborg", slug: "culemborg" }]
+  },
+  {
+    slug: "den-bosch",
+    city: "'s-Hertogenbosch",
+    provinceArea: "Noord-Brabant",
+    title: "Autosleutel Den Bosch.",
+    description: "Autosleutelservice voor Den Bosch: vraag naar autosleutels bijmaken, programmering en hulp bij verlies voor geschikte voertuigen.",
+    intro: "Een autosleutel bijmaken of een verloren sleutel vervangen in Den Bosch? Autosleutel Rivierenland beoordeelt de mogelijkheden op basis van uw voertuig en locatie.",
+    context: "Den Bosch ligt buiten de directe kern van Rivierenland. We controleren daarom vooraf of de gewenste werkzaamheden mobiel uitgevoerd kunnen worden en welke afspraak haalbaar is.",
+    serviceText: "Noem bij uw aanvraag het merk, model, bouwjaar en type sleutel. We bespreken welke sleutel beschikbaar is, of programmering nodig is en wat de totale prijs wordt.",
+    nearby: [{ name: "Zaltbommel", slug: "zaltbommel" }, { name: "Tiel", slug: "tiel" }, { name: "Gorinchem", slug: "gorinchem" }]
+  },
+  {
+    slug: "gorinchem",
+    city: "Gorinchem",
+    provinceArea: "Zuid-Holland / Rivierenland",
+    title: "Autosleutel Gorinchem.",
+    description: "Autosleutelservice in Gorinchem: autosleutel bijmaken, sleutel programmeren en hulp bij een verloren of defecte sleutel voor geschikte auto's.",
+    intro: "Heeft u in Gorinchem een extra autosleutel nodig of werkt uw huidige sleutel niet meer? We bespreken graag welke oplossing voor uw auto mogelijk is.",
+    context: "Gorinchem sluit aan op het westelijke deel van ons regionale werkgebied. De mogelijkheid van mobiele service hangt af van de locatie, het voertuig en de benodigde werkzaamheden.",
+    serviceText: "We helpen met sleuteltypes zonder afstandsbediening, met afstandsbediening en keyless/smart keys voor geschikte voertuigen. We controleren vooraf de compatibiliteit en geven een duidelijke prijsopgave.",
+    nearby: [{ name: "Leerdam", slug: "leerdam" }, { name: "Culemborg", slug: "culemborg" }, { name: "Zaltbommel", slug: "zaltbommel" }]
+  },
+  {
+    slug: "veenendaal",
+    city: "Veenendaal",
+    provinceArea: "Utrecht / Gelderland",
+    title: "Autosleutel Veenendaal.",
+    description: "Autosleutelservice voor Veenendaal: extra autosleutels, sleutelprogrammering en hulp bij sleutelverlies voor geschikte voertuigen.",
+    intro: "Een autosleutel laten bijmaken in Veenendaal? Neem contact op met voertuigmerk, model en bouwjaar. Dan beoordelen we welke sleutel en service mogelijk zijn.",
+    context: "Voor Veenendaal controleren we vooraf de planning en locatie. We spreken pas een afspraak af nadat duidelijk is welke werkzaamheden nodig zijn en of mobiele service praktisch uitvoerbaar is.",
+    serviceText: "Voor geschikte auto's verzorgen we transpondersleutels, sleutels met afstandsbediening en keyless/smart keys. De totaalprijs wordt vooraf bevestigd, inclusief een eventuele voertuigspecifieke toeslag.",
+    nearby: [{ name: "Ede", slug: "ede" }, { name: "Rhenen", slug: "rhenen" }, { name: "Tiel", slug: "tiel" }]
+  },
 ];
-
-const regionHref = (slug: string) => slug === "tiel" ? "/tiel" : `/regio/${slug}`;
+\nconst regionHref = (slug: string) => slug === "tiel" ? "/tiel" : `/regio/${slug}`;
 
 const services = [
   ["01", "Autosleutel bijmaken", "Een extra autosleutel laten maken? Voor geschikte voertuigen maken en programmeren wij een passende sleutel.", "/diensten/autosleutel-bijmaken"],
