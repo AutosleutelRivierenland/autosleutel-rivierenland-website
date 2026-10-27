@@ -210,8 +210,31 @@ const regions: Region[] = [
     serviceText: "Voor geschikte auto's verzorgen we transpondersleutels, sleutels met afstandsbediening en keyless/smart keys. De totaalprijs wordt vooraf bevestigd, inclusief een eventuele voertuigspecifieke toeslag.",
     nearby: [{ name: "Ede", slug: "ede" }, { name: "Rhenen", slug: "rhenen" }, { name: "Tiel", slug: "tiel" }]
   },
-];
-\nconst regionHref = (slug: string) => slug === "tiel" ? "/tiel" : `/regio/${slug}`;
+  {
+    slug: "houten",
+    city: "Houten",
+    provinceArea: "Utrecht",
+    title: "Autosleutel Houten.",
+    description: "Autosleutelservice voor Houten: extra autosleutels, sleutelprogrammering en vervanging bij verlies voor geschikte voertuigen.",
+    intro: "Een autosleutel bijmaken of vervangen in Houten? Stuur ons het merk, model en bouwjaar, zodat we kunnen controleren welke sleutel bij uw auto past.",
+    context: "Voor Houten beoordelen we vooraf de locatie en de werkzaamheden. We bevestigen eerst of mobiele service ingepland kan worden en bespreken eventuele bijkomende kosten voordat de afspraak wordt vastgelegd.",
+    serviceText: "Voor geschikte auto's kunnen we een transpondersleutel, een sleutel met afstandsbediening of een keyless/smart key verzorgen. We bevestigen vooraf welke opties beschikbaar zijn en wat de totaalprijs wordt.",
+    nearby: [{ name: "Utrecht", slug: "utrecht" }, { name: "Nieuwegein", slug: "nieuwegein" }, { name: "Culemborg", slug: "culemborg" }]
+  },
+  {
+    slug: "rhenen",
+    city: "Rhenen",
+    provinceArea: "Utrecht / Gelderland",
+    title: "Autosleutel Rhenen.",
+    description: "Autosleutelservice voor Rhenen: autosleutel bijmaken, sleutel programmeren en hulp bij verlies voor geschikte voertuigen.",
+    intro: "Heeft u in Rhenen een extra autosleutel nodig of bent u uw sleutel kwijt? We bespreken de mogelijkheden voor uw voertuig en of mobiele service op uw locatie haalbaar is.",
+    context: "Rhenen ligt aan de oostzijde van het Utrechtse gebied. Bij elke aanvraag controleren we vooraf de planning en benodigde werkzaamheden, zodat we een realistische afspraak kunnen maken.",
+    serviceText: "Geef merk, model, bouwjaar en type sleutel door. We beoordelen of een transpondersleutel, afstandsbediening of keyless sleutel geschikt is en bevestigen de prijs vooraf.",
+    nearby: [{ name: "Veenendaal", slug: "veenendaal" }, { name: "Ede", slug: "ede" }, { name: "Tiel", slug: "tiel" }]
+  },
+]; 
+
+const regionHref = (slug: string) => slug === "tiel" ? "/tiel" : `/regio/${slug}`;
 
 const services = [
   ["01", "Autosleutel bijmaken", "Een extra autosleutel laten maken? Voor geschikte voertuigen maken en programmeren wij een passende sleutel.", "/diensten/autosleutel-bijmaken"],
