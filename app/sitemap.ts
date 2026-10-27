@@ -10,6 +10,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "behuizingen-vervangen",
     "schadevrij-openen",
     "diagnose-uitlezen",
+    "keyless-smartkey",
+    "vag-coderen",
+    "contactslot-vervangen",
   ];
   const regions = [
     "culemborg",
@@ -18,6 +21,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "druten",
     "buren",
     "leerdam",
+    "ede",
+    "nijmegen",
+    "utrecht",
+    "nieuwegein",
+    "den-bosch",
+    "gorinchem",
+    "veenendaal",
+    "houten",
+    "rhenen",
   ];
 
   return [
