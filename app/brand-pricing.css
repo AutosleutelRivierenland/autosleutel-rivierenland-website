@@ -324,3 +324,19 @@ footer{background:var(--brand-navy)!important}
 @media(max-width:760px){
  :root{--section-heading-size:clamp(31px,8vw,38px)}
 }
+
+
+/* Commercieel logo naast de titel op alle lokale plaats-landingspagina's */
+.tiel-page .tiel-hero-grid{
+  display:grid!important;
+  grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr)!important;
+  align-items:center!important;
+  gap:clamp(28px,5vw,72px)!important;
+}
+.tiel-page .landing-logo-wrap{display:flex!important;align-items:center;justify-content:center;min-width:0;width:100%}
+.tiel-page .landing-brand-image{display:block;width:100%;height:auto;max-width:520px;aspect-ratio:3/2;object-fit:contain;border-radius:14px}
+@media(max-width:760px){
+ .tiel-page .tiel-hero-grid{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
+ .tiel-page .landing-logo-wrap{justify-content:flex-start}
+ .tiel-page .landing-brand-image{max-width:100%;aspect-ratio:3/2}
+}

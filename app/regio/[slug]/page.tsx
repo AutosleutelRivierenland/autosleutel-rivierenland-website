@@ -365,7 +365,9 @@ export default async function RegionPage({
               <span><b>CONTACT</b><small>Bel of WhatsApp</small></span>
             </div>
           </div>
-
+          <div className="landing-logo-wrap">
+            <img className="landing-brand-image" src="/commercieel-logo.jpg" alt="Autosleutel Rivierenland — autosleutelservice" width="420" height="280" />
+          </div>
         </div>
       </section>
 
