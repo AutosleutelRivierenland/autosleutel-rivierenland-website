@@ -11,9 +11,9 @@ const brands = [
 ] as const;
 
 const prices = [
-  { title: "Transpondersleutel", description: "Autosleutel zonder afstandsbediening", price: "€ 79,95" },
-  { title: "Autosleutel met afstandsbediening", description: "Voor centrale vergrendeling, waar ondersteund", price: "€ 139,95" },
-  { title: "Keyless / Smart Key", description: "Voor voertuigen met keyless toegang en starten", price: "€ 184,95" },
+  { title: "Transpondersleutel", description: "Zonder afstandsbediening", price: "€ 79,95", note: "Transponderchip en mogelijkheden per voertuig controleren." },
+  { title: "Autosleutel met afstandsbediening", description: "Met afstandsbedieningsfuncties", price: "€ 139,95", note: "Type sleutel en programmering vooraf bevestigen." },
+  { title: "Keyless / Smart Key", description: "Voor keyless toegang en starten", price: "€ 184,95", note: "All-in: sleutel en programmering inbegrepen. 1 jaar garantie." },
 ];
 
 export default function PricingAndBrands() {
@@ -33,7 +33,7 @@ export default function PricingAndBrands() {
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
                 <strong className="pricing-price">{item.price}</strong>
-                <span className="pricing-includes">Programmeren/inleren indien nodig en technisch mogelijk.</span>
+                <span className="pricing-includes">{item.note}</span>
               </article>
             ))}
           </div>
