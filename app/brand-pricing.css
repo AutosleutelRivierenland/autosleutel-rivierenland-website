@@ -83,3 +83,7 @@ footer{background:#071426!important}
 .local-more-links>span{font-size:12px;font-weight:700;color:#64748b;margin-right:4px}
 .local-more-links a{font-size:12px;color:#155eef;background:#fff;border:1px solid #e2e8f0;border-radius:20px;padding:7px 11px}
 .local-more-links a:hover{border-color:#155eef;background:#f6f9ff}
+
+.header .logo-frame{width:174px!important;height:64px!important;justify-content:center!important;flex:none!important}
+.header .logo-frame img{width:162px!important;height:auto!important}
+@media(max-width:900px){.header .logo-frame{width:145px!important;height:56px!important}.header .logo-frame img{width:136px!important}}
