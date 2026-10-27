@@ -19,10 +19,9 @@ export default function MobileMenu() {
       </button>
       {open && <button className="mobile-menu-backdrop" aria-label="Menu sluiten" onClick={close} />}
       <nav className={`mobile-menu-panel${open ? " is-open" : ""}`} aria-label="Mobiele navigatie">
-        <a href="/#top" onClick={close}>Home</a>
-        <a href="/#diensten" onClick={close}>Diensten</a>
+        <a href="/diensten/autosleutel-bijmaken" onClick={close}>Autosleutel bijmaken</a>
         <a href="/mercedes-contactslot" onClick={close}>Mercedes contactslot vervangen</a>
-        <a href="/#zakelijk" onClick={close}>Zakelijk</a>
+        <a href="/#prijzen" onClick={close}>Prijzen</a>
         <a href="/#contact" onClick={close}>Contact</a>
         <a className="mobile-menu-phone" href="tel:+31648659279" onClick={close}>Bel direct · 06 48 65 92 79</a>
       </nav>

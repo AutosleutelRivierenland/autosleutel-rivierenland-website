@@ -11,6 +11,10 @@ const reviews = [
   { name: "A.M. Magosin", text: "Accidentally locked the car with the keys in it. Called once and in ca 15 minutes already had a person sent to my location. He opened the car in less than a minute. Very friendly people, professional service. Love for the Netherlands from Germany!" },
   { name: "Amanda Ouwehand", text: "Advertentie gevonden via Facebook. Contact gelegd via WhatsApp. Hij reageerde snel en de afspraak was ook zo gemaakt. De sleutel werkt perfect! Toen de sleutel niet netjes aan slot, is hij zelfs nog terug gekomen om het in orde te maken!" },
   { name: "Willem Tang", text: "Na contact via whatsapp hebben we snel een afspraak gemaakt. Voor een goede prijs kon ik een sleutel bij laten maken met afstandbediening. Mijn oude sleutel had het nog nooit gedaan qua centrale vergrendeling. Maar door deze service was dit snel verholpen. Nogmaals hartstikke bedankt voor je goede service" },
+  { name: "Tristan Bastemeijer", text: "Vandaag na 2 jaar weer een sleutel voor mijn bus laten maken. Super service! In no time een nieuwe sleutel gemaakt en ingeleerd. De bus startte meteen. Aardige vakman met humor; mijn nummer 1 voor sleutels." },
+  { name: "Bryan Van Tintelen", text: "Kwam netjes op tijd, zelfs iets eerder. Heeft een goede sleutel gemaakt en alles werkt top." },
+  { name: "Arno Nagel", text: "Ik kon snel een afspraak maken. Betrouwbare service, denkt mee en zorgt voor een sleutel met afstandsbediening. Goede service en duidelijke communicatie." },
+  { name: "Ger­linde Pors", text: "Heel netjes geregeld, lekker vlot en makkelijk. Echt fijn bedrijf!" },
 ];
 
 export default function ReviewsCarousel() {
