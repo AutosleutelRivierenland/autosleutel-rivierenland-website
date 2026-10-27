@@ -1,13 +1,13 @@
 const whatsappCatalog = "https://wa.me/c/31648659279";
 
 const brands = [
-  ["Mercedes-Benz","mercedesbenz"],["BMW","bmw"],["Volkswagen","volkswagen"],["Audi","audi"],
-  ["SEAT","seat"],["CUPRA","cupra"],["Škoda","skoda"],["Fiat","fiat"],["Ferrari","ferrari"],
-  ["Lamborghini","lamborghini"],["Alfa Romeo","alfaromeo"],["Land Rover","landrover"],["Volvo","volvo"],
+  ["Mercedes-Benz","wordmark-mercedes"],["BMW","bmw"],["Volkswagen","volkswagen"],["Audi","audi"],
+  ["SEAT","seat"],["CUPRA","wordmark-cupra"],["Škoda","skoda"],["Fiat","fiat"],["Ferrari","ferrari"],
+  ["Lamborghini","lamborghini"],["Alfa Romeo","wordmark-alfa"],["Land Rover","wordmark-landrover"],["Volvo","volvo"],
   ["Peugeot","peugeot"],["Renault","renault"],["Opel","opel"],["Citroën","citroen"],["Ford","ford"],
-  ["Chevrolet","chevrolet"],["Dodge","dodge"],["Kia","kia"],["Hyundai","hyundai"],["Suzuki","suzuki"],
+  ["Chevrolet","chevrolet"],["Dodge","wordmark-dodge"],["Kia","kia"],["Hyundai","hyundai"],["Suzuki","suzuki"],
   ["Mazda","mazda"],["Honda","honda"],["Toyota","toyota"],["Mitsubishi","mitsubishi"],["Nissan","nissan"],
-  ["Porsche","porsche"],["Lexus","lexus"],["Jeep","jeep"],["Rolls-Royce","rollsroyce"],["Bentley","bentley"]
+  ["Porsche","porsche"],["Lexus","wordmark-lexus"],["Jeep","jeep"],["Rolls-Royce","rollsroyce"],["Bentley","bentley"]
 ] as const;
 
 const prices = [
@@ -55,7 +55,7 @@ export default function PricingAndBrands() {
           <div className="brand-grid">
             {brands.map(([name, slug]) => (
               <div className="brand-logo" key={slug} title={name}>
-                <img src={`https://cdn.simpleicons.org/${slug}/17283d`} alt={name} loading="lazy" />
+                {slug.startsWith("wordmark-") ? <span className={`brand-wordmark ${slug}`} aria-hidden="true">{name}</span> : <img src={`https://cdn.simpleicons.org/${slug}/17283d`} alt={name} loading="lazy" onError={(event) => { event.currentTarget.style.display = "none"; }} />}
                 <span>{name}</span>
               </div>
             ))}
