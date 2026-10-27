@@ -548,3 +548,13 @@ h2 em,h2 span,h2 strong{
 .brand-mark.mark-landrover{height:27px;width:100px;border:0;border-radius:0;font-size:9px;font-weight:800;letter-spacing:.02em}
 .brand-mark.mark-dodge{font-size:17px;font-weight:900;font-style:italic;letter-spacing:-1px}
 .brand-mark.mark-lexus svg{width:80px;height:27px}
+
+/* Compacte, rustige dienstenlijst op de homepage */
+.home-services{padding:64px 0 70px}
+.home-services .section-head{margin-bottom:24px}
+.home-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.home-service-grid a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:20px 22px;border:1px solid #dce5f2;border-radius:12px;background:#f5f7fb;color:var(--brand-navy);font-size:17px;font-weight:700;text-decoration:none;transition:border-color .18s ease,background .18s ease,transform .18s ease}
+.home-service-grid a b{flex:none;color:var(--brand-blue);font-size:20px;font-weight:600}
+.home-service-grid a:hover{background:#fff;border-color:var(--brand-blue);transform:translateY(-1px)}
+@media(max-width:900px){.home-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.home-services{padding:48px 0 54px}.home-service-grid{grid-template-columns:1fr;gap:10px}.home-service-grid a{min-height:64px;padding:17px 18px;font-size:16px}}
