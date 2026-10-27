@@ -10,6 +10,16 @@ const brands = [
   ["Porsche","porsche"],["Lexus","lexus"],["Jeep","jeep"],["Rolls-Royce","rollsroyce"],["Bentley","bentley"]
 ] as const;
 
+function BrandLogo({name,slug}:{name:string;slug:string}) {
+  if (slug === "mercedesbenz") return <span className="brand-mark mark-mercedes" aria-label={name}><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17"/><path d="M20 3V20L7 29M20 20L33 29"/></svg></span>;
+  if (slug === "cupra") return <span className="brand-mark mark-cupra" aria-label={name}><svg viewBox="0 0 80 30"><path d="M5 3H30L39 15L30 27H5L19 15ZM75 3H50L41 15L50 27H75L61 15Z"/></svg></span>;
+  if (slug === "alfaromeo") return <span className="brand-mark mark-alfa" aria-label={name}><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17"/><path d="M9 12H31M9 28H31M14 8L20 20L26 8M14 32L20 20L26 32"/></svg></span>;
+  if (slug === "landrover") return <span className="brand-mark mark-landrover" aria-label={name}>LAND ROVER</span>;
+  if (slug === "dodge") return <span className="brand-mark mark-dodge" aria-label={name}>DODGE</span>;
+  if (slug === "lexus") return <span className="brand-mark mark-lexus" aria-label={name}><svg viewBox="0 0 80 30"><ellipse cx="40" cy="15" rx="30" ry="12"/><path d="M30 6H45L35 24H49"/></svg></span>;
+  return <BrandLogo name={name} slug={slug} />;
+}
+
 const prices = [
   { title: "Transpondersleutel", description: "Zonder afstandsbediening", price: "€ 79,95", note: "Transponderchip en mogelijkheden per voertuig controleren." },
   { title: "Autosleutel met afstandsbediening", description: "Met afstandsbedieningsfuncties", price: "€ 139,95", note: "Type sleutel en programmering vooraf bevestigen." },
