@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const tel="tel:+31648659279";
 const whatsapp="https://wa.me/31648659279?text=Hallo%20Autosleutel%20Rivierenland%2C%20ik%20heb%20een%20vraag%20over%20een%20Mercedes%20contactslot.";
-const carPhoto="https://upload.wikimedia.org/wikipedia/commons/d/d9/Mercedes_E_240_Avantgarde_W211_%282002-2009%3B_hier_2003%29_Cockpit_MJ.JPG";
+const carPhoto="/Mercedes%20E%20Klasse%20contactslot.jpg";
 
 type ModelGroup = [string, [string, string][]];
 
