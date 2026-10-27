@@ -111,3 +111,17 @@ h3{font-size:clamp(18px,2vw,22px)}
 @media(max-width:520px){.home-usps{padding:52px 0}.usp-grid{grid-template-columns:1fr}.usp-grid article{padding:20px}.home-main-link{width:100%;justify-content:space-between}.details strong{font-size:15px}}
 
 .mercedes-cta{display:flex;align-items:stretch;gap:12px;flex-wrap:wrap}.mercedes-cta .btn{flex:1 1 220px;min-width:0;min-height:56px;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 20px;font:700 16px/1.2 Arial,Helvetica,sans-serif;border-radius:9px!important;text-decoration:none}.mercedes-cta .btn.primary{background:#155eef!important;color:#fff!important;border:2px solid #155eef!important}.mercedes-cta .btn.primary:hover{background:#071426!important;border-color:#071426!important;color:#fff!important}.mercedes-cta .btn.ghost{background:#fff!important;color:#071426!important;border:2px solid #071426!important}.mercedes-cta .btn.ghost:hover{background:#071426!important;color:#fff!important}.mercedes-cta .btn span{font-size:19px}.mercedes-cta .btn b{font-size:18px}
+
+
+/* Openingstijden: duidelijke, scanbare dag- en tijdsrijen op de homepage */
+.contact-actions .opening-hours{display:block;margin:8px 0 0;padding:18px 20px;background:#f5f7fb;border:1px solid #e2e8f0;border-radius:12px;color:#243247;font-size:14px!important;line-height:1.5}
+.opening-hours-title{display:flex;align-items:center;gap:9px;margin-bottom:12px;color:#071426;font-size:16px}
+.opening-hours-title>span{display:grid;place-items:center;width:32px;height:32px;flex:none;border-radius:8px;background:#e8efff;color:#155eef;font-size:20px}
+.opening-hours dl{margin:0;display:grid;gap:0}
+.opening-hours dl>div{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:8px 0;border-bottom:1px solid #e1e7f0}
+.opening-hours dl>div:last-child{border-bottom:0}
+.opening-hours dt{font-weight:600;color:#334155}
+.opening-hours dd{margin:0;text-align:right;color:#071426;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.opening-hours dl>div:nth-child(5) dd,.opening-hours dl>div:nth-child(7) dd{color:#64748b;font-weight:600}
+.contact-actions .opening-hours>p{margin:12px 0 0;padding-top:10px;border-top:1px solid #e1e7f0;color:#64748b;font-size:12px!important;line-height:1.5}
+@media(max-width:520px){.contact-actions .opening-hours{padding:15px 16px}.opening-hours dl>div{padding:9px 0}}
