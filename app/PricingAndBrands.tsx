@@ -1,3 +1,5 @@
+"use client";
+
 const whatsappCatalog = "https://wa.me/c/31648659279";
 
 const brands = [
