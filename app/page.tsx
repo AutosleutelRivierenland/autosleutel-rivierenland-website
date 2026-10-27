@@ -12,7 +12,7 @@ const services = [
   ["02", "Autosleutels kwijt", "Geen werkende sleutel meer? Wij beoordelen de mogelijkheden voor uw voertuig en helpen u weer op weg.", "/diensten/autosleutel-kwijt", "/real-photos/0c2c7b9b-2069-4b34-b03c-c597a20e3bf6.jpeg", "Autosleutel bij een Volkswagen Transporter tijdens mobiele service"],
   ["03", "Schadevrij openen", "Buitengesloten? Wij openen uw auto zo zorgvuldig mogelijk en proberen onnodige schade te voorkomen.", "/diensten/schadevrij-openen", "https://images.pexels.com/photos/17124737/pexels-photo-17124737.jpeg?auto=compress&cs=tinysrgb&w=1200", "Lishi lockpick in een autoslot tijdens zorgvuldig openen"],
   ["04", "Sleutelbehuizing vervangen", "Is uw sleutelbehuizing versleten of beschadigd? Voor geschikte sleutels kunnen wij de behuizing vervangen.", "/diensten/behuizingen-vervangen", "/real-photos/IMG_0713(1).jpeg", "Oude en nieuwe Volkswagen autosleutel naast elkaar"],
-  ["05", "Auto uitlezen & diagnose", "Foutmelding of startprobleem? Voor geschikte voertuigen kunnen wij uitlezen en de oorzaak helpen bepalen.", "/diensten/diagnose-uitlezen", "/real-photos/IMG_0864(2).jpeg", "Audi-interieur met Autel diagnoseapparaat"],
+  ["05", "Foutcodes uitlezen en wissen", "Foutmelding of startprobleem? Voor geschikte voertuigen lezen we foutcodes uit en wissen we codes waar dat passend en veilig is.", "/diensten/diagnose-uitlezen", "/real-photos/IMG_0864(2).jpeg", "Audi-interieur met Autel diagnoseapparaat"],
   ["06", "Mercedes contactsloten vervangen", "Problemen met het contactslot van uw Mercedes? Wij onderzoeken de klacht en vervangen geschikte contactsloten.", "/mercedes-contactslot", "https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz_Sprinter_cockpit.jpg?width=1280", "Mercedes-interieur met zichtbaar contactslot"],
   ["07", "Keyless & smart keys", "Smart keys en keyless sleutels voor geschikte auto's, inclusief programmering waar mogelijk.", "/diensten/keyless-smartkey", "/real-photos/IMG_0701(1).jpeg", "Autosleutels voor verschillende voertuigen"],
   ["08", "VAG opties coderen", "Opties vrijschakelen en coderen voor geschikte Volkswagen-, Audi-, SEAT-, CUPRA- en Škoda-modellen.", "/diensten/vag-coderen", "/real-photos/IMG_0864(2).jpeg", "Diagnoseapparaat in auto-interieur"],
@@ -55,6 +55,12 @@ export default function Home(){return <main id="top"><script type="application/l
       <a href="/regio/druten"><strong>Druten</strong><span>Mobiele autosleutelservice</span><b>Bekijk Druten →</b></a>
       <a href="/regio/buren"><strong>Buren</strong><span>Autosleutel bijmaken en sleutelproblemen</span><b>Bekijk Buren →</b></a>
       <a href="/regio/leerdam"><strong>Leerdam</strong><span>Autosleutel bijmaken en programmeren</span><b>Bekijk Leerdam →</b></a>
+    </div>
+    <div className="local-more-links" aria-label="Meer servicegebieden">
+      <span>Ook in:</span>
+      <a href="/regio/ede">Ede</a><a href="/regio/veenendaal">Veenendaal</a><a href="/regio/rhenen">Rhenen</a>
+      <a href="/regio/nijmegen">Nijmegen</a><a href="/regio/utrecht">Utrecht</a><a href="/regio/nieuwegein">Nieuwegein</a>
+      <a href="/regio/houten">Houten</a><a href="/regio/den-bosch">Den Bosch</a><a href="/regio/gorinchem">Gorinchem</a>
     </div>
   </div>
 </section>
