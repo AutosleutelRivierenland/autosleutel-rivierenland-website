@@ -26,21 +26,6 @@ export default function Home(){return <main id="top"><script type="application/l
 <section className="hero"><div className="container hero-inner"><div className="hero-copy"><div className="eyebrow">MOBIELE AUTOSLEUTELSERVICE UIT TIEL</div><h1>Autosleutel nodig?<br/><span>Wij helpen u verder.</span></h1><p className="hero-text">Autosleutel bijmaken, een verloren sleutel vervangen, programmeren of inleren, een sleutelbehuizing vervangen of uw auto zorgvuldig openen. Vanuit Tiel helpen wij klanten in Rivierenland en de omliggende regio. <strong>*De bewerkingstijd hangt af van voertuig en werkzaamheden.</strong></p><div className="actions"><a className="btn primary" href={tel}><span className="btn-icon"><PhoneIcon/></span><span>Bel direct</span><b>06 48 65 92 79</b></a><a className="btn hero-secondary" href={whatsapp} target="_blank" rel="noreferrer"><span className="btn-icon whatsapp-icon"><WhatsAppIcon/></span><span>WhatsApp</span><b>Stuur een bericht →</b></a></div><div className="hero-trust"><span>✓ Veel sleutels binnen 30–45 minuten klaar*</span><span>✓ Op locatie ingeleerd waar mogelijk</span><span>✓ 1 jaar garantie op autosleutels</span><span>✓ Dealerkwaliteit</span><span>✓ Bel of WhatsApp voor mogelijkheden</span></div></div><div className="hero-image-wrap" aria-label="Echte autosleutelservice van Autosleutel Rivierenland"><Image className="hero-image" src="/real-photos/IMG_0865(2).jpeg" alt="Autosleutel van Volkswagen in het interieur van een auto" fill sizes="(max-width: 760px) 100vw, 55vw" priority /></div></div></section>
 <section className="section home-usps"><div className="container"><div className="section-head"><div><label>WAAROM AUTOSLEUTEL RIVIERENLAND</label><h2>Autosleutel bijmaken. <em>Snel, zorgvuldig en duidelijk.</em></h2></div></div><div className="usp-grid"><article><span>◷</span><h3>Vaak snel geregeld</h3><p>Veel sleutels zijn binnen 30–45 minuten klaar, afhankelijk van voertuig en werkzaamheden.</p></article><article><span>⌖</span><h3>Mobiele service</h3><p>Op locatie helpen waar dat technisch mogelijk en praktisch haalbaar is.</p></article><article><span>✓</span><h3>Prijs vooraf duidelijk</h3><p>We controleren merk, model, bouwjaar en sleuteltype voordat we de totaalprijs bevestigen.</p></article><article><span>♧</span><h3>1 jaar garantie</h3><p>Garantie op autosleutels volgens de voorwaarden en passend bij de uitgevoerde werkzaamheden.</p></article></div><div className="key-type-grid"><article><span className="key-type-icon">▰</span><h3>Transpondersleutel</h3><p>Een sleutel zonder afstandsbediening.</p><b>Vanaf € 79,95</b></article><article><span className="key-type-icon">⌁</span><h3>Klapsleutel</h3><p>Een compacte autosleutel met afstandsbediening, afhankelijk van uw voertuig.</p><b>Vanaf € 139,95</b></article><article><span className="key-type-icon">⌑</span><h3>Smart key</h3><p>Keyless toegang en starten voor geschikte auto's.</p><b>Vanaf € 184,95</b></article></div><a className="home-main-link" href="/diensten/autosleutel-bijmaken">Bekijk autosleutel bijmaken <span>→</span></a></div></section>
 <PricingAndBrands />
-<section className="region-home-section region-home-clean">
-  <div className="container">
-    <div className="region-clean-head">
-      <div>
-        <label>ONZE REGIO</label>
-        <h2>Gevestigd in Tiel. <em>Mobiele service in Rivierenland.</em></h2>
-      </div>
-      <p>Wij werken vanuit Tiel en komen voor geschikte autosleutelwerkzaamheden naar klanten in de regio. Bekijk hieronder onze belangrijkste plaatsen.</p>
-    </div>
-    <div className="region-clean-bottom">
-      <div><strong>Tiel · Culemborg · Geldermalsen · Buren · Zaltbommel · Leerdam · Gorinchem · Druten</strong><span>Ook actief in de omliggende regio. Bel of WhatsApp met uw merk, model en bouwjaar.</span></div>
-      <a className="btn primary region-button" href="/tiel">Autosleutel Tiel →</a>
-    </div>
-  </div>
-</section>
 <section className="section local-areas">
   <div className="container">
     <div className="local-areas-head">
