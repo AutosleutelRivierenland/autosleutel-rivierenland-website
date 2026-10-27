@@ -290,21 +290,7 @@ function WhatsAppIcon() {
 
 function Header() {
   return (
-    <header className="header">
-      <div className="container nav-inner">
-        <Link className="logo-frame" href="/" aria-label="Autosleutel Rivierenland home">
-          <img src="/logo.svg" alt="Autosleutel Rivierenland" width={220} height={89} />
-        </Link>
-        <nav aria-label="Hoofdnavigatie">
-          <Link href="/">Home</Link>
-          <Link href="/#diensten">Diensten</Link>
-          <Link href="/mercedes-contactslot">Mercedes contactslot vervangen</Link>
-          <Link href="/#zakelijk">Zakelijk</Link>
-          <Link href="/#contact">Contact</Link>
-        </nav>
-        <a className="nav-phone" href={tel}><b>☎</b><span>06 48 65 92 79</span></a>
-      </div>
-    </header>
+    
   );
 }
 
@@ -459,15 +445,7 @@ export default async function RegionPage({
         </div>
       </section>
 
-      <footer>
-        <div className="container footer-grid">
-          <Link className="logo-frame footer-logo" href="/"><img src="/logo.svg" alt="Autosleutel Rivierenland" width={220} height={89} /></Link>
-          <div><b>DIENSTEN</b>{services.map(([_, title, __, href]) => <Link key={href} href={href}>{title}</Link>)}</div>
-          <div><b>REGIO</b><Link href="/tiel">Autosleutel Tiel</Link>{region.nearby.map((place) => <Link key={place.slug} href={regionHref(place.slug)}>Autosleutel {place.name}</Link>)}</div>
-          <div><b>CONTACT</b><a href={tel}>06 48 65 92 79</a><a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp</a><span>Tiel · Rivierenland</span></div>
-        </div>
-        <div className="container footer-bottom"><span>© 2026 Autosleutel Rivierenland</span><span>KvK 94298033</span><span>Service op locatie</span></div>
-      </footer>
+      
     </main>
   );
 }
