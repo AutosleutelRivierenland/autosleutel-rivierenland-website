@@ -17,7 +17,7 @@ function BrandLogo({name,slug}:{name:string;slug:string}) {
   if (slug === "landrover") return <span className="brand-mark mark-landrover" aria-label={name}>LAND ROVER</span>;
   if (slug === "dodge") return <span className="brand-mark mark-dodge" aria-label={name}>DODGE</span>;
   if (slug === "lexus") return <span className="brand-mark mark-lexus" aria-label={name}><svg viewBox="0 0 80 30"><ellipse cx="40" cy="15" rx="30" ry="12"/><path d="M30 6H45L35 24H49"/></svg></span>;
-  return <BrandLogo name={name} slug={slug} />;
+  return <img src={`https://cdn.simpleicons.org/${slug}/17283d`} alt={`${name} logo`} loading="lazy" />;
 }
 
 const prices = [
@@ -65,7 +65,7 @@ export default function PricingAndBrands() {
           <div className="brand-grid">
             {brands.map(([name, slug]) => (
               <div className="brand-logo" key={slug} title={name}>
-                <img src={`https://cdn.simpleicons.org/${slug}/17283d`} alt={`${name} logo`} loading="lazy" />
+                <BrandLogo name={name} slug={slug} />
                 <span>{name}</span>
               </div>
             ))}
