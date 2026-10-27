@@ -12,11 +12,11 @@ const brands = [
 
 function BrandLogo({name,slug}:{name:string;slug:string}) {
   if (slug === "mercedesbenz") return <span className="brand-mark mark-mercedes" aria-label={name}><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17"/><path d="M20 3V20L7 29M20 20L33 29"/></svg></span>;
-  if (slug === "cupra") return <span className="brand-mark mark-cupra" aria-label={name}><svg viewBox="0 0 80 30"><path d="M5 3H30L39 15L30 27H5L19 15ZM75 3H50L41 15L50 27H75L61 15Z"/></svg></span>;
+  if (slug === "cupra") return <span className="brand-mark mark-cupra" aria-label={name}><svg viewBox="0 0 80 30"><path d="M7 4H25L39 15L25 26H7L20 15ZM73 4H55L41 15L55 26H73L60 15Z"/></svg></span>;
   if (slug === "alfaromeo") return <span className="brand-mark mark-alfa" aria-label={name}><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17"/><path d="M9 12H31M9 28H31M14 8L20 20L26 8M14 32L20 20L26 32"/></svg></span>;
-  if (slug === "landrover") return <span className="brand-mark mark-landrover" aria-label={name}>LAND ROVER</span>;
-  if (slug === "dodge") return <span className="brand-mark mark-dodge" aria-label={name}>DODGE</span>;
-  if (slug === "lexus") return <span className="brand-mark mark-lexus" aria-label={name}><svg viewBox="0 0 80 30"><ellipse cx="40" cy="15" rx="30" ry="12"/><path d="M30 6H45L35 24H49"/></svg></span>;
+  if (slug === "landrover") return <span className="brand-mark mark-landrover" aria-label={name}><svg viewBox="0 0 80 30"><ellipse cx="40" cy="15" rx="35" ry="12"/><text x="40" y="18.5" textAnchor="middle" fontSize="9" fontWeight="800" stroke="none" fill="#17283d">LAND ROVER</text></svg></span>;
+  if (slug === "dodge") return <span className="brand-mark mark-dodge" aria-label={name}><svg viewBox="0 0 80 30"><text x="35" y="20" textAnchor="middle" fontSize="17" fontWeight="900" fontStyle="italic" stroke="none" fill="#17283d">DODGE</text><path d="M62 20H76M65 25H76" strokeWidth="2.4"/></svg></span>;
+  if (slug === "lexus") return <span className="brand-mark mark-lexus" aria-label={name}><svg viewBox="0 0 80 30"><ellipse cx="40" cy="15" rx="30" ry="12"/><path d="M31 7H48L34 23H50"/></svg></span>;
   return <img src={`https://cdn.simpleicons.org/${slug}/17283d`} alt={`${name} logo`} loading="lazy" />;
 }
 
