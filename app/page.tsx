@@ -29,7 +29,7 @@ export default function Home(){return <main id="top"><script type="application/l
     <div className="section-head"><div><label>ONZE DIENSTEN</label><h2>Waar kunnen we u <em>mee helpen?</em></h2></div></div>
     <div className="home-service-grid">
       <a href="/diensten/autosleutel-bijmaken"><span>Autosleutel bijmaken</span><b aria-hidden="true">↗</b></a>
-      <a href="/diensten/autosleutel-kwijt"><span>Alle sleutels kwijt</span><b aria-hidden="true">↗</b></a>
+      <a href="/diensten/autosleutel-kwijt"><span>Autosleutel kwijt</span><b aria-hidden="true">↗</b></a>
       <a href="/diensten/schadevrij-openen"><span>Auto schadevrij openen</span><b aria-hidden="true">↗</b></a>
       <a href="/diensten/behuizingen-vervangen"><span>Behuizing vervangen</span><b aria-hidden="true">↗</b></a>
       <a href="/mercedes-contactslot"><span>Mercedes contactslot vervangen</span><b aria-hidden="true">↗</b></a>
