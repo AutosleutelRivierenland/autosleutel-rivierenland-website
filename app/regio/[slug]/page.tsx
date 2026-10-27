@@ -365,15 +365,7 @@ export default async function RegionPage({
               <span><b>CONTACT</b><small>Bel of WhatsApp</small></span>
             </div>
           </div>
-          <div className="tiel-hero-visual">
-            <div className="visual-grid"></div>
-            <div className="visual-key"><span></span><i></i><i></i></div>
-            <div className="visual-caption">
-              <small>WERKGEBIED</small>
-              <strong>{region.city.toUpperCase()}</strong>
-              <span>{region.provinceArea}</span>
-            </div>
-          </div>
+
         </div>
       </section>
 
@@ -435,16 +427,7 @@ export default async function RegionPage({
               <span>Veel werkzaamheden kunnen op locatie worden uitgevoerd.</span>
             </div>
           </div>
-          <div className="region-visual">
-            <div className="region-lines"></div>
-            <div className="tiel-node"><span></span><b>{region.city}</b><small>WERKGEBIED</small></div>
-            <div className="place-node node-1"><i></i>Tiel</div>
-            <div className="place-node node-2"><i></i>Rivierenland</div>
-            <div className="place-node node-3"><i></i>Gelderland</div>
-            <div className="place-node node-4"><i></i>West Betuwe</div>
-            <div className="place-node node-5"><i></i>Mobiele service</div>
-            <div className="region-route"><span></span><span></span><span></span></div>
-          </div>
+
         </div>
       </section>
 
