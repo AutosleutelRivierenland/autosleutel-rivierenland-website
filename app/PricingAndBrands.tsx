@@ -3,7 +3,7 @@ const whatsappCatalog = "https://wa.me/c/31648659279";
 const brands = [
   ["Mercedes-Benz","mercedesbenz"],["BMW","bmw"],["Volkswagen","volkswagen"],["Audi","audi"],
   ["SEAT","seat"],["Škoda","skoda"],["Fiat","fiat"],["Ferrari","ferrari"],
-  ["Lamborghini","lamborghini"],["Land Rover","landrover"],["Volvo","volvo"],
+  ["Lamborghini","lamborghini"],["Range Rover","landrover"],["Volvo","volvo"],
   ["Peugeot","peugeot"],["Renault","renault"],["Opel","opel"],["Citroën","citroen"],["Ford","ford"],
   ["Chevrolet","chevrolet"],["Kia","kia"],["Hyundai","hyundai"],["Suzuki","suzuki"],
   ["Mazda","mazda"],["Honda","honda"],["Toyota","toyota"],["Mitsubishi","mitsubishi"],["Nissan","nissan"],
@@ -13,7 +13,7 @@ const brands = [
 function BrandLogo({name,slug}:{name:string;slug:string}) {
   if (slug === "mercedesbenz") return <span className="brand-mark mark-mercedes" aria-label={name}><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17"/><path d="M20 3V20L7 29M20 20L33 29"/></svg></span>;
   if (slug === "alfaromeo") return <span className="brand-mark mark-alfa" aria-label={name}><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17"/><path d="M9 12H31M9 28H31M14 8L20 20L26 8M14 32L20 20L26 32"/></svg></span>;
-  if (slug === "landrover") return <span className="brand-mark mark-landrover" aria-label={name}><svg viewBox="0 0 100 30"><ellipse cx="50" cy="15" rx="44" ry="12" strokeWidth="2.1"/><text x="50" y="18.4" textAnchor="middle" fontSize="10" fontWeight="800" stroke="none" fill="#17283d" letterSpacing=".3">LAND ROVER</text></svg></span>;
+  if (slug === "landrover") return <span className="brand-mark mark-landrover" aria-label={name}><svg viewBox="0 0 100 30"><ellipse cx="50" cy="15" rx="44" ry="12" strokeWidth="2.1"/><text x="50" y="18.4" textAnchor="middle" fontSize="10" fontWeight="800" stroke="none" fill="#17283d" letterSpacing=".3">RANGE ROVER</text></svg></span>;
   if (slug === "lexus") return <span className="brand-mark mark-lexus" aria-label={name}><svg viewBox="0 0 100 30"><ellipse cx="50" cy="15" rx="31" ry="12" strokeWidth="2"/><path d="M38 7H60L43 23H61" strokeWidth="2.2"/></svg></span>;
   return <img src={`https://cdn.simpleicons.org/${slug}/17283d`} alt={`${name} logo`} loading="lazy" />;
 }
