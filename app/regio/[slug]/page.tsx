@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 type Region = {
   slug: string;
@@ -313,7 +314,8 @@ export default async function RegionPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const region = regions.find((item) => item.slug === slug) ?? regions[0];
+  const region = regions.find((item) => item.slug === slug);
+  if (!region) notFound();
 
   const structuredData = {
     "@context": "https://schema.org",
