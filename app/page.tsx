@@ -31,7 +31,7 @@ export default function Home(){return <main id="top"><script type="application/l
       <a href="/diensten/autosleutel-bijmaken"><span>Autosleutel bijmaken</span><b aria-hidden="true">↗</b></a>
       <a href="/diensten/autosleutel-kwijt"><span>Autosleutel kwijt</span><b aria-hidden="true">↗</b></a>
       <a href="/diensten/schadevrij-openen"><span>Auto schadevrij openen</span><b aria-hidden="true">↗</b></a>
-      <a href="/diensten/behuizingen-vervangen"><span>Behuizing vervangen</span><b aria-hidden="true">↗</b></a>
+      <a href="/diensten/behuizingen-vervangen"><span>Behuizing autosleutel vervangen</span><b aria-hidden="true">↗</b></a>
       <a href="/mercedes-contactslot"><span>Mercedes contactslot vervangen</span><b aria-hidden="true">↗</b></a>
       <a href="/diensten/vag-coderen"><span>Diagnose en coderen voor VAG-auto’s</span><b aria-hidden="true">↗</b></a>
       <a href="/diensten/contactslot-vervangen"><span>Overige slotenservice</span><b aria-hidden="true">↗</b></a>
