@@ -289,9 +289,7 @@ function WhatsAppIcon() {
 }
 
 function Header() {
-  return (
-    
-  );
+  return null;
 }
 
 export default async function RegionPage({
