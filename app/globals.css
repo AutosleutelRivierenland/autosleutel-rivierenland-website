@@ -110,3 +110,29 @@ footer{background:#10233a;color:#fff;padding:50px 0 20px}.footer-grid{display:gr
 .site-footer .footer-grid a:hover{color:#58a5ff}
 .site-footer .footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:22px;color:#91a4b5;font-size:11px}
 @media(max-width:760px){.site-header .nav-inner{gap:12px;justify-content:space-between}.site-header .logo-frame{width:145px}.site-header .logo-frame img{width:145px}.site-header nav{display:none!important}.site-header .nav-phone{padding:12px 14px!important;font-size:12px!important}.site-footer .footer-grid{grid-template-columns:1fr 1fr;gap:28px;padding-bottom:30px}.site-footer .footer-logo{grid-column:1/-1}.site-footer .footer-bottom{flex-wrap:wrap;font-size:10px}}
+
+/* Header logo visibility and alignment fix */
+.site-header .logo-frame{
+  width:245px!important;
+  height:78px!important;
+  min-width:245px;
+  overflow:visible!important;
+  background:#fff!important;
+  border-radius:8px!important;
+  padding:5px 12px!important;
+  box-sizing:border-box!important;
+}
+.site-header .logo-frame:before{display:none!important;content:none!important}
+.site-header .logo-frame img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  visibility:visible!important;
+}
+.site-header .nav-inner{min-height:96px!important;align-items:center!important}
+@media(max-width:900px){
+  .site-header .logo-frame{width:170px!important;min-width:170px;height:58px!important;padding:4px 8px!important}
+  .site-header .logo-frame img{width:100%!important}
+  .site-header .nav-inner{min-height:74px!important}
+}
