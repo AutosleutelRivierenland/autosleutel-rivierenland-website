@@ -21,6 +21,7 @@ import "./scroll-polish.css";
 import "./header-fit.css";
 import "./local-areas.css";
 import "./brand-pricing.css";
+import "./premium-site-chrome.css";
 import MobileMenu from "./mobile-menu";
 import ServicePhotoOverrides from "./service-photo-overrides";
 import ScrollReveal from "./scroll-reveal";
@@ -109,11 +110,14 @@ const businessSchema = {
     "Den Bosch",
   ],
   priceRange: "€€",
-  openingHoursSpecification:[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday"],"opens":"12:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Saturday"],"opens":"10:00","closes":"20:00"}],
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday"], opens: "12:00", closes: "20:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Tuesday", "Wednesday", "Thursday", "Saturday"], opens: "10:00", closes: "20:00" },
+  ],
   sameAs: [
     "https://www.tiktok.com/@autosleutel_rivierenland",
     "https://www.facebook.com/people/Autosleutel-Rivierenland/pfbid02Wde94Zwd7919j3RobbTRN6Squn27JKy83oRBRaug5x6fWo2joP5VPYUQeCriVMhdl/",
-  ]
+  ],
 };
 
 export default function RootLayout({
