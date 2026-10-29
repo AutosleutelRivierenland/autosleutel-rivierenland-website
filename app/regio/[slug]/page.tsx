@@ -242,6 +242,7 @@ const services = [
   ["02", "Autosleutels kwijt", "Geen werkende sleutel meer? Wij beoordelen de situatie en bespreken welke oplossing mogelijk is.", "/diensten/autosleutel-kwijt"],
   ["03", "Schadevrij openen", "Buitengesloten? Wij openen uw auto zo zorgvuldig mogelijk en proberen onnodige schade te voorkomen.", "/diensten/schadevrij-openen"],
   ["04", "Sleutelbehuizing vervangen", "Is uw sleutelbehuizing gebroken of versleten? Voor geschikte sleutels kunnen we de behuizing vervangen.", "/diensten/behuizingen-vervangen"],
+  ["05", "Mercedes contactslot vervangen", "Problemen met het contactslot van uw Mercedes? Voor geschikte modellen beoordelen en vervangen wij het contactslot.", "/mercedes-contactslot"],
 ];
 
 export function generateStaticParams() {
