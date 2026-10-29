@@ -47,7 +47,7 @@ export default async function ServicePage({params}:{params:Promise<{slug:string}
     ["/diensten/vag-coderen","VAG-codering"],
     ["/diensten/overige-slotenservice","Overige slotenservice"],
     ["/mercedes-contactslot","Mercedes contactslot vervangen"],
-  ].filter(([href])=>href!==`/diensten/${service.slug}`).map(([href,label])=><Link href={href} key={href}>{label}<span aria-hidden="true">↗</span></Link>)}</div></div></section>
+  ].filter(([href])=>href!==`/diensten/${service.slug}` || service.slug==="keyless-smartkey").map(([href,label])=><Link href={href} key={href}>{label}<span aria-hidden="true">↗</span></Link>)}</div></div></section>
   <section className="section service-info"><div className="container info-grid"><div><label>BEZOEKADRES</label><h2>Uitsluitend <em>op afspraak.</em></h2></div><div><p>Latensteinse Rondweg 2-109, Tiel. Bel of WhatsApp altijd vooraf om een afspraak te maken. Langskomen zonder afspraak is niet mogelijk.</p><a className="service-link" href="/#contact">Contact opnemen voor een afspraak →</a></div></div></section>
   
  </main>;
