@@ -29,3 +29,22 @@
 
 /* Extra inhoud voor VAG-diagnose en codering */
 .vag-detail-section{background:#f4f7fc;border-top:1px solid #e1e8f2}.vag-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}.vag-detail-grid article{background:#fff;border:1px solid #e0e8f2;border-radius:14px;padding:30px}.vag-detail-grid h2{font-size:clamp(28px,3vw,36px);line-height:1.1;letter-spacing:-.04em;margin:12px 0 18px;color:#0b1729}.vag-detail-grid h2 em{font-style:normal;color:#2161f5}.vag-detail-grid p{font-size:16px;line-height:1.7;color:#61728a;margin:0 0 14px}@media(max-width:760px){.vag-detail-grid{grid-template-columns:1fr;gap:20px}.vag-detail-grid article{padding:23px}}
+
+
+/* Consistente typografie, ruimte en links op alle service-landingspagina's */
+.service-page .service-breadcrumb{font-size:14px!important}
+.service-page .service-hero h1{font-size:clamp(40px,4.4vw,58px)!important;line-height:1.08!important}
+.service-page .service-hero p,.service-page .offer-copy p,.service-page .info-grid p,.service-page .faq-list p,.service-page .service-cta p{font-size:17px!important;line-height:1.75!important}
+.service-page .service-trust{font-size:13px!important;line-height:1.5!important}
+.service-page .check-grid span{font-size:14px!important;line-height:1.5!important}
+.service-page .faq-list summary{font-size:15px!important;line-height:1.5!important}
+.all-services-section{background:#f4f7fc;border-top:1px solid #e1e8f2}
+.all-services-heading{max-width:760px;margin-bottom:30px}
+.all-services-heading h2{font-size:clamp(32px,4vw,46px);line-height:1.1;margin:10px 0 14px;color:#122333}
+.all-services-heading h2 em{font-style:normal;color:#2161f5}
+.all-services-heading p{font-size:17px;line-height:1.7;color:#61728a}
+.all-services-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.all-services-grid a{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:20px 22px;min-height:72px;background:#fff;border:1px solid #dfe8ef;border-radius:10px;color:#122333;font-size:16px;font-weight:700;line-height:1.4;transition:border-color .2s,transform .2s}
+.all-services-grid a:hover{border-color:#2161f5;transform:translateY(-2px)}
+.all-services-grid a span{color:#2161f5;font-size:20px;flex:none}
+@media(max-width:760px){.service-page .service-breadcrumb{font-size:12px!important}.service-page .service-hero h1{font-size:clamp(35px,8vw,43px)!important}.service-page .service-hero p,.service-page .offer-copy p,.service-page .info-grid p,.service-page .faq-list p,.service-page .service-cta p{font-size:16px!important}.all-services-grid{grid-template-columns:1fr}.all-services-grid a{font-size:15px;min-height:60px;padding:16px}}
