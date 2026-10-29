@@ -136,3 +136,27 @@ footer{background:#10233a;color:#fff;padding:50px 0 20px}.footer-grid{display:gr
   .site-header .logo-frame img{width:100%!important}
   .site-header .nav-inner{min-height:74px!important}
 }
+
+
+/* Mercedes contactslot: compactere CTA-knoppen op mobiel, desktop blijft ongewijzigd */
+@media(max-width:560px){
+  .mercedes-cta .btn{
+    width:fit-content!important;
+    min-width:190px;
+    max-width:100%;
+    padding:11px 14px!important;
+    gap:12px!important;
+    font-size:12px!important;
+    border-radius:7px;
+  }
+  .mercedes-cta{
+    align-items:flex-start!important;
+    gap:9px!important;
+  }
+  .contact-box .contact-actions .btn.large{
+    width:100%;
+    padding:13px 15px!important;
+    gap:14px!important;
+    font-size:12px!important;
+  }
+}
