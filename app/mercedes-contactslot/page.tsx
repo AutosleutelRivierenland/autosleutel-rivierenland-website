@@ -42,6 +42,15 @@ export default function MercedesContactslotPage(){return <main>
 
 
  <section className="contact"><div className="container contact-box"><div><label>CONTACT</label><h2>Mercedes probleem? <em>Neem contact op.</em></h2><p>Autosleutel Rivierenland werkt vanuit Tiel en komt voor geschikte werkzaamheden op locatie.</p></div><div className="contact-actions"><a className="btn primary large" href={tel}>Bel 06 48 65 92 79 <b>→</b></a><a className="btn whatsapp large" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp ons <b>↗</b></a></div></div></section>
-
- 
- </main>}
+<section className="section landing-services-directory"><div className="container"><div className="all-services-heading"><label>ALLE BESCHIKBARE DIENSTEN</label><h2>Autosleutelservice en <em>voertuigservice.</em></h2><p>We werken uitsluitend op afspraak. Neem vooraf contact op om de mogelijkheden voor uw voertuig te bespreken.</p></div><div className="all-services-grid">{[
+["/diensten/autosleutel-bijmaken","Autosleutel bijmaken"],
+["/diensten/autosleutel-kwijt","Autosleutel kwijt"],
+["/diensten/behuizingen-vervangen","Sleutelbehuizing vervangen"],
+["/diensten/schadevrij-openen","Auto schadevrij openen"],
+["/diensten/diagnose-uitlezen","Diagnose en foutcodes uitlezen"],
+["/diensten/keyless-smartkey","Keyless & smart keys"],
+["/diensten/vag-coderen","VAG-codering"],
+["/diensten/overige-slotenservice","Overige slotenservice"],
+["/mercedes-contactslot","Mercedes contactslot reparatie"],
+].map(([href,label])=><a href={href} key={href}>{label}<span aria-hidden="true">↗</span></a>)}</div></div></section>
+</main>}
