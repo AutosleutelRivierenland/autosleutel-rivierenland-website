@@ -69,3 +69,10 @@
 @media(max-width:760px){
   .landing-services-directory .all-services-grid a{font-size:16px;line-height:1.5}
 }
+
+
+/* Voorkom dubbel logo in de footer: toon alleen de echte logo-afbeelding */
+.site-footer .footer-logo:before{
+  display:none!important;
+  content:none!important;
+}
