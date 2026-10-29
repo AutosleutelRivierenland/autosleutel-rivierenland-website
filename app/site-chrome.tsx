@@ -29,7 +29,7 @@ export function SiteHeader() {
     <header className="header site-header">
       <div className="container nav-inner">
         <a className="logo-frame site-logo" href="/" aria-label="Autosleutel Rivierenland home">
-          <Image src="/logo-header.svg" alt="Autosleutel Rivierenland" width={245} height={90} priority unoptimized />
+          <Image src="/logo-exact.svg" alt="Autosleutel Rivierenland" width={245} height={90} priority unoptimized />
         </a>
         <nav className="site-main-nav" aria-label="Hoofdnavigatie">
           <a href="/diensten/autosleutel-bijmaken">Autosleutel bijmaken</a>
@@ -56,7 +56,7 @@ export function SiteFooter() {
       <div className="container footer-grid">
         <div className="site-footer-brand">
           <a className="logo-frame footer-logo" href="/" aria-label="Autosleutel Rivierenland home">
-            <Image src="/logo-header.svg" alt="Autosleutel Rivierenland" width={245} height={90} unoptimized />
+            <Image src="/logo-exact.svg" alt="Autosleutel Rivierenland" width={245} height={90} unoptimized />
           </a>
           <p>Autosleutelservice vanuit Tiel: autosleutels bijmaken, programmeren, sleutelproblemen oplossen en Mercedes-contactslotreparatie.</p>
           <p className="site-appointment-note">Uitsluitend op afspraak. Bel of WhatsApp vooraf; langskomen zonder afspraak is niet mogelijk.</p>
