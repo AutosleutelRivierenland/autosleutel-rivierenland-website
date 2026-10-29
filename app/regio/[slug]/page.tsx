@@ -423,7 +423,7 @@ export default async function RegionPage({
           <div>
             <p>Een autosleutel is afhankelijk van merk, model, bouwjaar en uitvoering. Daarom geven we liever een passende prijsindicatie na controle dan een bedrag dat achteraf verandert.</p>
             <p>Stuur via WhatsApp het merk, model, bouwjaar en eventueel kenteken. Een duidelijke foto van de huidige sleutel helpt om het type sleutel sneller te herkennen.</p>
-            <p><strong>Niet beschikbaar:</strong> Renault en Volvo. Bij twijfel kunt u altijd eerst contact opnemen.</p><p>Bezoekadres: Latensteinse Rondweg 2-109, Tiel. Uitsluitend op afspraak; neem vooraf telefonisch of via WhatsApp contact op.</p>
+            <p>Ook voor Renault en Volvo kunt u contact opnemen. De mogelijkheden hangen af van merk, model, bouwjaar en sleuteltype; we controleren dit vooraf.</p><p>Bezoekadres: Latensteinse Rondweg 2-109, Tiel. Uitsluitend op afspraak; neem vooraf telefonisch of via WhatsApp contact op.</p>
           </div>
         </div>
       </section>
