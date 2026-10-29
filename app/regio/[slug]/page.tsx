@@ -451,7 +451,7 @@ export default async function RegionPage({
 ["/diensten/keyless-smartkey","Keyless & smart keys"],
 ["/diensten/vag-coderen","VAG-codering"],
 ["/diensten/overige-slotenservice","Overige slotenservice"],
-["/mercedes-contactslot","Mercedes contactslot reparatie"],
+["/mercedes-contactslot","Mercedes contactslot vervangen"],
 ].map(([href,label])=><a href={href} key={href}>{label}<span aria-hidden="true">↗</span></a>)}</div></div></section>
     </main>
   );
