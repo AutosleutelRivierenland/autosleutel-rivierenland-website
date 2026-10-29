@@ -91,6 +91,7 @@ const businessSchema = {
   logo: `${siteUrl}/logo.svg`,
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Latensteinse Rondweg 2-109",
     addressLocality: "Tiel",
     addressRegion: "Gelderland",
     addressCountry: "NL",
@@ -109,7 +110,8 @@ const businessSchema = {
     "Arnhem",
     "Den Bosch",
   ],
-  priceRange: "€€",\n  description: "Autosleutelservice uitsluitend op afspraak. Bel of WhatsApp vooraf; bezoekadres Latensteinse Rondweg 2-109, Tiel.",
+  priceRange: "€€",
+  description: "Autosleutelservice uitsluitend op afspraak. Bel of WhatsApp vooraf; bezoekadres Latensteinse Rondweg 2-109, Tiel.",
   openingHoursSpecification: [
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday"], opens: "12:00", closes: "20:00" },
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Tuesday", "Wednesday", "Thursday", "Saturday"], opens: "10:00", closes: "20:00" },
