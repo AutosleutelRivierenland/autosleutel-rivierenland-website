@@ -423,7 +423,7 @@ export default async function RegionPage({
           <div>
             <p>Een autosleutel is afhankelijk van merk, model, bouwjaar en uitvoering. Daarom geven we liever een passende prijsindicatie na controle dan een bedrag dat achteraf verandert.</p>
             <p>Stuur via WhatsApp het merk, model, bouwjaar en eventueel kenteken. Een duidelijke foto van de huidige sleutel helpt om het type sleutel sneller te herkennen.</p>
-            <p><strong>Niet beschikbaar:</strong> Renault en Volvo. Bij twijfel kunt u altijd eerst contact opnemen.</p>
+            <p><strong>Niet beschikbaar:</strong> Renault en Volvo. Bij twijfel kunt u altijd eerst contact opnemen.</p><p>Bezoekadres: Latensteinse Rondweg 2-109, Tiel. Uitsluitend op afspraak; neem vooraf telefonisch of via WhatsApp contact op.</p>
           </div>
         </div>
       </section>
@@ -442,8 +442,17 @@ export default async function RegionPage({
           </div>
         </div>
       </section>
-
-      
+      <section className="section landing-services-directory"><div className="container"><div className="all-services-heading"><label>ALLE BESCHIKBARE DIENSTEN</label><h2>Autosleutelservice en <em>voertuigservice.</em></h2><p>We werken uitsluitend op afspraak. Neem vooraf contact op om de mogelijkheden voor uw voertuig te bespreken.</p></div><div className="all-services-grid">{[
+["/diensten/autosleutel-bijmaken","Autosleutel bijmaken"],
+["/diensten/autosleutel-kwijt","Autosleutel kwijt"],
+["/diensten/behuizingen-vervangen","Sleutelbehuizing vervangen"],
+["/diensten/schadevrij-openen","Auto schadevrij openen"],
+["/diensten/diagnose-uitlezen","Diagnose en foutcodes uitlezen"],
+["/diensten/keyless-smartkey","Keyless & smart keys"],
+["/diensten/vag-coderen","VAG-codering"],
+["/diensten/overige-slotenservice","Overige slotenservice"],
+["/mercedes-contactslot","Mercedes contactslot reparatie"],
+].map(([href,label])=><a href={href} key={href}>{label}<span aria-hidden="true">↗</span></a>)}</div></div></section>
     </main>
   );
 }

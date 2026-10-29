@@ -37,6 +37,18 @@ export default async function ServicePage({params}:{params:Promise<{slug:string}
   <section className="section service-steps"><div className="container"><div className="steps-head"><div><label>HOE HET WERKT</label><h2>Van eerste contact tot <em>oplossing.</em></h2></div><p>We beginnen met de situatie en voertuiggegevens. Daarna bespreken we wat er nodig is en voeren we de werkzaamheden uit wanneer de situatie daarvoor geschikt is.</p></div><div className="steps-grid">{service.steps.map((step,i)=><article key={step}><span>0{i+1}</span><h3>{["Situatie bespreken","Voertuig beoordelen","Werkzaamheden uitvoeren"][i]}</h3><p>{step}</p></article>)}</div></div></section>
   <section className="section service-info"><div className="container info-grid"><div><label>VANUIT TIEL</label><h2>Mobiel waar het kan. <em>Op afspraak waar het beter past.</em></h2></div><div><p>{service.text[2]}</p><p>Autosleutel Rivierenland helpt particulieren, garages en autobedrijven in Tiel en de omliggende regio. Voor geschikte werkzaamheden kunt u ook op afspraak langskomen.</p><Link href="/tiel" className="service-link">Meer over autosleutelservice in Tiel →</Link></div></div></section>
   <section className={`service-cta${service.slug==="autosleutel-bijmaken"?" service-cta-keymaking":""}`}><div className="container service-cta-grid"><div><label>HULP NODIG?</label><h2>Hulp nodig met uw <em>autosleutel?</em></h2><p>Vertel ons welk probleem u ervaart of welke service u zoekt. We beoordelen uw voertuiggegevens en bespreken vooraf de mogelijkheden en kosten.</p></div><div className="cta-actions"><a className="btn cta-primary" href={tel}>Bel direct <b>06 48 65 92 79</b><span>→</span></a><a className="btn cta-secondary" href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <b>Stuur een bericht</b><span>↗</span></a><small>maandag 12:00–20:00 · di–do 10:00–20:00 · vrijdag gesloten · zaterdag 10:00–20:00 · zondag gesloten</small></div></div></section>
+  <section className="section all-services-section"><div className="container"><div className="all-services-heading"><label>ALLE DIENSTEN</label><h2>Bekijk ook onze <em>andere services.</em></h2><p>We werken uitsluitend op afspraak. Neem vooraf contact op om de mogelijkheden voor uw voertuig te bespreken.</p></div><div className="all-services-grid">{[
+    ["/diensten/autosleutel-bijmaken","Autosleutel bijmaken"],
+    ["/diensten/autosleutel-kwijt","Autosleutel kwijt"],
+    ["/diensten/behuizingen-vervangen","Sleutelbehuizing vervangen"],
+    ["/diensten/schadevrij-openen","Auto schadevrij openen"],
+    ["/diensten/diagnose-uitlezen","Diagnose en foutcodes uitlezen"],
+    ["/diensten/keyless-smartkey","Keyless & smart keys"],
+    ["/diensten/vag-coderen","VAG-codering"],
+    ["/diensten/overige-slotenservice","Overige slotenservice"],
+    ["/mercedes-contactslot","Mercedes contactslot reparatie"],
+  ].filter(([href])=>href!==`/diensten/${service.slug}`).map(([href,label])=><Link href={href} key={href}>{label}<span aria-hidden="true">↗</span></Link>)}</div></div></section>
+  <section className="section service-info"><div className="container info-grid"><div><label>BEZOEKADRES</label><h2>Uitsluitend <em>op afspraak.</em></h2></div><div><p>Latensteinse Rondweg 2-109, Tiel. Bel of WhatsApp altijd vooraf om een afspraak te maken. Langskomen zonder afspraak is niet mogelijk.</p><a className="service-link" href="/#contact">Contact opnemen voor een afspraak →</a></div></div></section>
   
  </main>;
 }

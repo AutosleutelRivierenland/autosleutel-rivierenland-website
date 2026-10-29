@@ -20,3 +20,7 @@
   .mobile-menu-panel{right:15px;top:66px;width:calc(100vw - 30px)}
   .header .nav-inner{padding-right:64px}
 }
+
+/* Duidelijke mobiele navigatie met goed leesbare teksten */
+.mobile-menu-panel a{font-size:16px!important;line-height:1.5!important;padding:16px 18px!important}
+.mobile-menu-panel .mobile-menu-phone{font-size:16px!important;font-weight:800!important}
