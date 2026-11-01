@@ -18,9 +18,8 @@ const serviceLinks = [
   ["/diensten/autosleutel-kwijt", "Autosleutel kwijt"],
   ["/diensten/behuizingen-vervangen", "Sleutelbehuizing vervangen"],
   ["/diensten/schadevrij-openen", "Auto schadevrij openen"],
-  ["/diensten/diagnose-uitlezen", "Diagnose en foutcodes uitlezen"],
   ["/diensten/keyless-smartkey", "Keyless & smart keys"],
-  ["/diensten/vag-coderen", "VAG-codering"],
+  ["/diensten/vag-coderen", "Diagnose & VAG-codering"],
   ["/diensten/overige-slotenservice", "Overige slotenservice"],
 ];
 
